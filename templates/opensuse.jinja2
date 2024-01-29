@@ -1,0 +1,11 @@
+menuentry "{{ title }}" {
+      iso_path="/boot/iso/{{ filename }}"
+      export iso_path
+      export with_gfx
+      search --set=root --file "$iso_path"
+      loopback loop "$iso_path"
+      root=(loop)
+      linux (loop)/boot/x86_64/loader/linux isofrom_system=$iso_path LANG=en_US.UTF-8
+      initrd (loop)/boot/x86_64/loader/initrd
+      loopback --delete loop
+}

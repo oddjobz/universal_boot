@@ -21,7 +21,7 @@ from subprocess import call, Popen, PIPE, check_call, run
 from urllib import request
 from http.cookiejar import CookieJar
 from tqdm import tqdm
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 from jinja2.exceptions import TemplateNotFound
 from isos import iso_images
 
@@ -33,7 +33,7 @@ class Multiboot:
         self._available = None
         self._titles = None
         self._env = Environment(
-            loader=PackageLoader("templates"),
+            loader=FileSystemLoader("templates"),
             autoescape=select_autoescape()
         )
 

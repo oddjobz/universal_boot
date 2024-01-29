@@ -1,0 +1,40 @@
+submenu "{{ title }}" {
+    iso_path="/boot/iso/{{ filename }}"
+    export iso_path
+    #search --set=root --file "$iso_path"
+    loopback loop "$iso_path"
+    root=(loop)
+    loadfont /boot/grub/font.pf2
+    color_normal=cyan/black
+    menu_color_highlight=yellow/red
+    menu_color_normal=light-gray/black
+
+    menuentry "fossapup64 9.5" {
+        linux (loop)/vmlinuz pfix=fsck pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+    menuentry "fossapup64 9.5 - Copy SFS files to RAM" {
+        linux (loop)/vmlinuz pfix=copy,fsck pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+    menuentry "fossapup64 9.5 - Don't copy SFS files to RAM" {
+        linux (loop)/vmlinuz pfix=nocopy,fsck pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+    menuentry "fossapup64 9.5 - RAM only" {
+        linux (loop)/vmlinuz pfix=ram,fsck pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+    menuentry "fossapup64 9.5 - No X" {
+        linux (loop)/vmlinuz pfix=nox,fsck pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+    menuentry "fossapup64 9.5 - No KMS (Kernel modesetting)" {
+        linux (loop)/vmlinuz nomodeset pfix=fsck pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+    menuentry "fossapup64 9.5 - Ram Disk SHell" {
+        linux (loop)/vmlinuz pfix=rdsh pmedia=usbflash find_iso=${iso_path}
+        initrd (loop)/initrd.gz
+    }
+}

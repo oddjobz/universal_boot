@@ -1,0 +1,8 @@
+menuentry "{{ title }} => {{ filename }}" {
+    iso_path="/boot/iso/{{ filename }}"
+    export iso_path
+    search --set=root --file "$iso_path"
+    loopback loop "$iso_path"
+    multiboot (loop)/loader/setupldr.sys SystemPath=multi(0)disk(0)rdisk(0)partition(1)/
+    chainloader (hd0,msdos2)+1
+}

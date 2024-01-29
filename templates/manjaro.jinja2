@@ -1,0 +1,12 @@
+menuentry "{{ title }}"  {
+    set dri="free"
+    set lang="en_UK"
+    set keytable="uk"
+    set timezone="Europe/London"
+    iso_path="/boot/iso/{{ filename }}"
+    export iso_path
+    search --set=root --file "$iso_path"
+    loopback loop "$iso_path"
+    root=(loop)
+    configfile /boot/grub/loopback.cfg
+}

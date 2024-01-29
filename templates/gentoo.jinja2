@@ -1,0 +1,7 @@
+menuentry "{{ title }}" {
+    set gfxpayload=keep
+    insmod all_video
+    root=(hd0,msdos2)
+    linux /boot/gentoo/gentoo overlayfs nodhcp looptype=squashfs loop=/boot/gentoo/image.squashfs cdroot
+    initrd /boot/gentoo/gentoo.igz
+}
