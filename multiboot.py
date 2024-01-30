@@ -195,11 +195,24 @@ class Multiboot:
         parser.add_argument("--grub", action='store_true', help="Refresh the GRUB boot information")
         args = parser.parse_args()
         
-        if args.list:   self.list ()
-        if args.add:    self.add (args.add)
-        if args.verify: self.verify (args.verify)
-        if args.update: self.update ()
-        if args.grub:   self.grub ()
+        action = False
+        if args.list:
+            self.list ()
+            action = True
+        if args.add:
+            self.add (args.add)
+            action = True
+        if args.verify:
+            self.verify (args.verify)
+            action = True
+        if args.update:
+            self.update ()
+            action = True
+        if args.grub:
+            self.grub ()
+            action = True
+        if not action:
+            print ('No action specified, try adding --help')
 
 
 if __name__ == '__main__':

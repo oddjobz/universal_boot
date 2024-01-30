@@ -7,5 +7,5 @@ sudo mount -o remount,rw ${MNT}
 sudo git -C ${DST} config --global --add safe.directory ${DST}
 sudo git -C ${DST} pull
 echo "Universal Loader Ready>"
-exec cd -- ${DST}
-
+cd ${DST}
+exec bash
