@@ -26,7 +26,9 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from jinja2.exceptions import TemplateNotFound
 from isos import iso_images
 from os import rename
+from datetime import datetime
 from whiptail import Whiptail
+from psutil import disk_usage
 
 
 class Multiboot:
@@ -43,6 +45,7 @@ class Multiboot:
     def read_isos (self):
         self._installed = {}
         self._available = {}
+        self._verified = set()
         self._titles = {}
         for iso in Path('isos').iterdir():
             iso = iso.as_posix().split("/")[-1]
@@ -56,6 +59,8 @@ class Multiboot:
             if iso:
                 self._installed[name] = iso            
                 self._titles[name] = image.get('title')
+                if Path(f'verified/{name}').exists():
+                    self._verified.add(name)
                     
         for name, image in iso_images.items():
             iso = image.get('iso').split('/')[-1]
@@ -67,11 +72,11 @@ class Multiboot:
         self.read_isos ()
         print ("ISO's Present on the USB Key:")
         for name in self._installed:
-            print (f'> {name:32} => {self._titles[name]}')
+            print (f'> {name:32} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
         print ()
         print ("ISO's Available for download:")
         for name in self._available:
-            print (f'> {name:32} => {self._titles[name]}')
+            print (f'> {name:32} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
         print ()
         
     def add (self, name):
@@ -86,10 +91,14 @@ class Multiboot:
 
     def verify (self, name):
         self.read_isos ()
-        if name not in self._installed:
-            print(f'"{name}" is not currently available, add it first!')
-            return
-        self.gnupg_verify (name)
+        if name == "all":
+            for name in self._installed:
+                self.gnupg_verify (name)    
+        else:
+            if name not in self._installed:
+                print(f'"{name}" is not currently available, add it first!')
+                return
+            self.gnupg_verify (name)
         
     def update (self):
         for name, entry in iso_images.items():
@@ -145,8 +154,15 @@ class Multiboot:
             title = iso_images[name]['title'].replace(' ', '-')
             lines.append((name, title, 'OFF'))
 
+        fs = disk_usage('isos')
+        d = 10000000
+        size = int(fs.total/d)/100
+        used = int(fs.used/d)/100
+        free = int(fs.free/d)/100
+        spc = 'Key size: {}G, %used: {}, used: {}G, free: {}G'.format(size, fs.percent, used, free)
+
         w = Whiptail(title="Currently Active USB ISO Images")
-        response = w.checklist('\n Choose which images should be included, use space bar to select', lines, prefix="")
+        response = w.checklist(f'Choose which images should be included, use space bar to select\n{spc}', lines, prefix="")
         if response[1]:
             print ('* GUI Cancelled')
             return
@@ -157,6 +173,11 @@ class Multiboot:
         if not to_delete and not to_install:
             print ("* No changes requested")
             return
+        
+        #
+        #   TODO: Calculate the amount of space required and check there is enough
+        #   TODO: Add a size field to each ISO
+
         w = Whiptail(title="Install / Remove ISO's")
         d = ''
         for x in to_delete:
@@ -180,6 +201,7 @@ class Multiboot:
                 print (f"* Delete: {item}")
             for item in to_install:
                 print (f"* Download: {item}")
+                self.download (item)
 
     def update_key (self, server, key):
         print (f'Updating "{key}" using keyserver "{server}"')
@@ -195,8 +217,10 @@ class Multiboot:
         path = Path(f'isos/{iso_name}')
         if not path.exists():
             print(f"Need to download: {entry['iso']}")
-            self.download_file (iso, iso_name)
-            rename (f'tmp/{iso_name}', f'isos/{iso_name}')
+            if self.download_file (iso, iso_name):
+                rename (f'tmp/{iso_name}', f'isos/{iso_name}')
+            else:
+                print (f'* ERROR: ISO download failed! => {iso}')
         else:
             print ('* ISO already present, adding to the menu')
         self.gnupg_verify (name)
@@ -223,25 +247,57 @@ class Multiboot:
                 c.setopt(c.NOPROGRESS, False)
                 c.setopt(c.XFERINFOFUNCTION, status)
                 c.perform()
+                if c.getinfo(c.RESPONSE_CODE) != 200:
+                    print(f"Error downloading: {iso} => ", c.getinfo(c.HTTP_CODE))
+                    return False
                 c.close()
+                return True
 
     def gnupg_verify (self, name):
         entry = iso_images[name]
         sign = entry.get('sign')
         sums = entry.get('sums')
-        if not sign or not sums:
-            print(f"Unable to verify, checksums unavailable")
-            return
+        sum = entry.get('sum')
+        sf  = entry.get('sf')
         filename = entry["iso"].split('/')[-1]
-        self.download_file (sign)
-        self.download_file (sums)
-        ret = call([f'gpg --homedir .gnupg --keyid-format long --verify tmp/SHA256SUMS.sign tmp/SHA256SUMS 2>/tmp/SHAERR'], shell=True)
-        if ret:
-            print (f'* ERROR on {name} - SHA256SUMS corrupt')
+        if not sign or not sums:
+            if not sf and not sum:
+                print(f"*************************************************")
+                print(f"*ERROR - Unable to verify, checksums unavailable: {name}")
+                print(f"*************************************************")
+                return
+
+        if sign and sums:
+            if not self.download_file (sign) or not self.download_file (sums):
+                print(f"*************************************************")
+                print(f"*ERROR - Missing checksums => {name}")
+                print(f"*************************************************")
+                return
+                
+            sign_file = sign.split('/')[-1]
+            sum_file = sums.split('/')[-1]
+            
+            if name.startswith('fedora') or name.startswith('gentoo'):
+                print("1>")
+                ret = call([f'gpgv --homedir .gnupg --keyring tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
+            else:
+                ret = call([f'gpg --homedir .gnupg --keyid-format long --verify tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
             if ret:
-                with open('/tmp/SHAERR') as io:
-                    print(io.read())
-            return
+                print (f'* ERROR on {name} - SHA256SUMS corrupt')
+                if ret:
+                    with open('/tmp/SHAERR') as io:
+                        print(io.read())
+                return
+        elif sf:
+            if not self.download_file (sf):
+                print(f"*************************************************")
+                print(f"*ERROR - Missing checksums => {name}")
+                print(f"*************************************************")
+                return
+            sum_file = sf.split('/')[-1]
+        else:
+            sum_file = None
+            
         print ("Checking signature ...")
         path = Path(f'tmp/{filename}')
         if not path.exists():
@@ -250,22 +306,61 @@ class Multiboot:
                 print(f"* File not available: {filename}")
                 return
         csum = self.checksum(path)
-        with open ('tmp/SHA256SUMS') as io:
-            while line := io.readline().strip('\n'):
-                sign, file = [word for word in line.split(' ') if word]
-                if file == filename:
-                    if sign == csum:
-                        print(f'* Signature OK')
-                    else:
-                        print(f'* Signature BAD')
-                    return
-        print(f"* No such file listed: {file}")
+        if sum:
+            if sum == csum:
+                print(f'* Signature OK')
+                self.mark_verified (name)
+            else:
+                print(f'* Signature BAD, found {sum} wanted {csum}')
+                self.mark_verified (name)
+            return
         
+        mode = 'text'
+        with open (f'tmp/{sum_file}') as io:
+            while True:
+                line = io.readline()
+                if not line: break
+                line = line.strip('\n')
+                if line.startswith('-----'):
+                    mode = 'sig'
+                if mode == 'text':
+                    sign, file = [word for word in line.split(' ') if word]
+                    
+                    if file.strip("*") == filename:
+                        if sign == csum:
+                            print(f'* Signature OK')
+                            self.mark_verified (name)
+                        else:
+                            print(f'* Signature BAD, found {sign} wanted {csum}')
+                            self.mark_unverified (name)
+                        return
+                else:
+                    if line.startswith('SHA256'):
+                        sign = line.split('=')[-1].strip()
+                        if sign == csum:
+                            print(f'* Signature OK')
+                            self.mark_verified (name)
+                        else:
+                            print(f'* Signature BAD, found {sign} wanted {csum}')
+                            self.unmark_verified (name)
+                        return
+        print(f"* No such file listed: {filename}")
+
+    def mark_verified (self, name):
+        Path('verified').mkdir(exist_ok=True)
+        with open(f'verified/{name}', 'w') as io:
+            io.write(datetime.now().isoformat())
+
+    def mark_unverified (self, name):
+        Path('verified').mkdir(exist_ok=True)
+        Path(f'verified/{name}').unlink(missing_ok=True)
+
     def checksum(self, path, hash_factory=hashlib.sha256, chunk_num_blocks=16384):
         h = hash_factory()
         size = path.stat().st_size
+        desc = path.as_posix().split('/')[-1].split('-')[0]
         with open(path.as_posix(),'rb') as f:
-            with tqdm(total=size/(chunk_num_blocks*h.block_size)+1, desc=path.as_posix(), bar_format="{l_bar}{bar}") as progress:
+            with tqdm(total=size/(chunk_num_blocks*h.block_size)+1, desc=desc, bar_format="{l_bar}{bar}") as progress:
                 while chunk := f.read(chunk_num_blocks*h.block_size): 
                     h.update(chunk)
                     progress.update()
@@ -280,7 +375,7 @@ class Multiboot:
         parser.add_argument("--list", action='store_true', help="List available ISO's")
         parser.add_argument("--update", action='store_true', help="Update software and signatures")
         parser.add_argument("--add", type=str, metavar="<iso>", help="The name of the ISO to add")
-        parser.add_argument("--verify", type=str, metavar="<iso>", help="Verify the ISO's signatures")
+        parser.add_argument("--verify", type=str, metavar="<iso>|all", help="Verify the ISO's signatures")
         parser.add_argument("--grub", action='store_true', help="Refresh the GRUB boot information")
         parser.add_argument("--gui", action='store_true', help="Fire up the text based GUI")
         args = parser.parse_args()
@@ -302,9 +397,6 @@ class Multiboot:
             action = True
         if args.grub:
             self.grub ()
-            action = True
-        if args.isos_update:
-            self.isos_update (args.isos_update)
             action = True
         if not action:
             print ('No action specified, try adding --help')
