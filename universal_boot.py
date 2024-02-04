@@ -68,15 +68,27 @@ class Multiboot:
                 self._available[name] = iso
                 self._titles[name] = image.get('title')
 
+    def list_print (self, name):
+        # print (f'> {name:24} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
+        verified = "verified  " if name in self._verified else "unverified"
+        size = iso_images[name].get('size', 0)
+        print (f'> {name:24} | {verified} | {size:0.2f}G | {self._titles[name]}')
+
     def list (self):
         self.read_isos ()
         print ("ISO's Present on the USB Key:")
-        for name in self._installed:
-            print (f'> {name:32} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
+        installed = list(self._installed)
+        installed.sort()
+        for name in installed:
+            self.list_print(name)
+            # print (f'> {name:24} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
         print ()
         print ("ISO's Available for download:")
+        available = list(self._available)
+        available.sort()
         for name in self._available:
-            print (f'> {name:32} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
+            self.list_print(name)
+            # print (f'> {name:24} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
         print ()
         
     def add (self, name):
@@ -180,11 +192,16 @@ class Multiboot:
 
         w = Whiptail(title="Install / Remove ISO's")
         d = ''
+        del_size = 0
         for x in to_delete:
             d += f'* {x}\n'
+            del_size += iso_images[x].get('size', 0)
         i = ''
+
+        add_size = 0
         for x in to_install:
             i += f'* {x}\n'
+            add_size += iso_images[x].get('size', 0)
         prompt = ''
         if d:
             prompt += "ISO's to be deleted:\n" + d + '\n'
@@ -194,7 +211,15 @@ class Multiboot:
             prompt += "If you delete ISO's you will need to download them again if you wish to use them.\n"
         if i:
             prompt += "Downloading will take time, don't turn your computer or your Internet connection off while downloading.\n"
+
+        add_size = int(add_size*100)/100
+        del_size = int(del_size*100)/100
+        net_size = int((add_size - del_size)*100)/100
+
+        prompt += f'\nRemove {del_size}G and Download {add_size}G, net change {net_size}, free {free}'
         prompt += '\nAre you sure you want to do this?'
+        if net_size + 1 > free:
+            prompt += '\nWARNING: THIS DOWNLOAD MAY NOT FIT ON YOUR KEY!'
         w.calc_height(prompt)
         if not w.yesno(prompt, 'no'):
             for item in to_delete:
