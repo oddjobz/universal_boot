@@ -47,14 +47,21 @@ class Multiboot:
         self._available = {}
         self._verified = set()
         self._titles = {}
-        for iso in Path('isos').iterdir():
-            iso = iso.as_posix().split("/")[-1]
+        for path in Path('isos').iterdir():
+            iso = path.as_posix().split("/")[-1]
             for name, image in iso_images.items():
                 entry_iso = image.get('iso').split('/')[-1]
                 if iso == entry_iso:
                     break
             else:
                 print (f'Unknown ISO: {iso}')
+                w = Whiptail(title="Unknown ISO found")
+                menu = w.menu(
+                    f"The Bootloader doesn't recognise file: {iso}",
+                    (('ignore','Ignore this file'), ('delete','Remove this file')))[0]
+                if menu == 'delete':
+                    print("Delete> ", path)
+                    path.unlink()
                 continue
             if iso:
                 self._installed[name] = iso            
@@ -70,8 +77,17 @@ class Multiboot:
 
     def list_print (self, name):
         # print (f'> {name:24} | {"verified  " if name in self._verified else "unverified"} => {self._titles[name]}')
-        verified = "verified  " if name in self._verified else "unverified"
-        size = iso_images[name].get('size', 0)
+        entry = iso_images[name]
+        if name not in self._verified:
+            verified = '           '
+        elif entry.get('sign'):
+            verified = 'Verified ✅'
+        elif entry.get('sum'):
+            verified = 'By Host  ☑️ '
+        else:
+            verified = 'By Sum   ⚠️ '
+        # verified = "verified  " if name in self._verified else "unverified"
+        size = entry.get('size', 0)
         print (f'> {name:24} | {verified} | {size:0.2f}G | {self._titles[name]}')
 
     def list (self):
@@ -216,7 +232,7 @@ class Multiboot:
         del_size = int(del_size*100)/100
         net_size = int((add_size - del_size)*100)/100
 
-        prompt += f'\nRemove {del_size}G and Download {add_size}G, net change {net_size}, free {free}'
+        prompt += f'\nRemove {del_size}G and Download {add_size}G, net change {net_size}G, free {free}G'
         prompt += '\nAre you sure you want to do this?'
         if net_size + 1 > free:
             prompt += '\nWARNING: THIS DOWNLOAD MAY NOT FIT ON YOUR KEY!'
@@ -264,9 +280,11 @@ class Multiboot:
                 progress.update(download_d - total[0])
                 total[0] = download_d
             
+            agent = 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             with open(f'tmp/{path}', 'wb') as f:
                 c = Curl()
                 c.setopt(c.URL, iso)
+                c.setopt(c.USERAGENT, agent)
                 c.setopt(c.FOLLOWLOCATION, True)
                 c.setopt(c.WRITEDATA, f)
                 c.setopt(c.NOPROGRESS, False)
@@ -274,6 +292,7 @@ class Multiboot:
                 c.perform()
                 if c.getinfo(c.RESPONSE_CODE) != 200:
                     print(f"Error downloading: {iso} => ", c.getinfo(c.HTTP_CODE))
+                    print(f'=> {c.errstr()}')
                     return False
                 c.close()
                 return True
@@ -283,8 +302,41 @@ class Multiboot:
         sign = entry.get('sign')
         sums = entry.get('sums')
         sum = entry.get('sum')
+        key = entry.get('key')
         sf  = entry.get('sf')
         filename = entry["iso"].split('/')[-1]
+        self.mark_unverified (name)
+        if sign and not sums:
+            if sign.startswith('https://'):
+                if not self.download_file(sign):
+                    print(f"*************************************************")
+                    print(f"*ERROR - Missing signature => {name}")
+                    print(f"*************************************************")
+                    return
+                sign = sign.split("/")[-1]
+            else:
+                with open(f'tmp/{filename}.sig', 'w') as w:
+                    w.write(sign)
+                sign = f'{filename}.sig'
+            if key and not self.download_file(key):
+                print(f"*************************************************")
+                print(f"*ERROR - Missing key => {name}")
+                print(f"*************************************************")
+                return
+            if key:
+                ret = call([f'gpg --homedir .gnupg --import tmp/{key.split("/")[-1]} 2>/tmp/SHAERR'], shell=True)
+                if ret:
+                    print (f'* ERROR importing key for {name}')
+                    with open('/tmp/SHAERR') as io:
+                        print(io.read())
+                    return                
+            ret = call([f'gpg --homedir .gnupg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR'], shell=True)
+            if ret:
+                print (f'* ERROR verifying {name}')
+                with open('/tmp/SHAERR') as io:
+                    print(io.read())
+            self.mark_verified (name)
+            return
         if not sign or not sums:
             if not sf and not sum:
                 print(f"*************************************************")

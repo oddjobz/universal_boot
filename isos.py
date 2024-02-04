@@ -139,8 +139,17 @@ iso_images = {
         'title': 'Sparky Desktop (07.02) Mate',
         'size': 1.98,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.2-x86_64-mate.iso',
-        'sums': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.2-x86_64-lxqt.iso.allsums.txt',
-        'sign': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.2-x86_64-mate.iso.sig',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmVwiZUACgkQw50/ciyG
+7spIJggArYX7XFOZB2MByfREBawVy+gLyAq2HrSsNAjaMltz+c9pxLT+AOUVfvlO
+npgPIIO+tskHcn+gC0Ag6giOyRhqKmZsxT3HsDWDfh+kSV0WTmBQutwOxsdSjDG1
+85My4PNUsX7f1jEmY0BtU1JMSsKd/MiW8dKq7DvAxcu8H0Duy19d8ssycT860n8Z
+9O6ZPm7Nf8sHxx9/1Z3OpJK7pfuefPs/yXO2UK0Fm1KApA+Jtsqc+CzZa4rfhe/T
+SrtcTTBbJ3Jv5GNiWTe4WGRtNJtcBRYG0nnqBqTdojq/nmrc6PeFma0x6aZFo2Zx
+8MMRZtkwwmcmhFaMdU9vgnJOivOf4Q==
+=H+Sl
+-----END PGP SIGNATURE-----"""
     },
     'sparky-07.02-xfce': {
         'name': 'sparky',
@@ -148,8 +157,17 @@ iso_images = {
         'title': 'Sparky Desktop (07.02) XFCE',
         'size': 1.63,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.2-x86_64-xfce.iso',
-        'sums': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.2-x86_64-xfce.iso.allsums.txt',
-        'sign': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.2-x86_64-xfce.iso.sig',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmVwm60ACgkQw50/ciyG
+7sp7sQgAioTGd/bZSomEwwb52CN2ZPz2qhpAI+wqxyjGx+dQgQoNb+BTuWqbM0IY
+06CcHyOwJZJOGhMQT/za2tfLJn+U67PywsVssBxL4plbbstY9ZWE7fAaHwhaZPtQ
+HKlTnI/icrO6GvXPv809Pw779cM+SGRbV04E4ucgBXrs0JtPl5FXZbMxngdjTiSS
+E/zx4mkfZwqAncQIFbXnoWlUeIF1clmqYaTM01rRDKbCcl05cRQgrjbHGzYVq672
+p9wHHBJmizBK3VQ0gCaAVz1RshBGMC+LuVpK20qOfRnZtWGDfAIuf9wwuW1lDjhy
+Rztib+H2FfX38zE7nggtPLYinBqOrA==
+=BFCu
+-----END PGP SIGNATURE-----"""
     },
     'sparky-07.02-kde': {
         'name': 'sparky',
@@ -157,8 +175,18 @@ iso_images = {
         'title': 'Sparky Desktop (07.02) KDE',
         'size': 2.09,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.2-x86_64-kde.iso',
-        'sums': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.2-x86_64-kde.iso.allsums.txt',
-        'sign': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.2-x86_64-kde.iso.sig',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmVwIFUACgkQw50/ciyG
+7soatAgAwKc+U+lnG3DZFQeMfGFmkpBPOElXBjJu+7KRhEIwD7iFCxnjxUUyNxfh
+0WyF1vQQlTqr+cxRDZqWSaAmSX7MKJAkYYa2FOaI+UJpTqvOQJFsn2nUyh5SJwGc
+DPMyW7tsXtaVJKZh83y6GHG3HL9Ar+nzFx8zAabZVz1xtgEe1ho5ySi1cQPYcunW
+jam/MWI7Dk+hon58TWAM01PC77ObxiOlfztkWlQKZ4j71fT9VQ7pXq2WYEICBQNf
+R3U0Xcrt8e3SorEySdfsG/m7egHZeIP0RQM934+cVXCX7BsajaGeb0xTCiO65LEM
+UuR2R2ztqkdul/WF+4/wON3aKug7Vg==
+=FL9O
+-----END PGP SIGNATURE-----
+"""
     },
     'sparky-07.02-minimal': {
         'name': 'sparky',
@@ -166,8 +194,18 @@ iso_images = {
         'title': 'Sparky Desktop (07.02) Minimal',
         'size': 1.39,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-x86_64-minimalgui.iso',
-        'sums': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-x86_64-minimalgui.iso.allsums.txt',
-        'sign': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-x86_64-minimalgui.iso.sig',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmVwIHEACgkQw50/ciyG
+7sr5EwgAm9dtSAvFV8uVhzQcyjx1UfTrEz4c0iFcHfHLdC5Tv2bvkWoFrQiJajPO
+3dp4/K2FkJNyo9CQA6KTn1pTUyQ+zef8Ly3m2253x9NNeXFAL2c5OgxKPQHiRWk2
+AEEYoEBR8qcMwVW6ONOthkY7SQcR35J8JXY4Emeqvafp3OJPuEADmUqOl+b9Yhn/
+E3yTGDSAw+x8K8ygkii9jjGdQG+srTmH0oAqSOFgZDsi7AXnwGnxePOT46+tfIxi
+p9V/jQ5lIWNI5sRVLAXd2Qi4RmE46XoaUAtnKnuVC9YioX/3mvw4/PrkWRcM6ONw
+Ddoh7/Y3XH2xR+ZanrDBRwQwNl3LXg==
+=kwYq
+-----END PGP SIGNATURE-----
+"""
     },
     'sparky-07.02-min-i686': {
         'name': 'sparky',
@@ -175,8 +213,18 @@ iso_images = {
         'title': 'Sparky Desktop (07.02) Min (i686)',
         'size': 1.21,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso',
-        'sums': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso.allsums.txt',
-        'sign': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso.sig',
+                'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmVwIH4ACgkQw50/ciyG
+7sreMAgAv1fv83KriE/E/t2b8J84QZNLgjs+374fmyXLMkasp4IjRt5qlZ5c4+pc
+jil5f2BiXW5nLg9ETYJirHSma5bMN9jl92ynX5ektsjN66ycT+4rmStitYYmVQ0U
+tB17fl0VQWi6F0RPVrc6NDX7qkDa20X2vx6vpoIKTgNRmgS3bJSGyebao/HkFKGM
+IAXOttQuFofLQsnoMbQVWblIBHj5GZ+FnkVQ6Zq4dIUg4KTYwEmeCyDWouZYvNRo
+6DTIIZAJ5vDTQMKjb6sK+HLAKsBoiHF6UQ3ZuaPdol1362g5QGjT5bOLzEzNRR1O
+iWaJNp9600t5CDsP6PIlKifvntMg2A==
+=Y88t
+-----END PGP SIGNATURE-----"""
     },
     'sparky-07.02-cli-i686': {
         'name': 'sparky',
@@ -184,18 +232,26 @@ iso_images = {
         'title': 'Sparky Desktop (07.02) CLI (i686)',
         'size': 0.717,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso',
-        'sums': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso.allsums.txt',
-        'sign': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso.sig',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmVwWhUACgkQw50/ciyG
+7soSWQgAk8ldLuPGhHZnNRa9mF69Tk03XWzHE4IrDO5BOJOUM3NJ8rdsZdCAgoaf
+b5Q4on5WV1kCvCz1wVKMrKC99OT1YF99MlFASxIbpynKQl6OyYDAEmG7KzEx2w/1
+Hm+8ThzC+2XhBwMnquEb/pCrOL8ZiaeM06CgIEHr7l7XpRZOWPgwO9BnQuaj+qbM
+/7wVMQA5mBp+We02priBPHqm3RJicH/DR2ul0td0stMXiWYEwCkbBxTuipYc/tCx
+Qp4werkTAnjHvLyLYXhMjmRoaLbWCzD5OoDKvmoXlYlbiE/1GZcZieIwGIUgWxrj
+rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
+=VUw1
+-----END PGP SIGNATURE-----"""
     },
-
-
     'ubuntu-22.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu Desktop (22.04) Gnome',
         'size': 4.7,
         'iso': 'https://releases.ubuntu.com/lunar/ubuntu-22.04.3-desktop-amd64.iso',
-        'sum': 'a435f6f393dda581172490eda9f683c32e495158a780b5a1de422ee77d98e909'
+        'sums': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS',
+        'sign': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS.gpg',
     },
     'ubuntu-23.04': {
         'name': 'ubuntu',
@@ -295,7 +351,7 @@ iso_images = {
         'title': 'Bodhi Desktop (7.0.0) Standard',
         'size': 1.3,
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64.iso',
-        'sums': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64.iso.sha256',
+        'sum': '0ddfc1d917b496fade58f141ef1b07ab798b41cc2d23c8e1b5ad9b288f27c538',
     },
     'bodhi-7.0.0-hwe': {
         'name': 'bodhi',
@@ -303,7 +359,7 @@ iso_images = {
         'title': 'Bodhi Desktop (7.0.0) HWE',
         'size': 1.3,
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso',
-        'sums': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso.sha256'
+        'sum': '55601a03d305159569b77e6a6008aedc59f5e81df1beb35f6224c0eae6efde70'
     },
     'arch-2024.02.01': {
         'name': 'arch',
@@ -429,5 +485,22 @@ iso_images = {
         'size': 3.6,
         'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
         'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
+    },
+    'tails-5.2.2': {
+        'name': 'tails',
+        'menu': 'debian',
+        'title': 'Tails (5.22) Gnome',
+        'size': 1.3,
+        'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.img',
+        'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.img.sig',
+        'key': 'https://tails.net/tails-signing.key'
+    },    
+    'vanillaos-22.10-r9': {
+        'name': 'vanilla',
+        'menu': 'debian',
+        'title': 'VanillaOS (22.10) Beta',
+        'size': 1.8,
+        'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
+        'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
     },
 }

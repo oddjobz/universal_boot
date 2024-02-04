@@ -4,3 +4,4 @@ isos
 verified
 __pycache__
 .gnupg
+grub.cfg
