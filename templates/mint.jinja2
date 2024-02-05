@@ -7,19 +7,17 @@ menuentry "{{ title }}" {
 
       menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" --class linuxmint {
             set gfxpayload=keep
-            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint live-media=$root ignore_uuid --
+            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint boot-casper iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
       menuentry "Start Linux Mint 21.3 Cinnamon 64-bit (compatibility mode)" {
-            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset --
+            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset boot-casper iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
       menuentry "OEM install (for manufacturers)" {
             set gfxpayload=keep
-            linux   /casper/vmlinuz  oem-config/enable=true only-ubiquity boot=casper username=mint hostname=mint quiet splash --
+            linux   /casper/vmlinuz  oem-config/enable=true only-ubiquity boot=casper username=mint hostname=mint boot-casper iso-scan/filename=${iso_path} quiet splash --
             initrd  /casper/initrd.lz
       }
-
-
       loopback --delete loop
 }
