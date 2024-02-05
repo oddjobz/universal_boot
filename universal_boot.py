@@ -43,7 +43,7 @@ class Multiboot:
         )
 
     def read_isos (self):
-        if not Path('isos'):
+        if not Path('isos').exists():
             Path('isos').symlink_to('../boot/iso')
 
         self._installed = {}
