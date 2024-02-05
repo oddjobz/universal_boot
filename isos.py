@@ -400,7 +400,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'popos-22.04': {
         'name': 'popos',
-        'menu': 'debian'
+        'menu': 'debian',
         'title': 'Pop!_OS (22.04) LTS',
         'size': 2.5,
         'iso': 'https://iso.pop-os.org/22.04/amd64/intel/33/pop-os_22.04_amd64_intel_33.iso',
