@@ -22,17 +22,5 @@ submenu "{{ title }}" {
             linux   (loop)/casper/vmlinuz  oem-config/enable=true only-ubiquity boot=casper username=mint hostname=mint quiet splash live-media-path=/casper/ ignore_uuid --
             initrd  (loop)/casper/initrd.lz
     }
-    grub_platform
-    if [ "$grub_platform" = "efi" ]; then
-    menuentry 'Boot from next volume' {
-            exit 1
-    }
-    menuentry 'UEFI Firmware Settings' {
-            fwsetup
-    }
-    menuentry 'Memory test' {
-            linux   (loop)/boot/memtest64.efi
-    }
-    fi
 }
 
