@@ -1,35 +1,25 @@
 menuentry "{{ title }}" {
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
-      img_path="/dev/disk/by-label/MP-DATA"
-      search --set=root --file "$iso_path"
       loopback loop "$iso_path"
       root=(loop)
-      linux (loop)/casper/vmlinuz img_dev=$img_path boot=casper username=mint hostname=mint initrd=/casper/initrd.lz live-media-path=/casper/ ignore_uuid --
-      initrd (loop)/casper/initrd.lz
+      configfile /boot/grub/loopback.cfg
+
+      menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" --class linuxmint {
+            set gfxpayload=keep
+            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint live-media-path=/casper/ ignore_uuid quiet splash --
+            initrd  /casper/initrd.lz
+      }
+      menuentry "Start Linux Mint 21.3 Cinnamon 64-bit (compatibility mode)" {
+            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset --
+            initrd  /casper/initrd.lz
+      }
+      menuentry "OEM install (for manufacturers)" {
+            set gfxpayload=keep
+            linux   /casper/vmlinuz  oem-config/enable=true only-ubiquity boot=casper username=mint hostname=mint quiet splash --
+            initrd  /casper/initrd.lz
+      }
+
+
       loopback --delete loop
 }
-
-#submenu "{{ title }}" {
-#	iso_path="/boot/iso/{{ filename }}"
-#	export iso_path
-#	img_path="/dev/disk/by-label/MP-DATA"
-#	search --set=root --file "$iso_path"
-#	loopback loop "$iso_path"
-#
-#
-#    menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" --class linuxmint {
-#            set gfxpayload=keep
-#            linux   (loop)/casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash live-media-path=/casper/ ignore_uuid img_dev=$img_path img_loop=$iso_path --
-#            initrd  (loop)/casper/initrd.lz
-#    }
-#    menuentry "Start Linux Mint 21.3 Cinnamon 64-bit (compatibility mode)" {
-#            linux   (loop)/casper/vmlinuz  boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset live-media-path=/casper/ ignore_uuid --
-#            initrd  (loop)/casper/initrd.lz
-#    }
-#    menuentry "OEM install (for manufacturers)" {
-#            set gfxpayload=keep
-#            linux   (loop)/casper/vmlinuz  oem-config/enable=true only-ubiquity boot=casper username=mint hostname=mint quiet splash live-media-path=/casper/ ignore_uuid --
-#            initrd  (loop)/casper/initrd.lz
-#    }
-#}
