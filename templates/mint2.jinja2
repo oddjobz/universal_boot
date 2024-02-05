@@ -1,5 +1,4 @@
 menuentry "{{ title }}" {
-  insmod probe
   probe -u $root --set=rootuuid
   set imgdevpath="/dev/disk/by-uuid/$rootuuid"
   export imgdevpath rootuuid
@@ -17,4 +16,5 @@ menuentry "{{ title }}" {
     root=(loop)
     configfile /boot/grub/loopback.cfg
     loopback --delete loop
+  }
 }
