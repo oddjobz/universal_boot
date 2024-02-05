@@ -5,10 +5,9 @@ menuentry "{{ title }}" {
       search --set=root --file "$iso_path"
       loopback loop "$iso_path"
       root=(loop)
-      linux   (loop)/casper/vmlinuz  boot=casper username=mint hostname=mint img_dev=$img_path --
-      initrd  (loop)/casper/initrd.lz
+      linux (loop)/casper/vmlinux img_dev=$img_path boot=casper initrd=/casper/initrd.lz live-media-path=/casper/ ignore_uuid -- –
+      initrd (loop)/casper/initrd.lz
       loopback --delete loop
-}
 
 #menuentry '{{ title }}' {
 #	iso_path="/boot/iso/{{ filename }}"
