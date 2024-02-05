@@ -8,3 +8,4 @@ menuentry "{{ title }}" {
       linux (loop)/casper/vmlinux img_dev=$img_path boot=casper initrd=/casper/initrd.lz live-media-path=/casper/ ignore_uuid --
       initrd (loop)/casper/initrd.lz
       loopback --delete loop
+}
