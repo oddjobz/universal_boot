@@ -296,7 +296,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },    
     'mint-21.3-cinnamon': {
         'name': 'mint',
-        'menu': 'mint2',
+        'menu': 'mint',
         'title': 'Mint Desktop (21.03) Cinnamon', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso',
