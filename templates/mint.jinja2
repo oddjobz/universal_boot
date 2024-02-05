@@ -3,11 +3,11 @@ menuentry "{{ title }}" {
       export iso_path
       loopback loop "$iso_path"
       root=(loop)
-      configfile /boot/grub/loopback.cfg
+      #configfile /boot/grub/loopback.cfg
 
       menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" --class linuxmint {
             set gfxpayload=keep
-            linux   /casper/vmlinuz  boot=casper username=mint hostname=mint boot-casper iso-scan/filename=${iso_path} --
+            linux   /casper/vmlinuz boot=casper username=mint hostname=mint boot-casper iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
       menuentry "Start Linux Mint 21.3 Cinnamon 64-bit (compatibility mode)" {
