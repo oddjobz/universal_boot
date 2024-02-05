@@ -9,7 +9,7 @@
 menuentry '{{ title }}' {
 	iso_path="/boot/iso/{{ filename }}"
 	export iso_path
-	img_path="/dev/disk/by-label/linuxuk"
+	img_path="/dev/disk/by-label/MP-DATA"
 	search --set=root --file "$iso_path"
 	loopback loop "$iso_path"
  	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_path img_loop=$iso_path earlymodules=loop

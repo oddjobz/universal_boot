@@ -296,7 +296,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },    
     'mint-21.3-cinnamon': {
         'name': 'mint',
-        'menu': 'debian',
+        'menu': 'mint',
         'title': 'Mint Desktop (21.03) Cinnamon', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso',
@@ -307,7 +307,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mint-21.3-mate': {
         'name': 'mint',
-        'menu': 'debian-loop',
+        'menu': 'mint',
         'title': 'Mint Desktop (21.03) Mate', 
         'size': 3.0,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-mate-64bit.iso',
@@ -316,7 +316,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mint-21.3-xfce': {
         'name': 'mint',
-        'menu': 'debian',
+        'menu': 'mint',
         'title': 'Mint Desktop (21.03) XFCE', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-xfce-64bit.iso',
@@ -400,11 +400,11 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'popos-22.04': {
         'name': 'popos',
+        'menu': 'debian'
         'title': 'Pop!_OS (22.04) LTS',
         'size': 2.5,
         'iso': 'https://iso.pop-os.org/22.04/amd64/intel/33/pop-os_22.04_amd64_intel_33.iso',
         'sum': 'ff834c94c6bc970a9508da24fccf32ac829a51030488e612cc1ab4ecf4e0859d',
-        'menu': 'debian'        
     },
     'fedora-38-gnome': {
         'name': 'fedora',

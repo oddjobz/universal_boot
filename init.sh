@@ -8,5 +8,4 @@ sudo git -C ${DST} config --global --add safe.directory ${DST}
 sudo git -C ${DST} pull
 echo "Universal Loader Ready>"
 cd ${DST}
-ln -sf ../boot/iso isos
 exec bash
