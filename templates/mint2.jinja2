@@ -1,4 +1,4 @@
-menuentry "{{ title }}" {
+submenu "{{ title }}" {
   probe -u $root --set=rootuuid
   set imgdevpath="/dev/disk/by-uuid/$rootuuid"
   export imgdevpath rootuuid
@@ -7,14 +7,19 @@ menuentry "{{ title }}" {
   set isofile=$isopath/{{ filename }}
   export isofile
   echo $isopath
-  regexp --set=isoname "$isopath/(.*)" "$isofile"
-  submenu "$isoname (loopback.cfg) ->" "$isofile" {
-    iso_path="$2"
-    export iso_path
-    search --set=root --file "$iso_path"
-    loopback loop "$iso_path"
-    root=(loop)
-    configfile /boot/grub/loopback.cfg
-    loopback --delete loop
+
+  menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" {
+        set gfxpayload=keep
+        linux   /casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash --
+        initrd  /casper/initrd.lz
+  }
+  menuentry "Start Linux Mint 21.3 Cinnamon 64-bit (compatibility mode)" {
+        linux   /casper/vmlinuz  boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset --
+        initrd  /casper/initrd.lz
+  }
+  menuentry "OEM install (for manufacturers)" {
+        set gfxpayload=keep
+        linux   /casper/vmlinuz  oem-config/enable=true only-ubiquity boot=casper username=mint hostname=mint quiet splash --
+        initrd  /casper/initrd.lz
   }
 }
