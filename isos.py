@@ -1,25 +1,3 @@
-from pathlib import Path
-from shutil import move
-from subprocess import call
-
-def fix_gentoo (entry):
-    if Path('/media/data/boot/gentoo/image.squashfs').exists():
-        return
-    print ('Running the Gentoo fix')
-    # name = entry['iso'].split('/')[-1]
-    # if Path(f'isos/{name}').exists() and not Path(f'./{name}').exists():
-    #     move(f'isos/{name}', f'./{name}')
-    #     with open(f'isos/{name}', 'w') as io:
-    #         io.write('Moved\n')
-
-    # call([f'sudo mkdir -p /media/data/boot/gentoo'], shell=True)          
-    # call([f'sudo mkdir -p /mnt/loop'], shell=True)          
-    # call([f'sudo mount -o loop ./{name} /mnt/loop'], shell=True)  
-    # call([f'sudo cp /mnt/loop/boot/gentoo /media/data/boot/gentoo/gentoo'], shell=True)
-    # call([f'sudo cp /mnt/loop/boot/gentoo.igz /media/data/boot/gentoo/gentoo.igz'], shell=True)
-    # call([f'sudo cp /mnt/loop/image.squashfs /media/data/boot/gentoo/image.squashfs'], shell=True)
-    # call([f'sudo umount /mnt/loop'], shell=True)
-
 iso_images = {
     'debian-12.04-cinnamon': {
         'name': 'debian',
@@ -127,7 +105,7 @@ iso_images = {
     },
     'sparky-07.02-lxqt': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) LXQt',
         'size': 1.79,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.2-x86_64-lxqt.iso',
@@ -135,7 +113,7 @@ iso_images = {
     },
     'sparky-07.02-mate': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) Mate',
         'size': 1.98,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.2-x86_64-mate.iso',
@@ -153,7 +131,7 @@ SrtcTTBbJ3Jv5GNiWTe4WGRtNJtcBRYG0nnqBqTdojq/nmrc6PeFma0x6aZFo2Zx
     },
     'sparky-07.02-xfce': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) XFCE',
         'size': 1.63,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.2-x86_64-xfce.iso',
@@ -171,7 +149,7 @@ Rztib+H2FfX38zE7nggtPLYinBqOrA==
     },
     'sparky-07.02-kde': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) KDE',
         'size': 2.09,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.2-x86_64-kde.iso',
@@ -190,7 +168,7 @@ UuR2R2ztqkdul/WF+4/wON3aKug7Vg==
     },
     'sparky-07.02-minimal': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) Minimal',
         'size': 1.39,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-x86_64-minimalgui.iso',
@@ -209,7 +187,7 @@ Ddoh7/Y3XH2xR+ZanrDBRwQwNl3LXg==
     },
     'sparky-07.02-min-i686': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) Min (i686)',
         'size': 1.21,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso',
@@ -228,7 +206,7 @@ iWaJNp9600t5CDsP6PIlKifvntMg2A==
     },
     'sparky-07.02-cli-i686': {
         'name': 'sparky',
-        'menu': 'sparky',
+        'menu': 'debian',
         'title': 'Sparky Desktop (07.02) CLI (i686)',
         'size': 0.717,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso',
@@ -329,7 +307,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mint-21.3-mate': {
         'name': 'mint',
-        'menu': 'debian',
+        'menu': 'debian-loop',
         'title': 'Mint Desktop (21.03) Mate', 
         'size': 3.0,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-mate-64bit.iso',
@@ -449,19 +427,6 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
 
     },
-    # FIXME: image validation is non-standard, needs work
-    # 'gentoo-2023-09-03': {
-    #     'name': 'gentoo',
-    #     'title': 'Gentoo (2024-01-28) Live',
-    #     'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240128T165521Z.iso',
-    #     'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240121T170320Z.iso.asc',
-    #     'sums': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240128T165521Z.iso.sha256',
-    #     'menu': 'gentoo',
-    #     'hook': fix_gentoo,
-    #     'prints': ['534E4209AB49EEE1C19D96162C44695DB9F6043D'],
-    #     'keyserver': 'hkp://keys.openpgp.org',
-    # },
-    #
     'manjaro-23.1.3': {
         'name': 'manjaro',
         'menu': 'manjaro',
@@ -504,3 +469,39 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
     },
 }
+
+
+
+    # FIXME: image validation is non-standard, needs work
+    # 'gentoo-2023-09-03': {
+    #     'name': 'gentoo',
+    #     'title': 'Gentoo (2024-01-28) Live',
+    #     'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240128T165521Z.iso',
+    #     'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240121T170320Z.iso.asc',
+    #     'sums': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240128T165521Z.iso.sha256',
+    #     'menu': 'gentoo',
+    #     'hook': fix_gentoo,
+    #     'prints': ['534E4209AB49EEE1C19D96162C44695DB9F6043D'],
+    #     'keyserver': 'hkp://keys.openpgp.org',
+    # },
+    #
+# from pathlib import Path
+# from shutil import move
+# from subprocess import call
+# def fix_gentoo (entry):
+#     if Path('/media/data/boot/gentoo/image.squashfs').exists():
+#         return
+#     print ('Running the Gentoo fix')
+    # name = entry['iso'].split('/')[-1]
+    # if Path(f'isos/{name}').exists() and not Path(f'./{name}').exists():
+    #     move(f'isos/{name}', f'./{name}')
+    #     with open(f'isos/{name}', 'w') as io:
+    #         io.write('Moved\n')
+
+    # call([f'sudo mkdir -p /media/data/boot/gentoo'], shell=True)          
+    # call([f'sudo mkdir -p /mnt/loop'], shell=True)          
+    # call([f'sudo mount -o loop ./{name} /mnt/loop'], shell=True)  
+    # call([f'sudo cp /mnt/loop/boot/gentoo /media/data/boot/gentoo/gentoo'], shell=True)
+    # call([f'sudo cp /mnt/loop/boot/gentoo.igz /media/data/boot/gentoo/gentoo.igz'], shell=True)
+    # call([f'sudo cp /mnt/loop/image.squashfs /media/data/boot/gentoo/image.squashfs'], shell=True)
+    # call([f'sudo umount /mnt/loop'], shell=True)

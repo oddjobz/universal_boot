@@ -140,7 +140,10 @@ class Multiboot:
             with open('config/grub.cfg', 'r') as src:
                 txt = src.read()
                 dst.write(txt)
-                for name in self._installed:
+
+                installed = list(self._installed)
+                installed.sort()
+                for name in installed:
                     entry = iso_images[name]
                     dst.write('\n')
                     path = f'{entry["menu"]}.jinja2'
