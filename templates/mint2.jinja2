@@ -1,16 +1,13 @@
 submenu "{{ title }}" {
-    loadfont unicode
-    set color_normal=white/black
-    set color_highlight=black/light-gray
-
-    isofile="/boot/iso/{{ filename }}"
-    export isofile
-    loopback loop "${isofile}"
-    root=(loop)
+	iso_path="/boot/iso/{{ filename }}"
+	export iso_path
+	img_path="/dev/disk/by-label/MP-DATA"
+	search --set=root --file "$iso_path"
+	loopback loop "$iso_path"
 
     menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" --class linuxmint {
             set gfxpayload=keep
-            linux   (loop)/casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash live-media-path=/casper/ ignore_uuid --
+            linux   (loop)/casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash live-media-path=/casper/ ignore_uuid img_dev=$img_path img_loop=$iso_path --
             initrd  (loop)/casper/initrd.lz
     }
     menuentry "Start Linux Mint 21.3 Cinnamon 64-bit (compatibility mode)" {
