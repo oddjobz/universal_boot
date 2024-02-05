@@ -5,17 +5,6 @@ menuentry "{{ title }}" {
       search --set=root --file "$iso_path"
       loopback loop "$iso_path"
       root=(loop)
-      linux (loop)/casper/vmlinux img_dev=$img_path boot=casper initrd=/casper/initrd.lz live-media-path=/casper/ ignore_uuid -- –
+      linux (loop)/casper/vmlinux img_dev=$img_path boot=casper initrd=/casper/initrd.lz live-media-path=/casper/ ignore_uuid --
       initrd (loop)/casper/initrd.lz
       loopback --delete loop
-
-#menuentry '{{ title }}' {
-#	iso_path="/boot/iso/{{ filename }}"
-#	export iso_path
-#	img_path="/dev/disk/by-label/MP-DATA"
-#	search --set=root --file "$iso_path"
-#	loopback loop "$iso_path"
-# 	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_path img_loop=$iso_path earlymodules=loop
-#	initrd (loop)/arch/boot/intel-ucode.img (loop)/arch/boot/amd-ucode.img (loop)/arch/boot/x86_64/initramfs-linux.img
-#	loopback --delete loop
-#}
