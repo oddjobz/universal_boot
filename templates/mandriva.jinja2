@@ -1,0 +1,16 @@
+menuentry "{{ title }}"  {
+    set dri="free"
+    set lang="en_UK"
+    set keytable="uk"
+    set timezone="Europe/London"
+    set bootlang='en_GB.UTF-8'
+    export bootlang
+    iso_path="/boot/iso/{{ filename }}"
+    export iso_path
+    search --set=root --file "$iso_path"
+    loopback loop "$iso_path"
+    root=(loop)
+    linux /boot/vmlinuz0 root=live:UUID=2023-11-23-14-13-56-00 ${boot_default} locale.LANG=${bootlang} vconsole.keymap=${bootkeymap} vconsole.font=latarcyrheb-sun16 vt.global_cursor_default=0 quiet rhgb splash=silent iso-scan/filename=${iso_path}
+    initrd /boot/liveinitrd.img
+
+}
