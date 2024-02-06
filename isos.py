@@ -420,14 +420,14 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     #
     'open-mandriva-5': {
         'name': 'mandriva',
-        'menu': 'debian',
+        'menu': 'mandriva',
         'title': 'Open Mandriva V (23.08) Gnome',
         'size': 2.7,
         'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
         'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
 
     },
-    'manjaro-23.1.3': {
+    'manjaro-23.1.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'title': 'Manjaro Desktop (23.1.3) Gnome',
@@ -435,7 +435,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://download.manjaro.org/gnome/23.1.3/manjaro-gnome-23.1.3-240113-linux66.iso',
         'sum': 'eea2f3163582fb5dc618fe0b15202ba1507449095f25ac43f8a1cf78814201f9'
     },
-    'kmanjaro-23.1.3': {
+    'manjaro-23.1.3-kde': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'title': 'Manjaro Desktop (23.1.3) KDE',
@@ -443,7 +443,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://download.manjaro.org/kde/23.1.3/manjaro-kde-23.1.3-240113-linux66.iso',
         'sum': 'bb7c43db4ae1c9d7a50a15d635e8144570bfc2000d9aaf35af79c9a916efa158',
     },
-    'xmanjaro-23.1.3': {
+    'manjaro-23.1.3-xfce': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'title': 'Manjaro Desktop (23.1.3) XFCE',

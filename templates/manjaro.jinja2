@@ -8,5 +8,6 @@ menuentry "{{ title }}"  {
     search --set=root --file "$iso_path"
     loopback loop "$iso_path"
     root=(loop)
+    set params "{{ title }}" "iso-scan/filename=${iso_path}"
     configfile /boot/grub/loopback.cfg
 }

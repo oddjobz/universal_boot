@@ -1,11 +1,3 @@
-#menuentry '{{ title }}' {
-#	set isofile='/boot/iso/{{ filename }}'
-#    set imgdevpath=(hd0,2)
-#	loopback loop $isofile
-#	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$imgdevpath img_loop=$isofile earlymodules=loop
-#	initrd (loop)/arch/boot/intel-ucode.img (loop)/arch/boot/amd-ucode.img (loop)/arch/boot/x86_64/initramfs-linux.img
-#}
-
 menuentry '{{ title }}' {
 	iso_path="/boot/iso/{{ filename }}"
 	export iso_path
