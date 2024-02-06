@@ -24,11 +24,13 @@ submenu "{{ title }}"  {
     export iso_path
     search --set=root --file "$iso_path"
     loopback loop "$iso_path"
-    #root=(loop)
-    probe --label --set=cd_label (loop)
+    probe -u $root --set=rootuuid
+	img_path="/dev/disk/by-label/MP-DATA"
+	#search --set=root --file "$iso_path"
+ 	#linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_path img_loop=$iso_path earlymodules=loop
 
     menuentry "Start OpenMandriva Lx Linux in live mode" {
-      bootoptions="iso-scan/filename=$iso_path $boot_default root=live:LABEL=$cd_label $boot_locale"
+      bootoptions="iso-scan/filename=$iso_path $boot_default $boot_locale img_dev=$img_path img_loop=$iso_path"
       linux (loop)/boot/vmlinuz0 $bootoptions
       initrd (loop)/boot/liveinitrd.img
     }
