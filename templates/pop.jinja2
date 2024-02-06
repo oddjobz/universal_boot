@@ -6,14 +6,12 @@ menuentry "{{ title }}" {
     set timeout=10
     set timeout_style=menu
 	set gfxpayload=keep
-
     iso_path="/boot/iso/{{ filename }}"
     export iso_path
     search --set=root --file "$iso_path"
     loopback loop "$iso_path"
     root=(loop)
-
-	linux (loop)/casper_pop-os_22.04_amd64_intel_debug_530/vmlinuz.efi boot=casper live-media-path=/casper_pop-os_22.04_amd64_intel_debug_530 hostname=pop-os username=pop-os noprompt  ---
+	linux (loop)/casper_pop-os_22.04_amd64_intel_debug_530/vmlinuz.efi boot=casper live-media-path=/casper_pop-os_22.04_amd64_intel_debug_530 hostname=pop-os username=pop-os noprompt iso-scan/filename=${iso_path} ---
 	initrd (loop)/casper_pop-os_22.04_amd64_intel_debug_530/initrd.gz
     loopback --delete loop
 }
