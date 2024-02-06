@@ -24,11 +24,11 @@ submenu "{{ title }}"  {
     export iso_path
     search --set=root --file "$iso_path"
     loopback loop "$iso_path"
-    root=(loop)
+    #root=(loop)
     probe --label --set=cd_label (loop)
 
     menuentry "Start OpenMandriva Lx Linux in live mode" {
-      bootoptions="iso-scan/filename=$iso_path $boot_default root=live:LABEL=$cd_label $boot_locale quiet rhgb splash=silent"
+      bootoptions="iso-scan/filename=$iso_path $boot_default root=live:LABEL=$cd_label $boot_locale"
       linux (loop)/boot/vmlinuz0 $bootoptions
       initrd (loop)/boot/liveinitrd.img
     }
