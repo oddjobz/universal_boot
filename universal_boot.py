@@ -244,8 +244,12 @@ class Multiboot:
             prompt += '\nWARNING: THIS DOWNLOAD MAY NOT FIT ON YOUR KEY!'
         w.calc_height(prompt)
         if not w.yesno(prompt, 'no'):
-            for item in to_delete:
-                print (f"* Delete: {item}")
+            for name in to_delete:
+                print (f"* Delete: {name}")
+                entry = iso_images[name]
+                iso = entry['iso']
+                iso_name = iso.split('/')[-1]
+                Path(f'isos/{iso_name}').unlink()
             for item in to_install:
                 print (f"* Download: {item}")
                 self.download (item)

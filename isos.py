@@ -395,8 +395,8 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'menu': 'debian',
         'title': 'Kali Desktop (2023.4) Live',
         'size': 4.0,
-        'iso': 'https://cdimage.kali.org/kali-2023.4/kali-linux-2023.4-installer-amd64.iso',
-        'sum': '49f6826e302659378ff0b18eda28121dad7eeab4da3b8d171df034da4996a75e'
+        'iso': 'https://cdimage.kali.org/kali-2023.4/kali-linux-2023.4-live-amd64.iso',
+        'sum': '1f6aad29795d4bc2fb9ba5ca07b02381d3e3fa28fe80ae54347d31aeac1e36e7'
     },
     'popos-22.04': {
         'name': 'popos',
@@ -416,17 +416,16 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
     #
-    #   Check for boot menu
+    # Can't make the boot menu work for now ...
     #
-    'open-mandriva-5': {
-        'name': 'mandriva',
-        'menu': 'mandriva',
-        'title': 'Open Mandriva V (23.08) Gnome',
-        'size': 2.7,
-        'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
-        'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
-
-    },
+    # 'open-mandriva-5': {
+    #     'name': 'mandriva',
+    #     'menu': 'mandriva',
+    #     'title': 'Open Mandriva V (23.08) Gnome',
+    #     'size': 2.7,
+    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
+    #     'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
+    # },
     'manjaro-23.1.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
