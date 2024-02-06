@@ -3,9 +3,12 @@ submenu "{{ title }}" {
       export iso_path
       loopback loop "$iso_path"
       root=(loop)
-      menuentry "Start Linux Mint 21.3 Cinnamon 64-bit" --class linuxmint {
-            set gfxpayload=keep
+      menuentry "Start {{ title }}" {
             linux   /casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash iso-scan/filename=${iso_path} --
+            initrd  /casper/initrd.lz
+      }
+      menuentry "Start {{ title }} (compatibility mode)" {
+            linux   boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
       loopback --delete loop
