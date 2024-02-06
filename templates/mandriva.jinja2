@@ -17,20 +17,14 @@
 submenu "{{ title }}"  {
     boot_locale="locale.lang=en_US"
     boot_default="rootfstype=auto ro rd.luks=0 rd.lvm=0 rd.md=0 rd.dm=0 rd.live.image acpi_osi=Linux acpi_osi='!Windows 2012' acpi_backlight=vendor audit=0 logo.nologo"
-    #iso_path="$2"
-    #loopback loop "$iso_path"
-    
     iso_path="/boot/iso/{{ filename }}"
     export iso_path
-    search --set=root --file "$iso_path"
+    #search --set=root --file "$iso_path"
     loopback loop "$iso_path"
-    probe -u $root --set=rootuuid
-	img_path="/dev/disk/by-label/MP-DATA"
-	#search --set=root --file "$iso_path"
- 	#linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_path img_loop=$iso_path earlymodules=loop
-
+    search.fs_uuid 'MP-DATA' root
+    
     menuentry "Start OpenMandriva Lx Linux in live mode" {
-      bootoptions="iso-scan/filename=$iso_path $boot_default $boot_locale img_dev=$img_path img_loop=$iso_path"
+      bootoptions="$boot_default $boot_locale root=live:LABEL=MP-DATA boot=casper"
       linux (loop)/boot/vmlinuz0 $bootoptions
       initrd (loop)/boot/liveinitrd.img
     }
