@@ -181,12 +181,14 @@ class Multiboot:
         installed.sort()
         for name in installed:
             title = iso_images[name]['title'].replace(' ', '-')
-            lines.append((name, title, 'ON'))
+            size = iso_images[name].get('size', 0)
+            lines.append((name, f'{size:4}G| {title}', 'ON'))
         available = list(self._available)
         available.sort()
         for name in available:
             title = iso_images[name]['title'].replace(' ', '-')
-            lines.append((name, title, 'OFF'))
+            size = iso_images[name].get('size', 0)
+            lines.append((name, f'{size:4}G| {title}', 'OFF'))
 
         fs = disk_usage('isos')
         d = 10000000
@@ -207,11 +209,6 @@ class Multiboot:
         if not to_delete and not to_install:
             print ("* No changes requested")
             return
-        
-        #
-        #   TODO: Calculate the amount of space required and check there is enough
-        #   TODO: Add a size field to each ISO
-
         w = Whiptail(title="Install / Remove ISO's")
         d = ''
         del_size = 0

@@ -2,7 +2,7 @@ iso_images = {
     'debian-12.04-cinnamon': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) Cinnamon',
+        'title': 'Debian (12.04) Cinnamon',
         'size': 3.1,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-cinnamon.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -15,7 +15,7 @@ iso_images = {
     'debian-12.04-gnome': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) Gnome',
+        'title': 'Debian (12.04) Gnome',
         'size': 3.2,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-gnome.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -28,7 +28,7 @@ iso_images = {
     'debian-12.04-kde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) KDE',
+        'title': 'Debian (12.04) KDE',
         'size': 3.3,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-kde.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -41,7 +41,7 @@ iso_images = {
     'debian-12.04-lxde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) LXDE',
+        'title': 'Debian (12.04) LXDE',
         'size': 2.9,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-lxde.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -54,7 +54,7 @@ iso_images = {
     'debian-12.04-lxqt': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) LXQT',
+        'title': 'Debian (12.04) LXQT',
         'size': 3.0,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-lxqt.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -67,7 +67,7 @@ iso_images = {
     'debian-12.04-mate': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) MATE',
+        'title': 'Debian (12.04) MATE',
         'size': 3.0,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-mate.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -80,7 +80,7 @@ iso_images = {
     'debian-12.04-standard': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) Standard',
+        'title': 'Debian (12.04) CLI',
         'size': 1.4,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-standard.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -93,7 +93,7 @@ iso_images = {
     'debian-12.04-xfce': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian Desktop (12.04) XFCE',
+        'title': 'Debian (12.04) XFCE',
         'size': 3.0,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-xfce.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
@@ -106,7 +106,7 @@ iso_images = {
     'sparky-07.02-lxqt': {
         'name': 'sparky',
         'menu': 'debian',
-        'title': 'Sparky Desktop (07.02) LXQt',
+        'title': 'Sparky (7.02) LXQt',
         'size': 1.79,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.2-x86_64-lxqt.iso',
         'sum': 'ca66cbf2c648f133c10be3d3a912ef299b6fe276a4dce59cb7228e3731830ea5'
@@ -114,7 +114,7 @@ iso_images = {
     'sparky-07.02-mate': {
         'name': 'sparky',
         'menu': 'debian',
-        'title': 'Sparky Desktop (07.02) Mate',
+        'title': 'Sparky (7.02) Mate',
         'size': 1.98,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.2-x86_64-mate.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
@@ -132,7 +132,7 @@ SrtcTTBbJ3Jv5GNiWTe4WGRtNJtcBRYG0nnqBqTdojq/nmrc6PeFma0x6aZFo2Zx
     'sparky-07.02-xfce': {
         'name': 'sparky',
         'menu': 'debian',
-        'title': 'Sparky Desktop (07.02) XFCE',
+        'title': 'Sparky (7.02) XFCE',
         'size': 1.63,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.2-x86_64-xfce.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
@@ -150,7 +150,7 @@ Rztib+H2FfX38zE7nggtPLYinBqOrA==
     'sparky-07.02-kde': {
         'name': 'sparky',
         'menu': 'debian',
-        'title': 'Sparky Desktop (07.02) KDE',
+        'title': 'Sparky (7.02) KDE',
         'size': 2.09,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.2-x86_64-kde.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
@@ -169,7 +169,7 @@ UuR2R2ztqkdul/WF+4/wON3aKug7Vg==
     'sparky-07.02-minimal': {
         'name': 'sparky',
         'menu': 'debian',
-        'title': 'Sparky Desktop (07.02) Minimal',
+        'title': 'Sparky (7.02) Minimal',
         'size': 1.39,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-x86_64-minimalgui.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
@@ -188,7 +188,7 @@ Ddoh7/Y3XH2xR+ZanrDBRwQwNl3LXg==
     'sparky-07.02-686-min': {
         'name': 'sparky',
         'menu': 'debian-loop',
-        'title': 'Sparky Desktop (07.02) Min (32 bit)',
+        'title': 'Sparky (7.02) Min (32 bit)',
         'size': 1.21,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso',
                 'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
@@ -207,8 +207,8 @@ iWaJNp9600t5CDsP6PIlKifvntMg2A==
     'sparky-07.02-i686-cli': {
         'name': 'sparky',
         'menu': 'debian-loop',
-        'title': 'Sparky Desktop (07.02) CLI (32 Bit)',
-        'size': 0.717,
+        'title': 'Sparky (7.02) CLI (32 Bit)',
+        'size': 0.72,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
@@ -225,7 +225,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-22.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (22.04) Gnome',
+        'title': 'Ubuntu (22.04) Gnome',
         'size': 4.7,
         'iso': 'https://releases.ubuntu.com/lunar/ubuntu-22.04.3-desktop-amd64.iso',
         'sums': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS',
@@ -234,7 +234,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) Gnome',
+        'title': 'Ubuntu (23.04) Gnome',
         'size': 4.6,
         'iso': 'https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso',
         'sums': 'https://releases.ubuntu.com/lunar/SHA256SUMS',
@@ -247,7 +247,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04-xfce': {
         'name': 'xubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) XFCE',
+        'title': 'Ubuntu (23.04) XFCE',
         'size': 2.9,
         'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.3-desktop-amd64.iso',
         'sum': 'eec14c4e6f13120555fee0f1f3c1909bd8196a48de4012b6ea96fb7dd27a5aab',
@@ -255,7 +255,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04-kde': {
         'name': 'kubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) KDE',
+        'title': 'Ubuntu (23.04) KDE',
         'size': 4.0,
         'iso': 'https://cdimage.ubuntu.com/kubuntu/releases/22.04.3/release/kubuntu-22.04.3-desktop-amd64.iso',
         'sum': '9a5ea3b4ae6651cf0cd82ec059e3e5c8d8b30006112ff06555acb35e45571f50',
@@ -263,7 +263,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04-lxde': {
         'name': 'lubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) LXDE',
+        'title': 'Ubuntu (23.04) LXDE',
         'size': 2.8,
         'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/22.04.3/release/lubuntu-22.04.3-desktop-amd64.iso',
         'sum': 'ffccfa53a10bacf0b8b7589e85c739e650aef8f38ac4ed66f96fd591396d2f21',
@@ -271,7 +271,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04-budgie': {
         'name': 'bubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) Budgie',
+        'title': 'Ubuntu (23.04) Budgie',
         'size': 3.5,
         'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
         'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
@@ -279,7 +279,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04-mate': {
         'name': 'mubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) MATE',
+        'title': 'Ubuntu (23.04) MATE',
         'size': 3.5,
         'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/22.04/release/ubuntu-mate-22.04.3-desktop-amd64.iso',
         'sum': 'd84cd3eb7732fbb39ce3cd24ba1b302a643fe0362f7ac9261fc4c7b756e42a55'
@@ -287,7 +287,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-23.04-studio': {
         'name': 'subuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu Desktop (23.04) Studio',
+        'title': 'Ubuntu (23.04) Studio',
         'size': 4.7,
         'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
         'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
@@ -297,7 +297,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'mint-21.3-cinnamon': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint Desktop (21.03) Cinnamon', 
+        'title': 'Mint (21.03) Cinnamon', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt',
@@ -308,7 +308,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'mint-21.3-mate': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint Desktop (21.03) Mate', 
+        'title': 'Mint (21.03) Mate', 
         'size': 3.0,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-mate-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt',
@@ -317,7 +317,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'mint-21.3-xfce': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint Desktop (21.03) XFCE', 
+        'title': 'Mint (21.03) XFCE', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-xfce-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt',
@@ -326,7 +326,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'bodhi-7.0.0-standard': {
         'name': 'bodhi',
         'menu': 'bodhi',
-        'title': 'Bodhi Desktop (7.0.0) Standard',
+        'title': 'Bodhi (7.0.0) Standard',
         'size': 1.3,
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64.iso',
         'sum': '0ddfc1d917b496fade58f141ef1b07ab798b41cc2d23c8e1b5ad9b288f27c538',
@@ -334,7 +334,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'bodhi-7.0.0-hwe': {
         'name': 'bodhi',
         'menu': 'bodhi',
-        'title': 'Bodhi Desktop (7.0.0) HWE',
+        'title': 'Bodhi (7.0.0) HWE',
         'size': 1.3,
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso',
         'sum': '55601a03d305159569b77e6a6008aedc59f5e81df1beb35f6224c0eae6efde70'
@@ -409,7 +409,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'fedora-38-gnome': {
         'name': 'fedora',
         'menu': 'redhat',
-        'title': 'Fedora Desktop (38/1.6) Gnome',
+        'title': 'Fedora (38/1.6) Gnome',
         'size': 2.1,
         'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso',
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-38-1.6-x86_64-CHECKSUM',
@@ -418,7 +418,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'manjaro-23.1.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro Desktop (23.1.3) Gnome',
+        'title': 'Manjaro (23.1.3) Gnome',
         'size': 3.9,
         'iso': 'https://download.manjaro.org/gnome/23.1.3/manjaro-gnome-23.1.3-240113-linux66.iso',
         'sum': 'eea2f3163582fb5dc618fe0b15202ba1507449095f25ac43f8a1cf78814201f9'
@@ -426,7 +426,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'manjaro-23.1.3-kde': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro Desktop (23.1.3) KDE',
+        'title': 'Manjaro (23.1.3) KDE',
         'size': 3.7,
         'iso': 'https://download.manjaro.org/kde/23.1.3/manjaro-kde-23.1.3-240113-linux66.iso',
         'sum': 'bb7c43db4ae1c9d7a50a15d635e8144570bfc2000d9aaf35af79c9a916efa158',
@@ -434,7 +434,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'manjaro-23.1.3-xfce': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro Desktop (23.1.3) XFCE',
+        'title': 'Manjaro (23.1.3) XFCE',
         'size': 3.6,
         'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
         'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
@@ -451,7 +451,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'name': 'antix',
         'menu': 'mxlinux',
         'title': 'MX Linux (23.2) Stable',
-        'size': 0,
+        'size': 2.2,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_x64.iso',
         'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
     },
@@ -459,7 +459,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'name': 'antix',
         'menu': 'mxlinux',
         'title': 'MX Linux (23.2) Current',
-        'size': 0,
+        'size': 22,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_ahs_x64.iso',
         'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
     },
@@ -467,7 +467,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'name': 'antix',
         'menu': 'mxlinux',
         'title': 'MX Linux (23.2) KDE',
-        'size': 0,
+        'size': 2.6,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
         'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
     },
