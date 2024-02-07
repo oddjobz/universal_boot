@@ -444,8 +444,8 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'menu': 'debian-loop',
         'title': 'Tails (5.22) Gnome',
         'size': 1.3,
-        'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.img',
-        'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.img.sig',
+        'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.iso',
+        'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.iso.sig',
         'key': 'https://tails.net/tails-signing.key'
     },    
     'vanillaos-22.10-r9': {
@@ -455,6 +455,38 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'size': 1.8,
         'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
         'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
+    },
+    'mxlinux-23.2-std': {
+        'name': 'antix',
+        'menu': 'antix',
+        'title': 'MX Linux (23.2) Stable',
+        'size': 0,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_x64.iso',
+        'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
+    },
+    'mxlinux-23.2-ahs': {
+        'name': 'antix',
+        'menu': 'antix',
+        'title': 'MX Linux (23.2) Current',
+        'size': 0,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_ahs_x64.iso',
+        'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
+    },
+    'mxlinux-23.2-kde': {
+        'name': 'antix',
+        'menu': 'antix',
+        'title': 'MX Linux (23.2) KDE',
+        'size': 0,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
+        'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
+    },
+    'mxlinux-23.2-flux': {
+        'name': 'antix',
+        'menu': 'antix',
+        'title': 'MX Linux (23.2) Fluxbox',
+        'size': 0,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.2_fluxbox_x64.iso',
+        'sum': '273fdd4d90b7326c9b4ec67284cc1641aa12bbfb9f2acae0502681616536a080'
     },
 }
 

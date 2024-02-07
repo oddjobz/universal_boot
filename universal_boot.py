@@ -290,16 +290,25 @@ class Multiboot:
                 progress.update(download_d - total[0])
                 total[0] = download_d
             
-            agent = 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            if 'sourceforge' in iso:
+                agent = ''
+                iso += '/download'
+            else:
+                agent = 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+
             with open(f'tmp/{path}', 'wb') as f:
                 c = Curl()
                 c.setopt(c.URL, iso)
                 c.setopt(c.USERAGENT, agent)
                 c.setopt(c.FOLLOWLOCATION, True)
+                c.setopt(c.AUTOREFERER,1)
                 c.setopt(c.WRITEDATA, f)
                 c.setopt(c.NOPROGRESS, False)
                 c.setopt(c.XFERINFOFUNCTION, status)
                 c.perform()
+                url_effective = c.getinfo(c.EFFECTIVE_URL)
+                print("EFFECTIVE URL>", url_effective)
+
                 if c.getinfo(c.RESPONSE_CODE) != 200:
                     print(f"Error downloading: {iso} => ", c.getinfo(c.HTTP_CODE))
                     print(f'=> {c.errstr()}')
