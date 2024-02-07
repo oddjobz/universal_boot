@@ -1,8 +1,9 @@
 menuentry "{{ title }}" {
-      iso_path="/boot/iso/{{ filename }}"
-      export iso_path
-      search --set=root --file "$iso_path"
-      loopback loop "$iso_path"
-      root=(loop)
-      configfile /boot/grub/loopback.cfg
+    iso_path="/boot/iso/{{ filename }}"
+    export iso_path
+    loopback loop "$iso_path"
+    root=(loop)
+    set params "{{ title }}" "iso-scan/filename=${iso_path}"
+    configfile /boot/grub/loopback.cfg
+    loopback --delete loop
 }

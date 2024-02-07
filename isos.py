@@ -360,7 +360,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'zorin-17.0': {
         'name': 'zorin',
-        'menu': 'debian-loop',
+        'menu': 'zorin',
         'title': 'Zorin Desktop (17.0)',
         'size': 3.6,
         'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17-Core-64-bit.iso',
