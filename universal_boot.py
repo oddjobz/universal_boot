@@ -281,7 +281,6 @@ class Multiboot:
             path = iso.split('/')[-1]
         Path('tmp').mkdir(exist_ok=True)            
         with tqdm (total=9e9, unit='iB', unit_scale=True) as progress:
-
             total_dl_d = [0]
 
             def status (download_t, download_d, upload_t, upload_d, total=total_dl_d):
@@ -289,7 +288,7 @@ class Multiboot:
                     progress.reset(download_t)    
                 progress.update(download_d - total[0])
                 total[0] = download_d
-            
+
             if 'sourceforge' in iso:
                 agent = ''
                 iso += '/download'
@@ -306,12 +305,9 @@ class Multiboot:
                 c.setopt(c.NOPROGRESS, False)
                 c.setopt(c.XFERINFOFUNCTION, status)
                 c.perform()
-                url_effective = c.getinfo(c.EFFECTIVE_URL)
-                print("EFFECTIVE URL>", url_effective)
-
-                if c.getinfo(c.RESPONSE_CODE) != 200:
-                    print(f"Error downloading: {iso} => ", c.getinfo(c.HTTP_CODE))
-                    print(f'=> {c.errstr()}')
+                effective = c.getinfo(c.EFFECTIVE_URL)
+                if ('failedmirror' in effective) or (c.getinfo(c.RESPONSE_CODE) != 200):
+                    print(f"Error downloading: {effective} => ", c.getinfo(c.HTTP_CODE))
                     return False
                 c.close()
                 return True
