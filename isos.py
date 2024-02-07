@@ -439,15 +439,6 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
         'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
     },
-    'tails-5.2.2': {
-        'name': 'tails',
-        'menu': 'tails',
-        'title': 'Tails (5.22) Gnome',
-        'size': 1.3,
-        'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.iso',
-        'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.iso.sig',
-        'key': 'https://tails.net/tails-signing.key'
-    },    
     'vanillaos-22.10-r9': {
         'name': 'vanilla',
         'menu': 'debian',
@@ -536,3 +527,13 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     # call([f'sudo cp /mnt/loop/boot/gentoo.igz /media/data/boot/gentoo/gentoo.igz'], shell=True)
     # call([f'sudo cp /mnt/loop/image.squashfs /media/data/boot/gentoo/image.squashfs'], shell=True)
     # call([f'sudo umount /mnt/loop'], shell=True)
+
+    # 'tails-5.2.2': {
+    #     'name': 'tails',
+    #     'menu': 'tails',
+    #     'title': 'Tails (5.22) Gnome',
+    #     'size': 1.3,
+    #     'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.iso',
+    #     'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.iso.sig',
+    #     'key': 'https://tails.net/tails-signing.key'
+    # },    
