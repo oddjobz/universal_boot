@@ -7,4 +7,5 @@ sudo mount -o remount,rw ${MNT}
 sudo git -C ${DST} config --global --add safe.directory ${DST}
 sudo git -C ${DST} pull
 echo "Universal Loader Ready>"
-cd ${DST} && exec bash ./universal_boot.py --gui
+cd ${DST} && ./universal_boot.py --gui
+cd ${DST} && exec bash
