@@ -187,7 +187,7 @@ Ddoh7/Y3XH2xR+ZanrDBRwQwNl3LXg==
     },
     'sparky-07.02-min-i686': {
         'name': 'sparky',
-        'menu': 'debian',
+        'menu': 'debian-loop',
         'title': 'Sparky Desktop (07.02) Min (i686)',
         'size': 1.21,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso',
@@ -206,7 +206,7 @@ iWaJNp9600t5CDsP6PIlKifvntMg2A==
     },
     'sparky-07.02-cli-i686': {
         'name': 'sparky',
-        'menu': 'debian',
+        'menu': 'debian-loop',
         'title': 'Sparky Desktop (07.02) CLI (i686)',
         'size': 0.717,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso',
