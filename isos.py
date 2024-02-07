@@ -415,17 +415,6 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-38-1.6-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
-    #
-    # Can't make the boot menu work for now ...
-    #
-    # 'open-mandriva-5': {
-    #     'name': 'mandriva',
-    #     'menu': 'mandriva',
-    #     'title': 'Open Mandriva V (23.08) Gnome',
-    #     'size': 2.7,
-    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
-    #     'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
-    # },
     'manjaro-23.1.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
@@ -470,6 +459,17 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
 }
 
 
+    #
+    # Can't make the boot menu work for now ...
+    #
+    # 'open-mandriva-5': {
+    #     'name': 'mandriva',
+    #     'menu': 'mandriva',
+    #     'title': 'Open Mandriva V (23.08) Gnome',
+    #     'size': 2.7,
+    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
+    #     'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
+    # },
 
     # FIXME: image validation is non-standard, needs work
     # 'gentoo-2023-09-03': {
