@@ -471,14 +471,17 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
         'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
     },
-    'mxlinux-23.2-flux': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) Fluxbox',
-        'size': 0,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.2_fluxbox_x64.iso',
-        'sum': '273fdd4d90b7326c9b4ec67284cc1641aa12bbfb9f2acae0502681616536a080'
-    },
+    #
+    #   Mirror is currently fauling!
+    #
+    # 'mxlinux-23.2-flux': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'title': 'MX Linux (23.2) Fluxbox',
+    #     'size': 0,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.2_fluxbox_x64.iso',
+    #     'sum': '273fdd4d90b7326c9b4ec67284cc1641aa12bbfb9f2acae0502681616536a080'
+    # },
 }
 
 
