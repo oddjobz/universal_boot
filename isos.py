@@ -449,7 +449,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mxlinux-23.2-std': {
         'name': 'antix',
-        'menu': 'antix',
+        'menu': 'mxlinux',
         'title': 'MX Linux (23.2) Stable',
         'size': 0,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_x64.iso',
@@ -457,7 +457,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mxlinux-23.2-ahs': {
         'name': 'antix',
-        'menu': 'antix',
+        'menu': 'mxlinux',
         'title': 'MX Linux (23.2) Current',
         'size': 0,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_ahs_x64.iso',
@@ -465,7 +465,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mxlinux-23.2-kde': {
         'name': 'antix',
-        'menu': 'antix',
+        'menu': 'mxlinux',
         'title': 'MX Linux (23.2) KDE',
         'size': 0,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
@@ -473,7 +473,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'mxlinux-23.2-flux': {
         'name': 'antix',
-        'menu': 'antix',
+        'menu': 'mxlinux',
         'title': 'MX Linux (23.2) Fluxbox',
         'size': 0,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.2_fluxbox_x64.iso',
