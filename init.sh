@@ -8,4 +8,4 @@ sudo git -C ${DST} config --global --add safe.directory ${DST}
 sudo git -C ${DST} pull
 echo "Universal Loader Ready>"
 cd ${DST}
-exec bash
+exec bash ./universal_boot.py --gui

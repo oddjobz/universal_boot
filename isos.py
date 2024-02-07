@@ -185,10 +185,10 @@ Ddoh7/Y3XH2xR+ZanrDBRwQwNl3LXg==
 -----END PGP SIGNATURE-----
 """
     },
-    'sparky-07.02-min-i686': {
+    'sparky-07.02-686-min': {
         'name': 'sparky',
         'menu': 'debian-loop',
-        'title': 'Sparky Desktop (07.02) Min (i686)',
+        'title': 'Sparky Desktop (07.02) Min (32 bit)',
         'size': 1.21,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.2-i686-minimalgui.iso',
                 'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
@@ -204,10 +204,10 @@ iWaJNp9600t5CDsP6PIlKifvntMg2A==
 =Y88t
 -----END PGP SIGNATURE-----"""
     },
-    'sparky-07.02-cli-i686': {
+    'sparky-07.02-i686-cli': {
         'name': 'sparky',
         'menu': 'debian-loop',
-        'title': 'Sparky Desktop (07.02) CLI (i686)',
+        'title': 'Sparky Desktop (07.02) CLI (32 Bit)',
         'size': 0.717,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.2-i686-minimalcli.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
