@@ -250,6 +250,8 @@ class Multiboot:
             for item in to_install:
                 print (f"* Download: {item}")
                 self.download (item)
+            print("<< Updating the Bootloader GRUB Configuration >>")
+            self.grub()
 
     def update_key (self, server, key):
         print (f'Updating "{key}" using keyserver "{server}"')
