@@ -441,7 +441,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'tails-5.2.2': {
         'name': 'tails',
-        'menu': 'debian-loop',
+        'menu': 'tails',
         'title': 'Tails (5.22) Gnome',
         'size': 1.3,
         'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.iso',
