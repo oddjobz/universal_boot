@@ -1,10 +1,10 @@
 iso_images = {
-    'debian-12.04-cinnamon': {
+    'debian-12.5-cinnamon': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) Cinnamon',
+        'title': 'Debian (12.5) Cinnamon',
         'size': 3.1,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-cinnamon.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-cinnamon.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -12,12 +12,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-gnome': {
+    'debian-12.5-gnome': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) Gnome',
+        'title': 'Debian (12.5) Gnome',
         'size': 3.2,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-gnome.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-gnome.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -25,12 +25,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-kde': {
+    'debian-12.5-kde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) KDE',
+        'title': 'Debian (12.5) KDE',
         'size': 3.3,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-kde.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-kde.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -38,12 +38,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-lxde': {
+    'debian-12.5-lxde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) LXDE',
+        'title': 'Debian (12.5) LXDE',
         'size': 2.9,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-lxde.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-lxde.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -51,12 +51,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-lxqt': {
+    'debian-12.5-lxqt': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) LXQT',
+        'title': 'Debian (12.5) LXQT',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-lxqt.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-lxqt.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -64,12 +64,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-mate': {
+    'debian-12.5-mate': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) MATE',
+        'title': 'Debian (12.5) MATE',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-mate.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-mate.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -77,12 +77,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-standard': {
+    'debian-12.5-standard': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) CLI',
+        'title': 'Debian (12.5) CLI',
         'size': 1.4,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-standard.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-standard.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -90,12 +90,12 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.04-xfce': {
+    'debian-12.5-xfce': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.04) XFCE',
+        'title': 'Debian (12.5) XFCE',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-xfce.iso',
+        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-xfce.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
         'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
@@ -292,6 +292,16 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
         'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
         'sign': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS.gpg',
+        'keyserver': 'hkp://keyserver.ubuntu.com'        
+    },    
+    'ubuntu-24.04-beta': {
+        'name': 'ubuntu-beta',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (24.04) LTS Beta',
+        'size': 4.9,
+        'iso': 'https://cdimage.ubuntu.com/daily-live/current/noble-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/daily-live/current/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/daily-live/current/SHA256SUMS.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com'        
     },    
     'mint-21.3-cinnamon': {

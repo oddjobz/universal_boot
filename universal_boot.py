@@ -364,12 +364,11 @@ class Multiboot:
                 print(f"*ERROR - Missing checksums => {name}")
                 print(f"*************************************************")
                 return
-                
+            
             sign_file = sign.split('/')[-1]
             sum_file = sums.split('/')[-1]
             
             if name.startswith('fedora') or name.startswith('gentoo'):
-                print("1>")
                 ret = call([f'gpgv --homedir .gnupg --keyring tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
             else:
                 ret = call([f'gpg --homedir .gnupg --keyid-format long --verify tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
@@ -388,7 +387,7 @@ class Multiboot:
             sum_file = sf.split('/')[-1]
         else:
             sum_file = None
-            
+           
         print ("Checking signature ...")
         path = Path(f'tmp/{filename}')
         if not path.exists():
@@ -405,7 +404,7 @@ class Multiboot:
                 print(f'* Signature BAD, found {sum} wanted {csum}')
                 self.mark_verified (name)
             return
-        
+
         mode = 'text'
         with open (f'tmp/{sum_file}') as io:
             while True:
