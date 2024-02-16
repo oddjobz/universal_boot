@@ -80,7 +80,7 @@ iso_images = {
     'debian-12.5-standard': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) CLI',
+        'title': 'Debian (12.5) Standard',
         'size': 1.4,
         'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-standard.iso',
         'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
