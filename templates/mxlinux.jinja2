@@ -3,6 +3,6 @@ menuentry "{{ title }}" {
       export iso_path
       loopback loop "$iso_path"
       root=(loop)
-      configfile /boot/grub/loopback.cfg
-      loopback --delete loop
+      prefix=($root)/boot/grub
+      source $prefix/grub.cfg
 }
