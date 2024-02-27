@@ -1,8 +1,30 @@
-menuentry "{{ title }}" {
-      iso_path="/boot/iso/{{ filename }}"
-      export iso_path
-      loopback loop "$iso_path"
-      root=(loop)
-      prefix=($root)/boot/grub
-      source $prefix/grub.cfg
+submenu "{{ title }}" {
+    iso_path="/boot/iso/{{ filename }}"
+    loopback loop "$iso_path"
+    probe -u $root --set=rootuuid
+    menuentry "Standard" {
+        bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx"
+        linux (loop)/antiX/vmlinuz $bootoptions
+        initrd (loop)/antiX/initrd.gz
+    }
+    menuentry "Persistent" {
+        bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx persist=hd,usb,r,h"
+        linux (loop)/antiX/vmlinuz $bootoptions
+        initrd (loop)/antiX/initrd.gz
+    }
+    menuentry "Customize Boot (text menus)" {
+        bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx menus"
+        linux (loop)/antiX/vmlinuz $bootoptions
+        initrd (loop)/antiX/initrd.gz
+    }
+    menuentry "Failsafe" {
+        bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx nomodeset failsafe"
+        linux (loop)/antiX/vmlinuz $bootoptions
+        initrd (loop)/antiX/initrd.gz
+    }
+    menuentry "Create Bootchart" {
+        bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx bootchart initcall_debug printk.time=y"
+        linux (loop)/antiX/vmlinuz $bootoptions
+        initrd (loop)/antiX/initrd.gz
+    }
 }
