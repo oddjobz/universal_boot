@@ -235,19 +235,65 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Gnome',
         'size': 5.7,
-        'iso': 'https://releases.ubuntu.com/noble/ubuntu-24.04-desktop-amd64.iso',
-        'sum': '81fae9cc21e2b1e3a9a4526c7dad3131b668e346c580702235ad4d02645d9455'
-        # 'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
-        # 'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',
+        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
+        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',        
     },
     'ubuntu-24.04-xfce': {
         'name': 'xubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) XFCE',
         'size': 3.8,
-        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso',
-        'sum': '8c47b15c4089473bcc58e369a472cabf83d137c7bf8ad7d9465ad086e7bd5272',
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS.gpg',
     },
+    'ubuntu-24.04-kde': {
+        'name': 'kubuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (24.04) KDE',
+        'size': 3.9,
+        'iso':  'https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/kubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/SHA256SUMS.gpg',
+    },
+    'ubuntu-24.04-lxde': {
+        'name': 'lubuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (23.04) LXDE',
+        'size': 3.1,
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/lubuntu/releases/24.04/release/lubuntu-24.04-desktop-amd64.iso',
+        'sum':  'f7ed99b368e00ab7f3fa2c05cefd912f43fc19a8ab9d4d241432d7d9e97e3491'
+    },
+    'ubuntu-24.04-budgie': {
+        'name': 'bubuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (23.04) Budgie',
+        'size': 3.5,
+        'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
+        'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
+    },
+    'ubuntu-24.04-mate': {
+        'name': 'mubuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (23.04) MATE',
+        'size': 3.5,
+        'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04-desktop-amd64.iso',
+        'sum': 'eae78e56c306ba30e5d59cbcbb48e54bef6e9263e8481f3f0f3a883054083f24'
+    },
+    'ubuntu-24.04-studio': {
+        'name': 'subuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (23.04) Studio',
+        'size': 4.7,
+        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04-dvd-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
+        'keyserver': 'hkp://keyserver.ubuntu.com'        
+    },    
+
+
+
 
 
     'ubuntu-22.04': {
@@ -320,16 +366,6 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
         'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
         'sign': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
-    },    
-    'ubuntu-24.04-beta': {
-        'name': 'ubuntu-beta',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) LTS Beta',
-        'size': 4.9,
-        'iso': 'https://cdimage.ubuntu.com/daily-live/current/noble-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/daily-live/current/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/daily-live/current/SHA256SUMS.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com'        
     },    
     'mint-21.3-cinnamon': {
