@@ -90,6 +90,14 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
+    'debian-12.5-installer': {
+        'name': 'debian',
+        'menu': 'debian',
+        'title': 'Debian (12.5) Installer',
+        'size': 0.659,
+        'iso': 'https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso',
+        'sum': '33c08e56c83d13007e4a5511b9bf2c4926c4aa12fd5dd56d493c0653aecbab380988c5bf1671dbaea75c582827797d98c4a611f7fb2b131fbde2c677d5258ec9'
+    },
     'debian-12.5-xfce': {
         'name': 'debian',
         'menu': 'debian',
@@ -222,6 +230,26 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
 =VUw1
 -----END PGP SIGNATURE-----"""
     },
+    'ubuntu-24.04': {
+        'name': 'ubuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (24.04) Gnome',
+        'size': 5.7,
+        'iso': 'https://releases.ubuntu.com/noble/ubuntu-24.04-desktop-amd64.iso',
+        'sum': '81fae9cc21e2b1e3a9a4526c7dad3131b668e346c580702235ad4d02645d9455'
+        # 'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
+        # 'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',
+    },
+    'ubuntu-24.04-xfce': {
+        'name': 'xubuntu',
+        'menu': 'debian-loop',
+        'title': 'Ubuntu (24.04) XFCE',
+        'size': 3.8,
+        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso',
+        'sum': '8c47b15c4089473bcc58e369a472cabf83d137c7bf8ad7d9465ad086e7bd5272',
+    },
+
+
     'ubuntu-22.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',

@@ -127,6 +127,8 @@ class Multiboot:
                 self.gnupg_verify (name)    
         else:
             if name not in self._installed:
+                print("Name>", name)
+                print("Installed>", self._installed)
                 print(f'"{name}" is not currently available, add it first!')
                 return
             self.gnupg_verify (name)
@@ -168,11 +170,15 @@ class Multiboot:
         else:
             device = output.decode().split('\n')[0]
             Path('/media/data').mkdir(exist_ok=True, parents=True)
-            check_call(['mount', device, '/media/data'])
-            src = Path('grub.cfg')
-            dst = Path('/media/data/boot/grub/grub.cfg')
-            dst.write_text(src.read_text())
-            check_call(['umount', device])
+            try:
+                check_call(['mount', device, '/media/data'])
+                src = Path('grub.cfg')
+                dst = Path('/media/data/boot/grub/grub.cfg')
+                dst.write_text(src.read_text())
+                check_call(['umount', device])
+                print (f'* Upddated!')
+            except Exception as e:
+                print (f'* ERROR: Error updating key, you are probably not root! => {str(e)}')
 
     def gui (self):
         self.read_isos ()
@@ -395,13 +401,12 @@ class Multiboot:
             if not path.exists():
                 print(f"* File not available: {filename}")
                 return
-        csum = self.checksum(path)
         if sum:
-            if sum == csum:
+            if sum == self.checksum512(path) or sum == self.checksum256(path):
                 print(f'* Signature OK')
                 self.mark_verified (name)
             else:
-                print(f'* Signature BAD, found {sum} wanted {csum}')
+                print(f'* Signature BAD, found {sum}')
                 self.mark_verified (name)
             return
 
@@ -417,21 +422,21 @@ class Multiboot:
                     sign, file = [word for word in line.split(' ') if word]
                     
                     if file.strip("*") == filename:
-                        if sign == csum:
+                        if sum == self.checksum512(path) or sum == self.checksum256(path):
                             print(f'* Signature OK')
                             self.mark_verified (name)
                         else:
-                            print(f'* Signature BAD, found {sign} wanted {csum}')
+                            print(f'* Signature BAD, found {sign}')
                             self.mark_unverified (name)
                         return
                 else:
                     if line.startswith('SHA256'):
                         sign = line.split('=')[-1].strip()
-                        if sign == csum:
+                        if sign == self.checksum512(path) or sign == self.checksum256(path):
                             print(f'* Signature OK')
                             self.mark_verified (name)
                         else:
-                            print(f'* Signature BAD, found {sign} wanted {csum}')
+                            print(f'* Signature BAD, found {sign}')
                             self.unmark_verified (name)
                         return
         print(f"* No such file listed: {filename}")
@@ -445,7 +450,7 @@ class Multiboot:
         Path('verified').mkdir(exist_ok=True)
         Path(f'verified/{name}').unlink(missing_ok=True)
 
-    def checksum(self, path, hash_factory=hashlib.sha256, chunk_num_blocks=16384):
+    def checksum(self, path, hash_factory, chunk_num_blocks=16384):
         h = hash_factory()
         size = path.stat().st_size
         desc = path.as_posix().split('/')[-1].split('-')[0]
@@ -455,6 +460,12 @@ class Multiboot:
                     h.update(chunk)
                     progress.update()
         return h.hexdigest()
+
+    def checksum256(self, path):
+        return self.checksum(path, hashlib.sha256)
+
+    def checksum512(self, path):
+        return self.checksum(path, hashlib.sha512)
 
     def main (self):
         parser = ArgumentParser(
