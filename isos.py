@@ -253,9 +253,9 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) KDE',
         'size': 3.9,
-        'iso':  'https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/kubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/kubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS.gpg',
     },
     'ubuntu-24.04-lxde': {
         'name': 'lubuntu',
