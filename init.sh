@@ -2,7 +2,7 @@
 MNT=/run/live/findiso
 DST=${MNT}/universal_boot
 sudo apt update
-sudo apt install -y python3-pip git libcurl4-openssl-dev libssl-dev whiptail rainbow-tqdm
+sudo apt install -y python3-pip git libcurl4-openssl-dev libssl-dev whiptail rainbow-tqdm git
 sudo pip install pgpy jinja2 tqdm pycurl rainbow_tqdm whiptail-dialogs psutil whiptail --break-system-packages
 sudo mount -o remount,rw ${MNT}
 sudo git -C ${DST} config --global --add safe.directory ${DST}

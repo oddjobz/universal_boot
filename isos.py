@@ -1,111 +1,103 @@
 iso_images = {
-    'debian-12.5-cinnamon': {
+    'debian-12.6-cinnamon': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Cinnamon',
+        'title': 'Debian (12.6) Cinnamon',
         'size': 3.1,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-cinnamon.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-cinnamon.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-gnome': {
+    'debian-12.6-gnome': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Gnome',
+        'title': 'Debian (12.6) Gnome',
         'size': 3.2,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-gnome.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-kde': {
+    'debian-12.6-kde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) KDE',
+        'title': 'Debian (12.6) KDE',
         'size': 3.3,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-kde.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-kde.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-lxde': {
+    'debian-12.6-lxde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) LXDE',
+        'title': 'Debian (12.6) LXDE',
         'size': 2.9,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-lxde.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-lxde.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-lxqt': {
+    'debian-12.6-lxqt': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) LXQT',
+        'title': 'Debian (12.6) LXQT',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-lxqt.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-lxqt.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-mate': {
+    'debian-12.6-mate': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) MATE',
+        'title': 'Debian (12.6) MATE',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-mate.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-mate.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-standard': {
+    'debian-12.6-standard': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Standard',
+        'title': 'Debian (12.6) Standard',
         'size': 1.4,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-standard.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-standard.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-installer': {
+    'debian-12.6-xfce': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Installer',
-        'size': 0.659,
-        'iso': 'https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso',
-        'sum': '33c08e56c83d13007e4a5511b9bf2c4926c4aa12fd5dd56d493c0653aecbab380988c5bf1671dbaea75c582827797d98c4a611f7fb2b131fbde2c677d5258ec9'
-    },
-    'debian-12.5-xfce': {
-        'name': 'debian',
-        'menu': 'debian',
-        'title': 'Debian (12.5) XFCE',
+        'title': 'Debian (12.6) XFCE',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-xfce.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-xfce.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
