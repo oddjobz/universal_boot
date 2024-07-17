@@ -252,31 +252,34 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     'ubuntu-24.04-lxde': {
         'name': 'lubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) LXDE',
+        'title': 'Ubuntu (24.04) LXDE',
         'size': 3.1,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/lubuntu/releases/24.04/release/lubuntu-24.04-desktop-amd64.iso',
-        'sum':  'f7ed99b368e00ab7f3fa2c05cefd912f43fc19a8ab9d4d241432d7d9e97e3491'
+        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/lubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS.gpg',
     },
     'ubuntu-24.04-budgie': {
         'name': 'bubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Budgie',
+        'title': 'Ubuntu (24.04) Budgie',
         'size': 3.5,
-        'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
-        'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
+        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/ubuntu-budgie-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS.gpg',
     },
-    'ubuntu-24.04-mate': {
+    'ubuntu-24.04-mate': {      
         'name': 'mubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) MATE',
-        'size': 3.5,
-        'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04-desktop-amd64.iso',
-        'sum': 'eae78e56c306ba30e5d59cbcbb48e54bef6e9263e8481f3f0f3a883054083f24'
+        'title': 'Ubuntu (24.04) MATE',
+        'size': 3.9,
+        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS.gpg',
     },
     'ubuntu-24.04-studio': {
         'name': 'subuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Studio',
+        'title': 'Ubuntu (24.04) Studio',
         'size': 4.7,
         'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04-dvd-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
@@ -288,78 +291,78 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
 
 
 
-    'ubuntu-22.04': {
-        'name': 'ubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (22.04) Gnome',
-        'size': 4.7,
-        'iso': 'https://releases.ubuntu.com/lunar/ubuntu-22.04.3-desktop-amd64.iso',
-        'sums': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS.gpg',
-    },
-    'ubuntu-23.04': {
-        'name': 'ubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Gnome',
-        'size': 4.6,
-        'iso': 'https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso',
-        'sums': 'https://releases.ubuntu.com/lunar/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/lunar/SHA256SUMS.gpg',
-        'prints': [
-            '843938DF228D22F7B3742BC0D94AA3F0EFE21092'
-        ],
-        'keyserver': 'hkp://keyserver.ubuntu.com'
-    },
-    'ubuntu-23.04-xfce': {
-        'name': 'xubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) XFCE',
-        'size': 2.9,
-        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.3-desktop-amd64.iso',
-        'sum': 'eec14c4e6f13120555fee0f1f3c1909bd8196a48de4012b6ea96fb7dd27a5aab',
-    },
-    'ubuntu-23.04-kde': {
-        'name': 'kubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) KDE',
-        'size': 4.0,
-        'iso': 'https://cdimage.ubuntu.com/kubuntu/releases/22.04.3/release/kubuntu-22.04.3-desktop-amd64.iso',
-        'sum': '9a5ea3b4ae6651cf0cd82ec059e3e5c8d8b30006112ff06555acb35e45571f50',
-    },
-    'ubuntu-23.04-lxde': {
-        'name': 'lubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) LXDE',
-        'size': 2.8,
-        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/22.04.3/release/lubuntu-22.04.3-desktop-amd64.iso',
-        'sum': 'ffccfa53a10bacf0b8b7589e85c739e650aef8f38ac4ed66f96fd591396d2f21',
-    },
-    'ubuntu-23.04-budgie': {
-        'name': 'bubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Budgie',
-        'size': 3.5,
-        'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
-        'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
-    },
-    'ubuntu-23.04-mate': {
-        'name': 'mubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) MATE',
-        'size': 3.5,
-        'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/22.04/release/ubuntu-mate-22.04.3-desktop-amd64.iso',
-        'sum': 'd84cd3eb7732fbb39ce3cd24ba1b302a643fe0362f7ac9261fc4c7b756e42a55'
-    },
-    'ubuntu-23.04-studio': {
-        'name': 'subuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Studio',
-        'size': 4.7,
-        'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
-    },    
+    # 'ubuntu-22.04': {
+    #     'name': 'ubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (22.04) Gnome',
+    #     'size': 4.7,
+    #     'iso': 'https://releases.ubuntu.com/lunar/ubuntu-22.04.3-desktop-amd64.iso',
+    #     'sums': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS',
+    #     'sign': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS.gpg',
+    # },
+    # 'ubuntu-23.04': {
+    #     'name': 'ubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) Gnome',
+    #     'size': 4.6,
+    #     'iso': 'https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso',
+    #     'sums': 'https://releases.ubuntu.com/lunar/SHA256SUMS',
+    #     'sign': 'https://releases.ubuntu.com/lunar/SHA256SUMS.gpg',
+    #     'prints': [
+    #         '843938DF228D22F7B3742BC0D94AA3F0EFE21092'
+    #     ],
+    #     'keyserver': 'hkp://keyserver.ubuntu.com'
+    # },
+    # 'ubuntu-23.04-xfce': {
+    #     'name': 'xubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) XFCE',
+    #     'size': 2.9,
+    #     'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.3-desktop-amd64.iso',
+    #     'sum': 'eec14c4e6f13120555fee0f1f3c1909bd8196a48de4012b6ea96fb7dd27a5aab',
+    # },
+    # 'ubuntu-23.04-kde': {
+    #     'name': 'kubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) KDE',
+    #     'size': 4.0,
+    #     'iso': 'https://cdimage.ubuntu.com/kubuntu/releases/22.04.3/release/kubuntu-22.04.3-desktop-amd64.iso',
+    #     'sum': '9a5ea3b4ae6651cf0cd82ec059e3e5c8d8b30006112ff06555acb35e45571f50',
+    # },
+    # 'ubuntu-23.04-lxde': {
+    #     'name': 'lubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) LXDE',
+    #     'size': 2.8,
+    #     'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/22.04.3/release/lubuntu-22.04.3-desktop-amd64.iso',
+    #     'sum': 'ffccfa53a10bacf0b8b7589e85c739e650aef8f38ac4ed66f96fd591396d2f21',
+    # },
+    # 'ubuntu-23.04-budgie': {
+    #     'name': 'bubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) Budgie',
+    #     'size': 3.5,
+    #     'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
+    #     'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
+    # },
+    # 'ubuntu-23.04-mate': {
+    #     'name': 'mubuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) MATE',
+    #     'size': 3.5,
+    #     'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/22.04/release/ubuntu-mate-22.04.3-desktop-amd64.iso',
+    #     'sum': 'd84cd3eb7732fbb39ce3cd24ba1b302a643fe0362f7ac9261fc4c7b756e42a55'
+    # },
+    # 'ubuntu-23.04-studio': {
+    #     'name': 'subuntu',
+    #     'menu': 'debian-loop',
+    #     'title': 'Ubuntu (23.04) Studio',
+    #     'size': 4.7,
+    #     'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
+    #     'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
+    #     'sign': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS.gpg',
+    #     'keyserver': 'hkp://keyserver.ubuntu.com'        
+    # },    
     'mint-21.3-cinnamon': {
         'name': 'mint',
         'menu': 'mint',

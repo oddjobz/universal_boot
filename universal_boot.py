@@ -163,6 +163,9 @@ class Multiboot:
         #
         #   TODO: now copy grub.cfg onto boot partition for USB key
         #
+        if Path('/usr/sbin/blkid').exists():
+            print ('* blkid tool not available')
+            return
         p = Popen([f'blkid','--label','MP-DATA'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
         output, err = p.communicate()
         if p.returncode:
@@ -277,6 +280,7 @@ class Multiboot:
                 rename (f'tmp/{iso_name}', f'isos/{iso_name}')
             else:
                 print (f'* ERROR: ISO download failed! => {iso}')
+                return
         else:
             print ('* ISO already present, adding to the menu')
         self.gnupg_verify (name)
