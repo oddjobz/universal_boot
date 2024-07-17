@@ -368,6 +368,17 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
         'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
     },
+
+    'endeavour-2024.06.25': {
+        'name': 'endeavour',
+        'menu': 'arch',
+        'title': 'EndeavourOS (2024.06.25)',
+        'size': 2.9,
+        'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso',
+        'sums': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso.sha512sum',
+        'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso.sig'
+    },
+
     #
     #   FIXME: bad key
     #
