@@ -530,6 +530,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
         'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
         'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
+        'keyserver': 'hkp://keys.openpgp.org',
         'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
     },
     #
