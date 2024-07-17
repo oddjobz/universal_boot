@@ -285,84 +285,36 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com'        
-    },    
-
-
-
-
-
-    # 'ubuntu-22.04': {
-    #     'name': 'ubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (22.04) Gnome',
-    #     'size': 4.7,
-    #     'iso': 'https://releases.ubuntu.com/lunar/ubuntu-22.04.3-desktop-amd64.iso',
-    #     'sums': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS',
-    #     'sign': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS.gpg',
-    # },
-    # 'ubuntu-23.04': {
-    #     'name': 'ubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) Gnome',
-    #     'size': 4.6,
-    #     'iso': 'https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso',
-    #     'sums': 'https://releases.ubuntu.com/lunar/SHA256SUMS',
-    #     'sign': 'https://releases.ubuntu.com/lunar/SHA256SUMS.gpg',
-    #     'prints': [
-    #         '843938DF228D22F7B3742BC0D94AA3F0EFE21092'
-    #     ],
-    #     'keyserver': 'hkp://keyserver.ubuntu.com'
-    # },
-    # 'ubuntu-23.04-xfce': {
-    #     'name': 'xubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) XFCE',
-    #     'size': 2.9,
-    #     'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.3-desktop-amd64.iso',
-    #     'sum': 'eec14c4e6f13120555fee0f1f3c1909bd8196a48de4012b6ea96fb7dd27a5aab',
-    # },
-    # 'ubuntu-23.04-kde': {
-    #     'name': 'kubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) KDE',
-    #     'size': 4.0,
-    #     'iso': 'https://cdimage.ubuntu.com/kubuntu/releases/22.04.3/release/kubuntu-22.04.3-desktop-amd64.iso',
-    #     'sum': '9a5ea3b4ae6651cf0cd82ec059e3e5c8d8b30006112ff06555acb35e45571f50',
-    # },
-    # 'ubuntu-23.04-lxde': {
-    #     'name': 'lubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) LXDE',
-    #     'size': 2.8,
-    #     'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/22.04.3/release/lubuntu-22.04.3-desktop-amd64.iso',
-    #     'sum': 'ffccfa53a10bacf0b8b7589e85c739e650aef8f38ac4ed66f96fd591396d2f21',
-    # },
-    # 'ubuntu-23.04-budgie': {
-    #     'name': 'bubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) Budgie',
-    #     'size': 3.5,
-    #     'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
-    #     'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
-    # },
-    # 'ubuntu-23.04-mate': {
-    #     'name': 'mubuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) MATE',
-    #     'size': 3.5,
-    #     'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/22.04/release/ubuntu-mate-22.04.3-desktop-amd64.iso',
-    #     'sum': 'd84cd3eb7732fbb39ce3cd24ba1b302a643fe0362f7ac9261fc4c7b756e42a55'
-    # },
-    # 'ubuntu-23.04-studio': {
-    #     'name': 'subuntu',
-    #     'menu': 'debian-loop',
-    #     'title': 'Ubuntu (23.04) Studio',
-    #     'size': 4.7,
-    #     'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
-    #     'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
-    #     'sign': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS.gpg',
-    #     'keyserver': 'hkp://keyserver.ubuntu.com'        
-    # },    
+    },
+    'mint-22beta-cinnamon': {
+        'name': 'mint',
+        'menu': 'mint',
+        'title': 'Mint (22-beta) Cinnamon', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-cinnamon-64bit-beta.iso',
+        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
+        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+        'keyserver': 'hkp://keyserver.ubuntu.com',
+        'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
+    },
+    'mint-22beta-mate': {
+        'name': 'mint',
+        'menu': 'mint',
+        'title': 'Mint (22-beta) Mate', 
+        'size': 3.0,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-mate-64bit-beta.iso',
+        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
+        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+    },
+    'mint-22beta-xfce': {
+        'name': 'mint',
+        'menu': 'mint',
+        'title': 'Mint (22-beta) XFCE', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-xfce-64bit-beta.iso',
+        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
+        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+    },
     'mint-21.3-cinnamon': {
         'name': 'mint',
         'menu': 'mint',
@@ -484,6 +436,36 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-38-1.6-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
+
+
+    'manjaro-24.0.3-gnome': {
+        'name': 'manjaro',
+        'menu': 'manjaro',
+        'title': 'Manjaro (23.1.3) Gnome',
+        'size': 3.9,
+        'iso': 'https://download.manjaro.org/gnome/24.0.3/manjaro-gnome-24.0.3-240702-linux69.iso',
+        'sum': ''
+    },
+    'manjaro-23.1.3-kde': {
+        'name': 'manjaro',
+        'menu': 'manjaro',
+        'title': 'Manjaro (23.1.3) KDE',
+        'size': 3.7,
+        'iso': 'https://download.manjaro.org/kde/24.0.3/manjaro-kde-24.0.3-240702-linux69.iso',
+        'sum': '',
+    },
+    'manjaro-23.1.3-xfce': {
+        'name': 'manjaro',
+        'menu': 'manjaro',
+        'title': 'Manjaro (23.1.3) XFCE',
+        'size': 3.6,
+        'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
+        'sum': '',
+    },
+
+
+
+
     'manjaro-23.1.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
@@ -539,6 +521,15 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'size': 2.6,
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
         'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
+    },
+    'eos-eos6.0.1': {
+        'name': 'endless',
+        'menu': 'endlessos',
+        'title': 'EndlessOS (6.0.1)',
+        'size': 3.74,
+        'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
+        'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
+        'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
     },
     #
     #   Mirror is currently fauling!

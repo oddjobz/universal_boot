@@ -163,7 +163,7 @@ class Multiboot:
         #
         #   TODO: now copy grub.cfg onto boot partition for USB key
         #
-        if Path('/usr/sbin/blkid').exists():
+        if not Path('/usr/sbin/blkid').exists():
             print ('* blkid tool not available')
             return
         p = Popen([f'blkid','--label','MP-DATA'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
