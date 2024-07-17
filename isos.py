@@ -1,103 +1,103 @@
 iso_images = {
-    'debian-12.5-cinnamon': {
+    'debian-12.6-cinnamon': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Cinnamon',
+        'title': 'Debian (12.6) Cinnamon',
         'size': 3.1,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-cinnamon.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-cinnamon.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-gnome': {
+    'debian-12.6-gnome': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Gnome',
+        'title': 'Debian (12.6) Gnome',
         'size': 3.2,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-gnome.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-kde': {
+    'debian-12.6-kde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) KDE',
+        'title': 'Debian (12.6) KDE',
         'size': 3.3,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-kde.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-kde.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-lxde': {
+    'debian-12.6-lxde': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) LXDE',
+        'title': 'Debian (12.6) LXDE',
         'size': 2.9,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-lxde.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-lxde.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-lxqt': {
+    'debian-12.6-lxqt': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) LXQT',
+        'title': 'Debian (12.6) LXQT',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-lxqt.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-lxqt.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-mate': {
+    'debian-12.6-mate': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) MATE',
+        'title': 'Debian (12.6) MATE',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-mate.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-mate.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-standard': {
+    'debian-12.6-standard': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) Standard',
+        'title': 'Debian (12.6) Standard',
         'size': 1.4,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-standard.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-standard.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.5-xfce': {
+    'debian-12.6-xfce': {
         'name': 'debian',
         'menu': 'debian',
-        'title': 'Debian (12.5) XFCE',
+        'title': 'Debian (12.6) XFCE',
         'size': 3.0,
-        'iso': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.5.0-amd64-xfce.iso',
-        'sums': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS',
-        'sign': 'https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/SHA256SUMS.sign',
+        'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-xfce.iso',
+        'sums': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS',
+        'sign': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.6.0-live/amd64/iso-hybrid/SHA256SUMS.sign',
         'prints': [
             'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
         ],
@@ -222,88 +222,99 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
 =VUw1
 -----END PGP SIGNATURE-----"""
     },
-    'ubuntu-22.04': {
+    'ubuntu-24.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (22.04) Gnome',
-        'size': 4.7,
-        'iso': 'https://releases.ubuntu.com/lunar/ubuntu-22.04.3-desktop-amd64.iso',
-        'sums': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/22.04.3/SHA256SUMS.gpg',
+        'title': 'Ubuntu (24.04) Gnome',
+        'size': 5.7,
+        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
+        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',        
     },
-    'ubuntu-23.04': {
-        'name': 'ubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Gnome',
-        'size': 4.6,
-        'iso': 'https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso',
-        'sums': 'https://releases.ubuntu.com/lunar/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/lunar/SHA256SUMS.gpg',
-        'prints': [
-            '843938DF228D22F7B3742BC0D94AA3F0EFE21092'
-        ],
-        'keyserver': 'hkp://keyserver.ubuntu.com'
-    },
-    'ubuntu-23.04-xfce': {
+    'ubuntu-24.04-xfce': {
         'name': 'xubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) XFCE',
-        'size': 2.9,
-        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.3-desktop-amd64.iso',
-        'sum': 'eec14c4e6f13120555fee0f1f3c1909bd8196a48de4012b6ea96fb7dd27a5aab',
+        'title': 'Ubuntu (24.04) XFCE',
+        'size': 3.8,
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS.gpg',
     },
-    'ubuntu-23.04-kde': {
+    'ubuntu-24.04-kde': {
         'name': 'kubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) KDE',
-        'size': 4.0,
-        'iso': 'https://cdimage.ubuntu.com/kubuntu/releases/22.04.3/release/kubuntu-22.04.3-desktop-amd64.iso',
-        'sum': '9a5ea3b4ae6651cf0cd82ec059e3e5c8d8b30006112ff06555acb35e45571f50',
+        'title': 'Ubuntu (24.04) KDE',
+        'size': 3.9,
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/kubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS.gpg',
     },
-    'ubuntu-23.04-lxde': {
+    'ubuntu-24.04-lxde': {
         'name': 'lubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) LXDE',
-        'size': 2.8,
-        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/22.04.3/release/lubuntu-22.04.3-desktop-amd64.iso',
-        'sum': 'ffccfa53a10bacf0b8b7589e85c739e650aef8f38ac4ed66f96fd591396d2f21',
+        'title': 'Ubuntu (24.04) LXDE',
+        'size': 3.1,
+        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/lubuntu-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS.gpg',
     },
-    'ubuntu-23.04-budgie': {
+    'ubuntu-24.04-budgie': {
         'name': 'bubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Budgie',
+        'title': 'Ubuntu (24.04) Budgie',
         'size': 3.5,
-        'iso': 'https://cdimage.debian.org/mirror/cdimage.ubuntu.com/ubuntu-budgie/releases/22.04.3/release/ubuntu-budgie-22.04.3-desktop-amd64.iso',
-        'sum': '03e8fa55a8634cf61fff0c22169576d590b606db568bffae2907ad98278d35b9',
+        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/ubuntu-budgie-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS.gpg',
     },
-    'ubuntu-23.04-mate': {
+    'ubuntu-24.04-mate': {      
         'name': 'mubuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) MATE',
-        'size': 3.5,
-        'iso': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/22.04/release/ubuntu-mate-22.04.3-desktop-amd64.iso',
-        'sum': 'd84cd3eb7732fbb39ce3cd24ba1b302a643fe0362f7ac9261fc4c7b756e42a55'
+        'title': 'Ubuntu (24.04) MATE',
+        'size': 3.9,
+        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS.gpg',
     },
-    'ubuntu-23.04-studio': {
+    'ubuntu-24.04-studio': {
         'name': 'subuntu',
         'menu': 'debian-loop',
-        'title': 'Ubuntu (23.04) Studio',
+        'title': 'Ubuntu (24.04) Studio',
         'size': 4.7,
-        'iso': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/ubuntustudio-22.04.3-dvd-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntustudio/releases/22.04.3/release/SHA256SUMS.gpg',
+        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04-dvd-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com'        
-    },    
-    'ubuntu-24.04-beta': {
-        'name': 'ubuntu-beta',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) LTS Beta',
-        'size': 4.9,
-        'iso': 'https://cdimage.ubuntu.com/daily-live/current/noble-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/daily-live/current/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/daily-live/current/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
-    },    
+    },
+    'mint-22beta-cinnamon': {
+        'name': 'mint',
+        'menu': 'mint',
+        'title': 'Mint (22-beta) Cinnamon', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-cinnamon-64bit-beta.iso',
+        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
+        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+        'keyserver': 'hkp://keyserver.ubuntu.com',
+        'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8']
+    },
+    'mint-22beta-mate': {
+        'name': 'mint',
+        'menu': 'mint',
+        'title': 'Mint (22-beta) Mate', 
+        'size': 3.0,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-mate-64bit-beta.iso',
+        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
+        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+    },
+    'mint-22beta-xfce': {
+        'name': 'mint',
+        'menu': 'mint',
+        'title': 'Mint (22-beta) XFCE', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-xfce-64bit-beta.iso',
+        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
+        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+    },
     'mint-21.3-cinnamon': {
         'name': 'mint',
         'menu': 'mint',
@@ -357,6 +368,17 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
         'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
     },
+
+    'endeavour-2024.06.25': {
+        'name': 'endeavour',
+        'menu': 'arch',
+        'title': 'EndeavourOS (2024.06.25)',
+        'size': 2.9,
+        'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso',
+        'sums': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso.sha512sum',
+        'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso.sig'
+    },
+
     #
     #   FIXME: bad key
     #
@@ -425,30 +447,57 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-38-1.6-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
-    'manjaro-23.1.3-gnome': {
+
+
+    'manjaro-24.0.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'title': 'Manjaro (23.1.3) Gnome',
         'size': 3.9,
-        'iso': 'https://download.manjaro.org/gnome/23.1.3/manjaro-gnome-23.1.3-240113-linux66.iso',
-        'sum': 'eea2f3163582fb5dc618fe0b15202ba1507449095f25ac43f8a1cf78814201f9'
+        'iso': 'https://download.manjaro.org/gnome/24.0.3/manjaro-gnome-24.0.3-240702-linux69.iso',
+        'sum': '8a121303e64d78832399336f7aed307887f31f010886bcf408c34aa3ee8d5fc5'
     },
-    'manjaro-23.1.3-kde': {
+    'manjaro-24.0.3-kde': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) KDE',
+        'title': 'Manjaro (24.0.3) KDE',
         'size': 3.7,
-        'iso': 'https://download.manjaro.org/kde/23.1.3/manjaro-kde-23.1.3-240113-linux66.iso',
-        'sum': 'bb7c43db4ae1c9d7a50a15d635e8144570bfc2000d9aaf35af79c9a916efa158',
+        'iso': 'https://download.manjaro.org/kde/24.0.3/manjaro-kde-24.0.3-240702-linux69.iso',
+        'sum': 'd5c4cd8ebf1bc0b371610a6dd8a577173b388f9ac5c20c9cd0ff72ad48ea195c'
     },
-    'manjaro-23.1.3-xfce': {
+    'manjaro-24.0.3-xfce': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) XFCE',
+        'title': 'Manjaro (24.0.3) XFCE',
         'size': 3.6,
-        'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
-        'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
+        'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
+        'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
     },
+
+    # 'manjaro-23.1.3-gnome': {
+    #     'name': 'manjaro',
+    #     'menu': 'manjaro',
+    #     'title': 'Manjaro (23.1.3) Gnome',
+    #     'size': 3.9,
+    #     'iso': 'https://download.manjaro.org/gnome/23.1.3/manjaro-gnome-23.1.3-240113-linux66.iso',
+    #     'sum': 'eea2f3163582fb5dc618fe0b15202ba1507449095f25ac43f8a1cf78814201f9'
+    # },
+    # 'manjaro-23.1.3-kde': {
+    #     'name': 'manjaro',
+    #     'menu': 'manjaro',
+    #     'title': 'Manjaro (23.1.3) KDE',
+    #     'size': 3.7,
+    #     'iso': 'https://download.manjaro.org/kde/23.1.3/manjaro-kde-23.1.3-240113-linux66.iso',
+    #     'sum': 'bb7c43db4ae1c9d7a50a15d635e8144570bfc2000d9aaf35af79c9a916efa158',
+    # },
+    # 'manjaro-23.1.3-xfce': {
+    #     'name': 'manjaro',
+    #     'menu': 'manjaro',
+    #     'title': 'Manjaro (23.1.3) XFCE',
+    #     'size': 3.6,
+    #     'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
+    #     'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
+    # },
     'vanillaos-22.10-r9': {
         'name': 'vanilla',
         'menu': 'debian',
@@ -481,6 +530,20 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
         'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
     },
+    #
+    #   Need to look at the Endless boot process, debian isn't working
+    #
+    # 'eos-eos6.0.1': {
+    #     'name': 'endless',
+    #     'menu': 'debian',
+    #     'title': 'EndlessOS (6.0.1)',
+    #     'size': 3.74,
+    #     'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
+    #     'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
+    #     'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
+    #     'keyserver': 'hkp://keys.openpgp.org',
+    #     'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
+    # },
     #
     #   Mirror is currently fauling!
     #
@@ -520,33 +583,3 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     #     'keyserver': 'hkp://keys.openpgp.org',
     # },
     #
-# from pathlib import Path
-# from shutil import move
-# from subprocess import call
-# def fix_gentoo (entry):
-#     if Path('/media/data/boot/gentoo/image.squashfs').exists():
-#         return
-#     print ('Running the Gentoo fix')
-    # name = entry['iso'].split('/')[-1]
-    # if Path(f'isos/{name}').exists() and not Path(f'./{name}').exists():
-    #     move(f'isos/{name}', f'./{name}')
-    #     with open(f'isos/{name}', 'w') as io:
-    #         io.write('Moved\n')
-
-    # call([f'sudo mkdir -p /media/data/boot/gentoo'], shell=True)          
-    # call([f'sudo mkdir -p /mnt/loop'], shell=True)          
-    # call([f'sudo mount -o loop ./{name} /mnt/loop'], shell=True)  
-    # call([f'sudo cp /mnt/loop/boot/gentoo /media/data/boot/gentoo/gentoo'], shell=True)
-    # call([f'sudo cp /mnt/loop/boot/gentoo.igz /media/data/boot/gentoo/gentoo.igz'], shell=True)
-    # call([f'sudo cp /mnt/loop/image.squashfs /media/data/boot/gentoo/image.squashfs'], shell=True)
-    # call([f'sudo umount /mnt/loop'], shell=True)
-
-    # 'tails-5.2.2': {
-    #     'name': 'tails',
-    #     'menu': 'tails',
-    #     'title': 'Tails (5.22) Gnome',
-    #     'size': 1.3,
-    #     'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.iso',
-    #     'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.iso.sig',
-    #     'key': 'https://tails.net/tails-signing.key'
-    # },    

@@ -21,7 +21,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 from subprocess import call, Popen, PIPE, check_call, run
 from tqdm import tqdm
-from pycurl import Curl
+from pycurl import Curl, CAINFO
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from jinja2.exceptions import TemplateNotFound
 from isos import iso_images
@@ -127,6 +127,8 @@ class Multiboot:
                 self.gnupg_verify (name)    
         else:
             if name not in self._installed:
+                print("Name>", name)
+                print("Installed>", self._installed)
                 print(f'"{name}" is not currently available, add it first!')
                 return
             self.gnupg_verify (name)
@@ -161,18 +163,25 @@ class Multiboot:
         #
         #   TODO: now copy grub.cfg onto boot partition for USB key
         #
-        p = Popen([f'blkid','--label','MP-DATA'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        if not Path('/usr/sbin/blkid').exists():
+            print ('* blkid tool not available')
+            return
+        p = Popen([f'/usr/sbin/blkid','--label','MP-DATA'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
         output, err = p.communicate()
         if p.returncode:
             print(f'* Error: {err} - unable to re-write GRUB')
         else:
             device = output.decode().split('\n')[0]
             Path('/media/data').mkdir(exist_ok=True, parents=True)
-            check_call(['mount', device, '/media/data'])
-            src = Path('grub.cfg')
-            dst = Path('/media/data/boot/grub/grub.cfg')
-            dst.write_text(src.read_text())
-            check_call(['umount', device])
+            try:
+                check_call(['mount', device, '/media/data'])
+                src = Path('grub.cfg')
+                dst = Path('/media/data/boot/grub/grub.cfg')
+                dst.write_text(src.read_text())
+                check_call(['umount', device])
+                print (f'* Upddated!')
+            except Exception as e:
+                print (f'* ERROR: Error updating key, you are probably not root! => {str(e)}')
 
     def gui (self):
         self.read_isos ()
@@ -271,6 +280,7 @@ class Multiboot:
                 rename (f'tmp/{iso_name}', f'isos/{iso_name}')
             else:
                 print (f'* ERROR: ISO download failed! => {iso}')
+                return
         else:
             print ('* ISO already present, adding to the menu')
         self.gnupg_verify (name)
@@ -303,6 +313,7 @@ class Multiboot:
                 c.setopt(c.WRITEDATA, f)
                 c.setopt(c.NOPROGRESS, False)
                 c.setopt(c.XFERINFOFUNCTION, status)
+                c.setopt(CAINFO, "/etc/ssl/certs/ca-certificates.crt")
                 c.perform()
                 effective = c.getinfo(c.EFFECTIVE_URL)
                 if ('failedmirror' in effective) or (c.getinfo(c.RESPONSE_CODE) != 200):
@@ -395,13 +406,16 @@ class Multiboot:
             if not path.exists():
                 print(f"* File not available: {filename}")
                 return
-        csum = self.checksum(path)
+            
+        wanted512 = self.checksum512(path)
+        wanted256 = self.checksum256(path)
+            
         if sum:
-            if sum == csum:
+            if sum in (wanted256, wanted256):
                 print(f'* Signature OK')
                 self.mark_verified (name)
             else:
-                print(f'* Signature BAD, found {sum} wanted {csum}')
+                print(f'* Signature BAD, found {sum}, wanted: {wanted256} / {wanted512} (1)')
                 self.mark_verified (name)
             return
 
@@ -417,21 +431,22 @@ class Multiboot:
                     sign, file = [word for word in line.split(' ') if word]
                     
                     if file.strip("*") == filename:
-                        if sign == csum:
+                        if sign == wanted256 or sum == wanted512:
                             print(f'* Signature OK')
                             self.mark_verified (name)
                         else:
-                            print(f'* Signature BAD, found {sign} wanted {csum}')
+                            print(f'* Signature BAD, found {sign}')
+                            print(f'* Wanted: {wanted256}, {wanted512} (2)')
                             self.mark_unverified (name)
                         return
                 else:
                     if line.startswith('SHA256'):
                         sign = line.split('=')[-1].strip()
-                        if sign == csum:
+                        if sign in (wanted512, wanted256):
                             print(f'* Signature OK')
                             self.mark_verified (name)
                         else:
-                            print(f'* Signature BAD, found {sign} wanted {csum}')
+                            print(f'* Signature BAD, found {sign} wanted {wanted256}, {wanted512} (3)')
                             self.unmark_verified (name)
                         return
         print(f"* No such file listed: {filename}")
@@ -445,7 +460,7 @@ class Multiboot:
         Path('verified').mkdir(exist_ok=True)
         Path(f'verified/{name}').unlink(missing_ok=True)
 
-    def checksum(self, path, hash_factory=hashlib.sha256, chunk_num_blocks=16384):
+    def checksum(self, path, hash_factory, chunk_num_blocks=16384):
         h = hash_factory()
         size = path.stat().st_size
         desc = path.as_posix().split('/')[-1].split('-')[0]
@@ -455,6 +470,12 @@ class Multiboot:
                     h.update(chunk)
                     progress.update()
         return h.hexdigest()
+
+    def checksum256(self, path):
+        return self.checksum(path, hashlib.sha256)
+
+    def checksum512(self, path):
+        return self.checksum(path, hashlib.sha512)
 
     def main (self):
         parser = ArgumentParser(
