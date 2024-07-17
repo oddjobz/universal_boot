@@ -166,7 +166,7 @@ class Multiboot:
         if not Path('/usr/sbin/blkid').exists():
             print ('* blkid tool not available')
             return
-        p = Popen([f'blkid','--label','MP-DATA'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        p = Popen([f'/usr/sbin/blkid','--label','MP-DATA'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
         output, err = p.communicate()
         if p.returncode:
             print(f'* Error: {err} - unable to re-write GRUB')

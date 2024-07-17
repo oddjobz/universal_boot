@@ -295,7 +295,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
         'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com',
-        'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
+        'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8']
     },
     'mint-22beta-mate': {
         'name': 'mint',
@@ -444,52 +444,49 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'title': 'Manjaro (23.1.3) Gnome',
         'size': 3.9,
         'iso': 'https://download.manjaro.org/gnome/24.0.3/manjaro-gnome-24.0.3-240702-linux69.iso',
-        'sum': ''
+        'sum': '8a121303e64d78832399336f7aed307887f31f010886bcf408c34aa3ee8d5fc5'
     },
-    'manjaro-23.1.3-kde': {
+    'manjaro-24.0.3-kde': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) KDE',
+        'title': 'Manjaro (24.0.3) KDE',
         'size': 3.7,
         'iso': 'https://download.manjaro.org/kde/24.0.3/manjaro-kde-24.0.3-240702-linux69.iso',
-        'sum': '',
+        'sum': 'd5c4cd8ebf1bc0b371610a6dd8a577173b388f9ac5c20c9cd0ff72ad48ea195c'
     },
-    'manjaro-23.1.3-xfce': {
+    'manjaro-24.0.3-xfce': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) XFCE',
+        'title': 'Manjaro (24.0.3) XFCE',
         'size': 3.6,
         'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
-        'sum': '',
+        'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
     },
 
-
-
-
-    'manjaro-23.1.3-gnome': {
-        'name': 'manjaro',
-        'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) Gnome',
-        'size': 3.9,
-        'iso': 'https://download.manjaro.org/gnome/23.1.3/manjaro-gnome-23.1.3-240113-linux66.iso',
-        'sum': 'eea2f3163582fb5dc618fe0b15202ba1507449095f25ac43f8a1cf78814201f9'
-    },
-    'manjaro-23.1.3-kde': {
-        'name': 'manjaro',
-        'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) KDE',
-        'size': 3.7,
-        'iso': 'https://download.manjaro.org/kde/23.1.3/manjaro-kde-23.1.3-240113-linux66.iso',
-        'sum': 'bb7c43db4ae1c9d7a50a15d635e8144570bfc2000d9aaf35af79c9a916efa158',
-    },
-    'manjaro-23.1.3-xfce': {
-        'name': 'manjaro',
-        'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) XFCE',
-        'size': 3.6,
-        'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
-        'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
-    },
+    # 'manjaro-23.1.3-gnome': {
+    #     'name': 'manjaro',
+    #     'menu': 'manjaro',
+    #     'title': 'Manjaro (23.1.3) Gnome',
+    #     'size': 3.9,
+    #     'iso': 'https://download.manjaro.org/gnome/23.1.3/manjaro-gnome-23.1.3-240113-linux66.iso',
+    #     'sum': 'eea2f3163582fb5dc618fe0b15202ba1507449095f25ac43f8a1cf78814201f9'
+    # },
+    # 'manjaro-23.1.3-kde': {
+    #     'name': 'manjaro',
+    #     'menu': 'manjaro',
+    #     'title': 'Manjaro (23.1.3) KDE',
+    #     'size': 3.7,
+    #     'iso': 'https://download.manjaro.org/kde/23.1.3/manjaro-kde-23.1.3-240113-linux66.iso',
+    #     'sum': 'bb7c43db4ae1c9d7a50a15d635e8144570bfc2000d9aaf35af79c9a916efa158',
+    # },
+    # 'manjaro-23.1.3-xfce': {
+    #     'name': 'manjaro',
+    #     'menu': 'manjaro',
+    #     'title': 'Manjaro (23.1.3) XFCE',
+    #     'size': 3.6,
+    #     'iso': 'https://download.manjaro.org/xfce/23.1.3/manjaro-xfce-23.1.3-240113-linux66.iso',
+    #     'sum': '2709aafc15ea39c45545ab09baf9c567e82ee903b9f1c7a945cf93f216bca75c',
+    # },
     'vanillaos-22.10-r9': {
         'name': 'vanilla',
         'menu': 'debian',
@@ -522,17 +519,20 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
         'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
     },
-    'eos-eos6.0.1': {
-        'name': 'endless',
-        'menu': 'debian',
-        'title': 'EndlessOS (6.0.1)',
-        'size': 3.74,
-        'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
-        'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
-        'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
-        'keyserver': 'hkp://keys.openpgp.org',
-        'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
-    },
+    #
+    #   Need to look at the Endless boot process, debian isn't working
+    #
+    # 'eos-eos6.0.1': {
+    #     'name': 'endless',
+    #     'menu': 'debian',
+    #     'title': 'EndlessOS (6.0.1)',
+    #     'size': 3.74,
+    #     'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
+    #     'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
+    #     'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
+    #     'keyserver': 'hkp://keys.openpgp.org',
+    #     'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
+    # },
     #
     #   Mirror is currently fauling!
     #
@@ -572,33 +572,3 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     #     'keyserver': 'hkp://keys.openpgp.org',
     # },
     #
-# from pathlib import Path
-# from shutil import move
-# from subprocess import call
-# def fix_gentoo (entry):
-#     if Path('/media/data/boot/gentoo/image.squashfs').exists():
-#         return
-#     print ('Running the Gentoo fix')
-    # name = entry['iso'].split('/')[-1]
-    # if Path(f'isos/{name}').exists() and not Path(f'./{name}').exists():
-    #     move(f'isos/{name}', f'./{name}')
-    #     with open(f'isos/{name}', 'w') as io:
-    #         io.write('Moved\n')
-
-    # call([f'sudo mkdir -p /media/data/boot/gentoo'], shell=True)          
-    # call([f'sudo mkdir -p /mnt/loop'], shell=True)          
-    # call([f'sudo mount -o loop ./{name} /mnt/loop'], shell=True)  
-    # call([f'sudo cp /mnt/loop/boot/gentoo /media/data/boot/gentoo/gentoo'], shell=True)
-    # call([f'sudo cp /mnt/loop/boot/gentoo.igz /media/data/boot/gentoo/gentoo.igz'], shell=True)
-    # call([f'sudo cp /mnt/loop/image.squashfs /media/data/boot/gentoo/image.squashfs'], shell=True)
-    # call([f'sudo umount /mnt/loop'], shell=True)
-
-    # 'tails-5.2.2': {
-    #     'name': 'tails',
-    #     'menu': 'tails',
-    #     'title': 'Tails (5.22) Gnome',
-    #     'size': 1.3,
-    #     'iso': 'https://download.tails.net/tails/stable/tails-amd64-5.22/tails-amd64-5.22.iso',
-    #     'sign': 'https://tails.net/torrents/files/tails-amd64-5.22.iso.sig',
-    #     'key': 'https://tails.net/tails-signing.key'
-    # },    
