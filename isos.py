@@ -524,12 +524,13 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
     },
     'eos-eos6.0.1': {
         'name': 'endless',
-        'menu': 'endlessos',
+        'menu': 'debian',
         'title': 'EndlessOS (6.0.1)',
         'size': 3.74,
         'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
         'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
         'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
+        'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
     },
     #
     #   Mirror is currently fauling!
