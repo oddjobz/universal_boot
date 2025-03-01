@@ -1,4 +1,4 @@
-iso_images = 9
+iso_images = {
     'debian-12.9-cinnamon': {
         'name': 'debian',
         'menu': 'debian',
