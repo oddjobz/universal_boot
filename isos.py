@@ -103,6 +103,14 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
+    'sparky-2025.03-lxqt': {
+        'name': 'sparky',
+        'menu': 'debian',
+        'title': 'Sparky (2025.03) LXQt',
+        'size': 2.2,
+        'iso': 'sparkylinux-2025.03-x86_64-lxqt.iso',
+        'sum': 'e236814eea7def783cb45c685a5bff4d1a15df9e5e1abb86784c08aa5c0947fda338b96f5c2bc75306ba7af576c0b50fde17dce1b9fc97cc36deb38e35a922c1'
+    },
     'sparky-07.02-lxqt': {
         'name': 'sparky',
         'menu': 'debian',
@@ -286,72 +294,36 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com'        
     },
-    'mint-22beta-cinnamon': {
+    'mint-22.1-cinnamon': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint (22-beta) Cinnamon', 
+        'title': 'Mint (22.1) Cinnamon', 
         'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-cinnamon-64bit-beta.iso',
-        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
-        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22.1-cinnamon-64bit.iso',
+        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
+        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com',
-        'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8']
+        'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8', '27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
-    'mint-22beta-mate': {
+    'mint-22.1-mate': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint (22-beta) Mate', 
+        'title': 'Mint (22.1) Mate', 
         'size': 3.0,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-mate-64bit-beta.iso',
-        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
-        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22.1-mate-64bit.iso',
+        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
+        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8', '27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'mint-22.1-xfce': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint (23.1) XFCE', 
+        'title': 'Mint (22.1) XFCE', 
         'size': 2.9,
         'iso':  'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
-    },
-
-# linuxmint-22.1-cinnamon-64bit.iso	2025-01-10 16:16	2.8G
-# ￼	linuxmint-22.1-mate-64bit.iso	2025-01-10 15:31	2.8G
-# ￼	linuxmint-22.1-xfce-64bit.iso	2025-01-10 14:57	2.7G
-# ￼	sha256sum.txt	2025-01-14 11:32	292
-# ￼	sha256sum.txt.gpg
-
-
-    'mint-21.3-cinnamon': {
-        'name': 'mint',
-        'menu': 'mint',
-        'title': 'Mint (21.03) Cinnamon', 
-        'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso',
-        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt',
-        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com',
-        'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
-    },
-    'mint-21.3-mate': {
-        'name': 'mint',
-        'menu': 'mint',
-        'title': 'Mint (21.03) Mate', 
-        'size': 3.0,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-mate-64bit.iso',
-        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt',
-        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt.gpg',
-    },
-    'mint-21.3-xfce': {
-        'name': 'mint',
-        'menu': 'mint',
-        'title': 'Mint (21.03) XFCE', 
-        'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/linuxmint-21.3-xfce-64bit.iso',
-        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt',
-        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/21.3/sha256sum.txt.gpg',
+        'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8', '27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'bodhi-7.0.0-standard': {
         'name': 'bodhi',
