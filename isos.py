@@ -365,20 +365,19 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'menu': 'arch',
         'title': 'Arch Linux (2024.01.01) Live',
         'size': 0.93,
-        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
-        'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
+        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2025.03.01/archlinux-2025.03.01-x86_64.iso',
+        'sum': '8150e3c1a479de9134baa13cea4ff78856cca5ebeb9bdfa87ecfce2e47ac9b5b',
     },
 
-    'endeavour-2024.06.25': {
+    'endeavour-2025.02.08': {
         'name': 'endeavour',
         'menu': 'arch',
-        'title': 'EndeavourOS (2024.06.25)',
-        'size': 2.9,
-        'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso',
-        'sums': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso.sha512sum',
-        'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso.sig'
+        'title': 'EndeavourOS (2025.02.08)',
+        'size': 3.1,
+        'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso',
+        'sums': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sha512sum',
+        'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sig'
     },
-
     #
     #   FIXME: bad key
     #
