@@ -311,10 +311,18 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'menu': 'mint',
         'title': 'Mint (23.1) XFCE', 
         'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
+        'iso':  'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
     },
+
+# linuxmint-22.1-cinnamon-64bit.iso	2025-01-10 16:16	2.8G
+# ￼	linuxmint-22.1-mate-64bit.iso	2025-01-10 15:31	2.8G
+# ￼	linuxmint-22.1-xfce-64bit.iso	2025-01-10 14:57	2.7G
+# ￼	sha256sum.txt	2025-01-14 11:32	292
+# ￼	sha256sum.txt.gpg
+
+
     'mint-21.3-cinnamon': {
         'name': 'mint',
         'menu': 'mint',
