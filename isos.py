@@ -426,7 +426,7 @@ iso_images = {
         'title': 'Open Mandriva V (24.12) KDE',
         'size': 3.2,
         'iso': 'https://sourceforge.net/projects/openmandriva/files/release/ROME/24.12/openmandriva.rome-24.12-plasma6.wayland.x86_64.iso',
-        'sum': 'e05a29f5b7bb0121c58080b27e5f6bd3df09b1d1'
+        'sum': '6a2a90583d97e18fd374e6f801715e8ed1e6fb61'
     },
     'eos-eos6.0.5': {
         'name': 'endless',
