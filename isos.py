@@ -256,14 +256,6 @@ iso_images = {
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso',
         'sum': '55601a03d305159569b77e6a6008aedc59f5e81df1beb35f6224c0eae6efde70'
     },
-    'arch-2025.03.01': {
-        'name': 'arch',
-        'menu': 'arch',
-        'title': 'Arch Linux (2025.03.01) Live',
-        'size': 1.2,
-        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2025.03.01/archlinux-2025.03.01-x86_64.iso',
-        'sum': '8150e3c1a479de9134baa13cea4ff78856cca5ebeb9bdfa87ecfce2e47ac9b5b',
-    },
     'endeavour-2025.02.08': {
         'name': 'endeavour',
         'menu': 'arch',
@@ -323,23 +315,6 @@ iso_images = {
         'iso': 'https://cdimage.kali.org/kali-2025.1a/kali-linux-2025.1a-live-amd64.iso',
         'sum': '2be87a23d5e84f7540e38074fd2bd5b3bcd55ab37f5fb81a3928e1bb34cb9908'
     },
-    'popos-22.04': {
-        'name': 'popos',
-        'menu': 'pop',
-        'title': 'Pop!_OS (22.04) LTS',
-        'size': 2.49,
-        'iso': 'https://iso.pop-os.org/22.04/amd64/intel/51/pop-os_22.04_amd64_intel_51.iso',
-        'sum': '5621e7544a00c1e358d667ce36eb5ae0741fe63431c92cf68c17ff66630b5ded',
-    },
-    'fedora-41-gnome': {
-        'name': 'fedora',
-        'menu': 'redhat',
-        'title': 'Fedora (41/1.4) Gnome',
-        'size': 2.29,
-        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
-        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
-        'sign': 'https://fedoraproject.org/fedora.gpg'
-    },
     'manjaro-24.2.1-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
@@ -367,14 +342,6 @@ iso_images = {
         'sum': '74a1ac9850c8fd2ffc85a6015d93dff097a230072d460db1b0262c2ac9bc4561',
         'sign': 'https://download.manjaro.org/xfce/24.2.1/manjaro-xfce-24.2.1-241216-linux612.iso.sig'
     },   
-    'vanillaos-2025-02-20': {
-        'name': 'vanilla',
-        'menu': 'debian',
-        'title': 'VanillaOS (2025-02)',
-        'size': 1.92,
-        'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
-        'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
-    },
     'mxlinux-23.5-std': {
         'name': 'antix',
         'menu': 'mxlinux',
@@ -411,50 +378,95 @@ iso_images = {
         'sum': 'b1c8b06bc8a6dea771c79d8a62c4837698b069ce883c7db264e7c4f1fa152819',
         'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso.sig'
     },
-    'gentoo-2025-09-03': {
-        'name': 'gentoo',
-        'title': 'Gentoo (2025-09-03) Live',
-        'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso',
-        'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso.asc',
-        'sum': '84f0008dc724ab6d4efdb7784655989eca9881f8281e9e8a6987595266032d54',
-        'menu': 'gentoo',
-        # 'hook': fix_gentoo,
-        'prints': ['534E4209AB49EEE1C19D96162C44695DB9F6043D'],
-        'keyserver': 'hkp://keys.openpgp.org',
-    },
-    'open-mandriva-24.12': {
-        'name': 'mandriva',
-        'menu': 'mandriva',
-        'title': 'Open Mandriva V (24.12) KDE',
-        'size': 3.2,
-        'iso': 'https://sourceforge.net/projects/openmandriva/files/release/ROME/24.12/openmandriva.rome-24.12-plasma6.wayland.x86_64.iso',
-        'sum': '6a2a90583d97e18fd374e6f801715e8ed1e6fb61'
-    },
-    'eos-eos6.0.5': {
-        'name': 'endless',
-        'menu': 'debian',
-        'title': 'EndlessOS (6.0.5)',
-        'size': 4,
-        'iso': 'https://images-dl.endlessm.com/release/6.0.5/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.250109-205325.base.iso',
-        'sign': 'https://images-dl.endlessm.com/release/6.0.5/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.250109-205325.base.iso.asc',
-        'keyserver': 'hkp://keys.openpgp.org',
-        'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
-    },
-
 }
 
+#
+#   * FIXME: should be an easy fix
+#
     #
-    #   Mirror is currently fauling!
+    #   Missing image
     #
-    #
-    # Can't make the boot menu work for now ...
-    #
-    # 'open-mandriva-5': {
-    #     'name': 'mandriva',
-    #     'menu': 'mandriva',
-    #     'title': 'Open Mandriva V (23.08) Gnome',
-    #     'size': 2.7,
-    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
-    #     'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
+    # 'arch-2025.03.01': {
+    #     'name': 'arch',
+    #     'menu': 'arch',
+    #     'title': 'Arch Linux (2025.03.01) Live',
+    #     'size': 1.2,
+    #     'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2025.03.01/archlinux-2025.03.01-x86_64.iso',
+    #     'sum': '8150e3c1a479de9134baa13cea4ff78856cca5ebeb9bdfa87ecfce2e47ac9b5b',
+    # },
+    # #
+    # #   UEFI only
+    # #
+    # 'vanillaos-2025-02-20': {
+    #     'name': 'vanilla',
+    #     'menu': 'debian',
+    #     'title': 'VanillaOS (2025-02)',
+    #     'size': 1.92,
+    #     'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
+    #     'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
+    # },
+    # #
+    # #    Hangs on boot
+    # #
+    # 'fedora-41-gnome': {
+    #     'name': 'fedora',
+    #     'menu': 'redhat',
+    #     'title': 'Fedora (41/1.4) Gnome',
+    #     'size': 2.29,
+    #     'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
+    #     'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
+    #     'sign': 'https://fedoraproject.org/fedora.gpg'
     # },
 
+#
+#   * FIXME: On-Hold
+#
+    # #
+    # #   Error finding EFI
+    # #
+    # 'popos-22.04': {
+    #     'name': 'popos',
+    #     'menu': 'pop',
+    #     'title': 'Pop!_OS (22.04) LTS',
+    #     'size': 2.49,
+    #     'iso': 'https://iso.pop-os.org/22.04/amd64/intel/51/pop-os_22.04_amd64_intel_51.iso',
+    #     'sum': '5621e7544a00c1e358d667ce36eb5ae0741fe63431c92cf68c17ff66630b5ded',
+    # },
+    # #
+    # #   Looping menu
+    # #
+    # 'eos-eos6.0.5': {
+    #     'name': 'endless',
+    #     'menu': 'debian',
+    #     'title': 'EndlessOS (6.0.5)',
+    #     'size': 4,
+    #     'iso': 'https://images-dl.endlessm.com/release/6.0.5/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.250109-205325.base.iso',
+    #     'sign': 'https://images-dl.endlessm.com/release/6.0.5/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.250109-205325.base.iso.asc',
+    #     'keyserver': 'hkp://keys.openpgp.org',
+    #     'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
+    # },
+    #
+    #   Menu entry fail
+    #
+    # 'gentoo-2025-09-03': {
+    #     'name': 'gentoo',
+    #     'title': 'Gentoo (2025-09-03) Live',
+    #     'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso',
+    #     'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso.asc',
+    #     'sum': '84f0008dc724ab6d4efdb7784655989eca9881f8281e9e8a6987595266032d54',
+    #     'menu': 'gentoo',
+    #     # 'hook': fix_gentoo,
+    #     'prints': ['534E4209AB49EEE1C19D96162C44695DB9F6043D'],
+    #     'keyserver': 'hkp://keys.openpgp.org',
+    # },
+    # #
+    # #   Failed to find MP-DATA
+    # #
+    # 'open-mandriva-24.12': {
+    #     'name': 'mandriva',
+    #     'menu': 'mandriva',
+    #     'title': 'Open Mandriva V (24.12) KDE',
+    #     'size': 3.2,
+    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/ROME/24.12/openmandriva.rome-24.12-plasma6.wayland.x86_64.iso',
+    #     'sum': '6a2a90583d97e18fd374e6f801715e8ed1e6fb61'
+    # },
