@@ -338,7 +338,9 @@ class Multiboot:
                     print(f"*ERROR - Missing signature => {name}")
                     print(f"*************************************************")
                     return
+                print (">>>>", sign)
                 sign = sign.split("/")[-1]
+                print (">>>>", sign)
             else:
                 with open(f'tmp/{filename}.sig', 'w') as w:
                     w.write(sign)
