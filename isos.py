@@ -429,13 +429,13 @@ iso_images = {
         'iso': 'https://distro.ibiblio.org/puppylinux/puppy-fossa/fossapup64-9.5.iso',
         'sf': 'https://distro.ibiblio.org/puppylinux/puppy-fossa/fossapup64-9.5.iso.sha256.txt',
     },
-    'kali-2023.4': {
+    'kali-2025.1a': {
         'name': 'kali',
         'menu': 'debian',
-        'title': 'Kali Desktop (2023.4) Live',
-        'size': 4.0,
-        'iso': 'https://cdimage.kali.org/kali-2023.4/kali-linux-2023.4-live-amd64.iso',
-        'sum': '1f6aad29795d4bc2fb9ba5ca07b02381d3e3fa28fe80ae54347d31aeac1e36e7'
+        'title': 'Kali Desktop (2025.1a) Live',
+        'size': 4.6,
+        'iso': 'https://cdimage.kali.org/kali-2025.1a/kali-linux-2025.1a-live-amd64.iso',
+        'sum': '2be87a23d5e84f7540e38074fd2bd5b3bcd55ab37f5fb81a3928e1bb34cb9908'
     },
     'popos-22.04': {
         'name': 'popos',
