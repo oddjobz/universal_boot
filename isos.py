@@ -306,14 +306,14 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
         'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
     },
-    'mint-22beta-xfce': {
+    'mint-21.1-xfce': {
         'name': 'mint',
         'menu': 'mint',
-        'title': 'Mint (22-beta) XFCE', 
+        'title': 'Mint (23.1) XFCE', 
         'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22-xfce-64bit-beta.iso',
-        'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
-        'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
+        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
+        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
     },
     'mint-21.3-cinnamon': {
         'name': 'mint',
