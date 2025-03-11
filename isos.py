@@ -414,7 +414,7 @@ iso_images = {
         'title': 'Gentoo (2025-09-03) Live',
         'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso',
         'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso.asc',
-        'sums': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso.sha256',
+        'sum': '84f0008dc724ab6d4efdb7784655989eca9881f8281e9e8a6987595266032d54',
         'menu': 'gentoo',
         # 'hook': fix_gentoo,
         'prints': ['534E4209AB49EEE1C19D96162C44695DB9F6043D'],
