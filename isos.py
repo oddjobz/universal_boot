@@ -378,6 +378,16 @@ iso_images = {
         'sum': 'b1c8b06bc8a6dea771c79d8a62c4837698b069ce883c7db264e7c4f1fa152819',
         'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso.sig'
     },
+    'fedora-41-gnome': {
+        'name': 'fedora',
+        'menu': 'redhat',
+        'title': 'Fedora (41/1.4) Gnome',
+        'size': 2.29,
+        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
+        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
+        'sign': 'https://fedoraproject.org/fedora.gpg'
+    },
+
 }
 
 #
@@ -405,18 +415,9 @@ iso_images = {
     #     'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
     #     'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
     # },
-    # #
-    # #    Hangs on boot
-    # #
-    # 'fedora-41-gnome': {
-    #     'name': 'fedora',
-    #     'menu': 'redhat',
-    #     'title': 'Fedora (41/1.4) Gnome',
-    #     'size': 2.29,
-    #     'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
-    #     'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
-    #     'sign': 'https://fedoraproject.org/fedora.gpg'
-    # },
+
+
+
 
 #
 #   * FIXME: On-Hold
