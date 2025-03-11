@@ -215,7 +215,7 @@ iso_images = {
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22.1-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com',
+        'keyserver': 'hkps://keys.openpgp.org',
         'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8', '27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'mint-22.1-mate': {
@@ -226,6 +226,7 @@ iso_images = {
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/testing/linuxmint-22.1-mate-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'keyserver': 'hkps://keys.openpgp.org',
         'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8', '27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'mint-22.1-xfce': {
@@ -236,6 +237,7 @@ iso_images = {
         'iso':  'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'keyserver': 'hkps://keys.openpgp.org',
         'prints': ['3B794DE6D4320FCE594F4171279E7CF5D8D56EC8', '27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'bodhi-7.0.0-standard': {
