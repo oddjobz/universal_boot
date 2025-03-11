@@ -314,6 +314,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso':  'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
 
 # linuxmint-22.1-cinnamon-64bit.iso	2025-01-10 16:16	2.8G
