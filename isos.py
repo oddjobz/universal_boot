@@ -445,16 +445,15 @@ iso_images = {
         'iso': 'https://iso.pop-os.org/22.04/amd64/intel/33/pop-os_22.04_amd64_intel_33.iso',
         'sum': 'ff834c94c6bc970a9508da24fccf32ac829a51030488e612cc1ab4ecf4e0859d',
     },
-    'fedora-38-gnome': {
+    'fedora-41-gnome': {
         'name': 'fedora',
         'menu': 'redhat',
-        'title': 'Fedora (38/1.6) Gnome',
-        'size': 2.1,
-        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso',
-        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-38-1.6-x86_64-CHECKSUM',
+        'title': 'Fedora (41/1.4) Gnome',
+        'size': 2.29,
+        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
+        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
-
 
     'manjaro-24.0.3-gnome': {
         'name': 'manjaro',
