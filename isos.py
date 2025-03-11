@@ -108,7 +108,7 @@ iso_images = {
         'menu': 'debian',
         'title': 'Sparky (2025.03) LXQt',
         'size': 2.2,
-        'iso': 'sparkylinux-2025.03-x86_64-lxqt.iso',
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-2025.03-x86_64-lxqt.iso',
         'sum': 'e236814eea7def783cb45c685a5bff4d1a15df9e5e1abb86784c08aa5c0947fda338b96f5c2bc75306ba7af576c0b50fde17dce1b9fc97cc36deb38e35a922c1'
     },
     'sparky-07.02-lxqt': {
