@@ -264,7 +264,7 @@ class Multiboot:
 
     def update_key (self, server, key):
         print (f'Updating "{key}" using keyserver "{server}"')
-        ret = call([f'gpg --homedir .gnupg --keyid-format long --keyserver {server} --recv-keys {key} 2>/tmp/SHAERR'], shell=True)
+        ret = call([f'gpg --keyid-format long --keyserver {server} --recv-keys {key} 2>/tmp/SHAERR'], shell=True)
         if ret:
             with open('/tmp/SHAERR') as io:
                 print(io.read())
@@ -349,13 +349,13 @@ class Multiboot:
                 print(f"*************************************************")
                 return
             if key:
-                ret = call([f'gpg --homedir .gnupg --import tmp/{key.split("/")[-1]} 2>/tmp/SHAERR'], shell=True)
+                ret = call([f'gpg --import tmp/{key.split("/")[-1]} 2>/tmp/SHAERR'], shell=True)
                 if ret:
                     print (f'* ERROR importing key for {name}')
                     with open('/tmp/SHAERR') as io:
                         print(io.read())
                     return                
-            ret = call([f'gpg --homedir .gnupg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR'], shell=True)
+            ret = call([f'gpg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR'], shell=True)
             if ret:
                 print (f'* ERROR verifying {name}')
                 with open('/tmp/SHAERR') as io:
@@ -380,11 +380,11 @@ class Multiboot:
             sum_file = sums.split('/')[-1]
             
             if name.startswith('fedora') or name.startswith('gentoo'):
-                ret = call([f'gpgv --homedir .gnupg --keyring tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
+                ret = call([f'gpgv --keyring tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
             else:
-                ret = call([f'gpg --homedir .gnupg --keyid-format long --verify tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
+                ret = call([f'gpg --keyid-format long --verify tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
             if ret:
-                print (f'* ERROR on {name} - SHA256SUMS corrupt')
+                print (f'* ERROR on {name} - SHASUMS corrupt')
                 if ret:
                     with open('/tmp/SHAERR') as io:
                         print(io.read())
