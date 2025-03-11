@@ -306,7 +306,7 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'sums': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt',
         'sign': 'https://ftp.crifo.org/mint-cd/testing/sha256sum.txt.gpg',
     },
-    'mint-23.1-xfce': {
+    'mint-22.1-xfce': {
         'name': 'mint',
         'menu': 'mint',
         'title': 'Mint (23.1) XFCE', 
