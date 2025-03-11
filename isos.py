@@ -376,7 +376,8 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'size': 3.1,
         'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso',
         'sums': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sha512sum',
-        'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sig'
+        'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sig',
+        'prints': ['CDF595A1']
     },
     #
     #   FIXME: bad key
