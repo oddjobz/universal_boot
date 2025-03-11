@@ -409,13 +409,14 @@ class Multiboot:
             
         wanted512 = self.checksum512(path)
         wanted256 = self.checksum256(path)
+        wanted1 = self.checksum1(path)
             
         if sum:
-            if sum in (wanted256, wanted512):
+            if sum in (wanted256, wanted512, wanted1):
                 print(f'* Signature OK')
                 self.mark_verified (name)
             else:
-                print(f'* Signature BAD, found {sum}, wanted: {wanted256} / {wanted512} (1)')
+                print(f'* Signature BAD, found {sum}, wanted: {wanted1} / {wanted256} / {wanted512} (1)')
                 self.mark_verified (name)
             return
 
@@ -470,6 +471,9 @@ class Multiboot:
                     h.update(chunk)
                     progress.update()
         return h.hexdigest()
+
+    def checksum1(self, path):
+        return self.checksum(path, hashlib.sha1)
 
     def checksum256(self, path):
         return self.checksum(path, hashlib.sha256)
