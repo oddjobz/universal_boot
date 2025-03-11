@@ -377,7 +377,8 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso',
         'sums': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sha512sum',
         'sign': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Mercury-2025.02.08.iso.sig',
-        'prints': ['CDF595A1']
+        'prints': ['CDF595A1'],
+        'keyserver': 'keyserver.ubuntu.com',
     },
     #
     #   FIXME: bad key
