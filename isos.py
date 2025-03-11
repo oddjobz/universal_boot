@@ -360,11 +360,11 @@ rLQfQx4sxrw7ARh4gytpHs9t1+RZ6w==
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso',
         'sum': '55601a03d305159569b77e6a6008aedc59f5e81df1beb35f6224c0eae6efde70'
     },
-    'arch-2024.02.01': {
+    'arch-2025.03.01': {
         'name': 'arch',
         'menu': 'arch',
-        'title': 'Arch Linux (2024.01.01) Live',
-        'size': 0.93,
+        'title': 'Arch Linux (2025.03.01) Live',
+        'size': 1.2,
         'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2025.03.01/archlinux-2025.03.01-x86_64.iso',
         'sum': '8150e3c1a479de9134baa13cea4ff78856cca5ebeb9bdfa87ecfce2e47ac9b5b',
     },
