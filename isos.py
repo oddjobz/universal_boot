@@ -512,29 +512,29 @@ iso_images = {
         'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
         'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
     },
-    'mxlinux-23.2-std': {
+    'mxlinux-23.5-std': {
         'name': 'antix',
         'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) Stable',
+        'title': 'MX Linux (23.5) Stable',
         'size': 2.2,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_x64.iso',
-        'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso',
+        'sum': '39c6b7d14d707e602acd91fb651fb3460f86eae80a4038696d626a58ff571960'
     },
-    'mxlinux-23.2-ahs': {
+    'mxlinux-23.5-ahs': {
         'name': 'antix',
         'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) Current',
-        'size': 22,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_ahs_x64.iso',
-        'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
-    },
-    'mxlinux-23.2-kde': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) KDE',
+        'title': 'MX Linux (23.5) Current',
         'size': 2.6,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
-        'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso',
+        'sum': '3a996902b08b7d18d3dd513efd6cd78070d963cb5c66ac5a51c6c876bc96e807'
+    },
+    'mxlinux-23.5-kde': {
+        'name': 'antix',
+        'menu': 'mxlinux',
+        'title': 'MX Linux (23.5) KDE',
+        'size': 2.6,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso',
+        'sum': '0c19f64a9316bf1413233a89e34b2dfc58506dc076fce7ae81e46b94fefc8bb3'
     },
     #
     #   Need to look at the Endless boot process, debian isn't working
