@@ -411,7 +411,7 @@ class Multiboot:
         wanted256 = self.checksum256(path)
             
         if sum:
-            if sum in (wanted256, wanted256):
+            if sum in (wanted256, wanted512):
                 print(f'* Signature OK')
                 self.mark_verified (name)
             else:
