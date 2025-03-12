@@ -148,64 +148,77 @@ iso_images = {
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Gnome',
         'size': 5.7,
-        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04-desktop-amd64.iso',
+        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04.2-desktop-amd64.iso',
         'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',        
+        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',  
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-xfce': {
         'name': 'xubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) XFCE',
         'size': 3.8,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/xubuntu-24.04.2-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-kde': {
         'name': 'kubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) KDE',
         'size': 3.9,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/kubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/kubuntu-24.04.2-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-lxde': {
         'name': 'lubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) LXDE',
         'size': 3.1,
-        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/lubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/lubuntu-24.04.2-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-budgie': {
         'name': 'bubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Budgie',
         'size': 3.5,
-        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/ubuntu-budgie-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS.gpg',
+        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/ubuntu-budgie-24.04.2-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-mate': {      
         'name': 'mubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) MATE',
         'size': 3.9,
-        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04.2-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-studio': {
         'name': 'subuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Studio',
         'size': 4.7,
-        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04-dvd-amd64.iso',
+        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04.2-dvd-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'mint-22.1-cinnamon': {
         'name': 'mint',
@@ -299,7 +312,7 @@ iso_images = {
         'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
         'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
     },
-    'puppy-9.5-bookworm': {
+    'puppy-10.0.10-bookworm': {
         'name': 'puppy',
         'menu': 'puppy',
         'title': 'Puppy Linux (10.0.10) Bookworm',
@@ -415,10 +428,6 @@ iso_images = {
     #     'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
     #     'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
     # },
-
-
-
-
 #
 #   * FIXME: On-Hold
 #
