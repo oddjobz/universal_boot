@@ -150,7 +150,9 @@ iso_images = {
         'size': 5.7,
         'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04.2-desktop-amd64.iso',
         'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',        
+        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',  
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-xfce': {
         'name': 'xubuntu',
@@ -160,6 +162,8 @@ iso_images = {
         'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/xubuntu-24.04.2-desktop-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-kde': {
         'name': 'kubuntu',
@@ -169,6 +173,8 @@ iso_images = {
         'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/kubuntu-24.04.2-desktop-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-lxde': {
         'name': 'lubuntu',
@@ -178,6 +184,8 @@ iso_images = {
         'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/lubuntu-24.04.2-desktop-amd64.iso',
         'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS',
         'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-budgie': {
         'name': 'bubuntu',
@@ -187,6 +195,8 @@ iso_images = {
         'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/ubuntu-budgie-24.04.2-desktop-amd64.iso',
         'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS',
         'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-mate': {      
         'name': 'mubuntu',
@@ -196,6 +206,8 @@ iso_images = {
         'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04.2-desktop-amd64.iso',
         'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS',
         'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-studio': {
         'name': 'subuntu',
@@ -205,7 +217,8 @@ iso_images = {
         'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04.2-dvd-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'mint-22.1-cinnamon': {
         'name': 'mint',
