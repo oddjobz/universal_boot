@@ -11,7 +11,6 @@
 #                                                                           #
 #############################################################################
 #
-#   TODO:
 #   4. Fix init.sh and test from key
 #
 #############################################################################
@@ -161,7 +160,7 @@ class Multiboot:
                     except TemplateNotFound:
                         print(f"ERROR: template missing: {path}")
         #
-        #   TODO: now copy grub.cfg onto boot partition for USB key
+        #   FIXME: now copy grub.cfg onto boot partition for USB key
         #
         if not Path('/usr/sbin/blkid').exists():
             print ('* blkid tool not available')
