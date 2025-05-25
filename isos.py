@@ -25,7 +25,7 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'debian-12.11-kde': {
+   'debian-12.11-kde': {
         'name': 'debian',
         'menu': 'debian',
         'title': 'Debian (12.11) KDE',
@@ -222,8 +222,6 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
 =yEJ5
 -----END PGP SIGNATURE-----"""
     },
-
-
     'ubuntu-25.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
@@ -294,61 +292,73 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Gnome',
         'size': 5.7,
-        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04-desktop-amd64.iso',
+        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04.2-desktop-amd64.iso',
         'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',        
+        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',  
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-xfce': {
         'name': 'xubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) XFCE',
         'size': 3.8,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/xubuntu-24.04.2-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-kde': {
         'name': 'kubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) KDE',
         'size': 3.9,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/kubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/kubuntu-24.04.2-desktop-amd64.iso',
+        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-lxde': {
         'name': 'lubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) LXDE',
         'size': 3.1,
-        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/lubuntu-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04/release/SHA256SUMS.gpg',
+        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/lubuntu-24.04.2-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-budgie': {
         'name': 'bubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Budgie',
         'size': 3.5,
-        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/ubuntu-budgie-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04/release/SHA256SUMS.gpg',
+        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/ubuntu-budgie-24.04.2-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-mate': {      
         'name': 'mubuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) MATE',
         'size': 3.9,
-        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/SHA256SUMS.gpg',
+        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04.2-desktop-amd64.iso',
+        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS',
+        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS.gpg',
+        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
+        'keyserver': 'keyserver.ubuntu.com'
     },
     'ubuntu-24.04-studio': {
         'name': 'subuntu',
         'menu': 'debian-loop',
         'title': 'Ubuntu (24.04) Studio',
         'size': 4.7,
-        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04-dvd-amd64.iso',
+        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04.2-dvd-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
         'keyserver': 'hkp://keyserver.ubuntu.com'        
@@ -433,32 +443,32 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'menu': 'zorin',
         'title': 'Zorin Desktop (17.0)',
         'size': 3.6,
-        'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17-Core-64-bit.iso',
-        'sum': '0191e343586d40e1fdaa90dddae0b8c2105223babb63640c05daf29881a4ccfd',
+        'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17.2-Core-64-bit.iso',
+        'sum': 'e68d49172964e4d0aa39ac1d77674d724b0b835658836a56fc1b318680deaed6',
     },
     'antix-23-full-64': {
         'name': 'antix',
         'menu': 'antix',
         'title': 'antiX (23) Full 64-bit',
-        'size': 1.7,
-        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23/antiX-23_x64-full.iso',
-        'sum': '20fd8f5bf2ef0007b743ceb441db66ae46c4a73fdb9816619fa3211561671524'
+        'size': 2.1,
+        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
+        'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
     },
     'antix-23-full-32': {
         'name': 'antix',
         'menu': 'antix',
         'title': 'antiX (23) Full 32-bit',
-        'size': 1.7,
-        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23/antiX-23_386-full.iso',
-        'sum': '551165bf52bf851b0763e1347c6bff23ba19bea833c2e1d107a9b984ba0a4585'
+        'size': 1.8,
+        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
+        'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
     },
-    'puppy-9.5-fossa': {
+    'puppy-10.0.10-bookworm': {
         'name': 'puppy',
         'menu': 'puppy',
-        'title': 'Puppy Linux (9.5) Fossa',
+        'title': 'Puppy Linux (10.0.10) Bookworm',
         'size': 0.41,
-        'iso': 'https://distro.ibiblio.org/puppylinux/puppy-fossa/fossapup64-9.5.iso',
-        'sf': 'https://distro.ibiblio.org/puppylinux/puppy-fossa/fossapup64-9.5.iso.sha256.txt',
+        'iso': 'https://distro.ibiblio.org/puppylinux/puppy-bookwormpup/BookwormPup64/10.0.10/BookwormPup64_10.0.10.iso',
+        'sum': '860eeb70e00a1517753037b5c7278b8a747b8e7b091f799ebe4ecc6be0fe96af'
     },
     'kali-2025.1c': {
         'name': 'kali',
@@ -488,23 +498,25 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'manjaro-24.0.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (23.1.3) Gnome',
+        'title': 'Manjaro (24.2.1) Gnome',
         'size': 3.9,
-        'iso': 'https://download.manjaro.org/gnome/24.0.3/manjaro-gnome-24.0.3-240702-linux69.iso',
-        'sum': '8a121303e64d78832399336f7aed307887f31f010886bcf408c34aa3ee8d5fc5'
+        'iso': 'https://download.manjaro.org/gnome/24.2.1/manjaro-gnome-24.2.1-241216-linux612.iso',
+        'sum': 'd6ccfbfccea732857bd60d33925852a639f08e570336f68e179479fa99df3866',
+        'sign': 'https://download.manjaro.org/gnome/24.2.1/manjaro-gnome-24.2.1-241216-linux612.iso.sig'
     },
-    'manjaro-24.0.3-kde': {
+    'manjaro-24.2.1-kde': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (24.0.3) KDE',
+        'title': 'Manjaro (24.2.1) KDE',
         'size': 3.7,
-        'iso': 'https://download.manjaro.org/kde/24.0.3/manjaro-kde-24.0.3-240702-linux69.iso',
-        'sum': 'd5c4cd8ebf1bc0b371610a6dd8a577173b388f9ac5c20c9cd0ff72ad48ea195c'
+        'iso': 'https://download.manjaro.org/kde/24.2.1/manjaro-kde-24.2.1-241216-linux612.iso',
+        'sum': 'e8cb6f9617593707bb7a96ccfc6051e4e3d25635e416cfdd5ae73e07fd1cd65f',
+        'sign': 'https://download.manjaro.org/kde/24.2.1/manjaro-kde-24.2.1-241216-linux612.iso.sig'
     },
-    'manjaro-24.0.3-xfce': {
+    'manjaro-24.2.1-xfce': {
         'name': 'manjaro',
         'menu': 'manjaro',
-        'title': 'Manjaro (24.0.3) XFCE',
+        'title': 'Manjaro (24.2.1) XFCE',
         'size': 3.6,
         'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
         'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
@@ -520,77 +532,125 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'mxlinux-23.2-std': {
         'name': 'antix',
         'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) Stable',
+        'title': 'MX Linux (23.5) Stable',
         'size': 2.2,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_x64.iso',
-        'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso',
+        'sum': '39c6b7d14d707e602acd91fb651fb3460f86eae80a4038696d626a58ff571960',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso.sig'
     },
-    'mxlinux-23.2-ahs': {
+    'mxlinux-23.5-ahs': {
         'name': 'antix',
         'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) Current',
-        'size': 22,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.2_ahs_x64.iso',
-        'sum': '968f9d6b01bb966cac025b6971cdcdb9dad39bb74a2600162f9f4bd7e6ab9eae'
-    },
-    'mxlinux-23.2-kde': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.2) KDE',
+        'title': 'MX Linux (23.5) Current',
         'size': 2.6,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.2_KDE_x64.iso',
-        'sum': 'e318809374e8f07ab259385b6f6ad85fb5be8e941fd7057b4fdf088a4f6ac479'
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso',
+        'sum': '3a996902b08b7d18d3dd513efd6cd78070d963cb5c66ac5a51c6c876bc96e807',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso.sig'
     },
+    'mxlinux-23.5-kde': {
+        'name': 'antix',
+        'menu': 'mxlinux',
+        'title': 'MX Linux (23.5) KDE',
+        'size': 2.6,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso',
+        'sum': '0c19f64a9316bf1413233a89e34b2dfc58506dc076fce7ae81e46b94fefc8bb3',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso.sig'
+    },
+    'mxlinux-23.5-flux': {
+        'name': 'antix',
+        'menu': 'mxlinux',
+        'title': 'MX Linux (23.5) Fluxbox',
+        'size': 1.8,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso',
+        'sum': 'b1c8b06bc8a6dea771c79d8a62c4837698b069ce883c7db264e7c4f1fa152819',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso.sig'
+    },
+    'fedora-41-gnome': {
+        'name': 'fedora',
+        'menu': 'redhat',
+        'title': 'Fedora (41/1.4) Gnome',
+        'size': 2.29,
+        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
+        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
+        'sign': 'https://fedoraproject.org/fedora.gpg'
+    },
+
+}
+
+#
+#   * FIXME: should be an easy fix
+#
     #
-    #   Need to look at the Endless boot process, debian isn't working
+    #   Missing image
     #
-    # 'eos-eos6.0.1': {
+    # 'arch-2025.03.01': {
+    #     'name': 'arch',
+    #     'menu': 'arch',
+    #     'title': 'Arch Linux (2025.03.01) Live',
+    #     'size': 1.2,
+    #     'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2025.03.01/archlinux-2025.03.01-x86_64.iso',
+    #     'sum': '8150e3c1a479de9134baa13cea4ff78856cca5ebeb9bdfa87ecfce2e47ac9b5b',
+    # },
+    # #
+    # #   UEFI only
+    # #
+    # 'vanillaos-2025-02-20': {
+    #     'name': 'vanilla',
+    #     'menu': 'debian',
+    #     'title': 'VanillaOS (2025-02)',
+    #     'size': 1.92,
+    #     'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
+    #     'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
+    # },
+#
+#   * FIXME: On-Hold
+#
+    # #
+    # #   Error finding EFI
+    # #
+    # 'popos-22.04': {
+    #     'name': 'popos',
+    #     'menu': 'pop',
+    #     'title': 'Pop!_OS (22.04) LTS',
+    #     'size': 2.49,
+    #     'iso': 'https://iso.pop-os.org/22.04/amd64/intel/51/pop-os_22.04_amd64_intel_51.iso',
+    #     'sum': '5621e7544a00c1e358d667ce36eb5ae0741fe63431c92cf68c17ff66630b5ded',
+    # },
+    # #
+    # #   Looping menu
+    # #
+    # 'eos-eos6.0.5': {
     #     'name': 'endless',
     #     'menu': 'debian',
-    #     'title': 'EndlessOS (6.0.1)',
-    #     'size': 3.74,
-    #     'iso': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso',
-    #     'sums': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.sha256',
-    #     'sign': 'https://images-dl.endlessm.com/release/6.0.1/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.240611-152433.base.iso.asc',
+    #     'title': 'EndlessOS (6.0.5)',
+    #     'size': 4,
+    #     'iso': 'https://images-dl.endlessm.com/release/6.0.5/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.250109-205325.base.iso',
+    #     'sign': 'https://images-dl.endlessm.com/release/6.0.5/eos-amd64-amd64/base/eos-eos6.0-amd64-amd64.250109-205325.base.iso.asc',
     #     'keyserver': 'hkp://keys.openpgp.org',
     #     'prints': ['CB500F7BC9233FAD32B4E7209E0C1250587A279C']
     # },
     #
-    #   Mirror is currently fauling!
+    #   Menu entry fail
     #
-    # 'mxlinux-23.2-flux': {
-    #     'name': 'antix',
-    #     'menu': 'mxlinux',
-    #     'title': 'MX Linux (23.2) Fluxbox',
-    #     'size': 0,
-    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.2_fluxbox_x64.iso',
-    #     'sum': '273fdd4d90b7326c9b4ec67284cc1641aa12bbfb9f2acae0502681616536a080'
-    # },
-}
-
-
-    #
-    # Can't make the boot menu work for now ...
-    #
-    # 'open-mandriva-5': {
-    #     'name': 'mandriva',
-    #     'menu': 'mandriva',
-    #     'title': 'Open Mandriva V (23.08) Gnome',
-    #     'size': 2.7,
-    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso',
-    #     'sf': 'https://sourceforge.net/projects/openmandriva/files/release/5.0/openmandriva.5.0-gnome.x86_64.iso.sha256',
-    # },
-
-    # FIXME: image validation is non-standard, needs work
-    # 'gentoo-2023-09-03': {
+    # 'gentoo-2025-09-03': {
     #     'name': 'gentoo',
-    #     'title': 'Gentoo (2024-01-28) Live',
-    #     'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240128T165521Z.iso',
-    #     'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240121T170320Z.iso.asc',
-    #     'sums': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20240128T165521Z.iso.sha256',
+    #     'title': 'Gentoo (2025-09-03) Live',
+    #     'iso': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso',
+    #     'sign': 'https://distfiles.gentoo.org/releases/amd64/autobuilds/20250309T170330Z/livegui-amd64-20250309T170330Z.iso.asc',
+    #     'sum': '84f0008dc724ab6d4efdb7784655989eca9881f8281e9e8a6987595266032d54',
     #     'menu': 'gentoo',
-    #     'hook': fix_gentoo,
+    #     # 'hook': fix_gentoo,
     #     'prints': ['534E4209AB49EEE1C19D96162C44695DB9F6043D'],
     #     'keyserver': 'hkp://keys.openpgp.org',
     # },
-    #
+    # #
+    # #   Failed to find MP-DATA
+    # #
+    # 'open-mandriva-24.12': {
+    #     'name': 'mandriva',
+    #     'menu': 'mandriva',
+    #     'title': 'Open Mandriva V (24.12) KDE',
+    #     'size': 3.2,
+    #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/ROME/24.12/openmandriva.rome-24.12-plasma6.wayland.x86_64.iso',
+    #     'sum': '6a2a90583d97e18fd374e6f801715e8ed1e6fb61'
+    # },
