@@ -354,11 +354,13 @@ class Multiboot:
                     with open('/tmp/SHAERR') as io:
                         print(io.read())
                     return                
+            # print (f'gpg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR')
             ret = call([f'gpg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR'], shell=True)
             if ret:
                 print (f'* ERROR verifying {name}')
                 with open('/tmp/SHAERR') as io:
                     print(io.read())
+                    return self.mark_unverified (name)
             self.mark_verified (name)
             return
         if not sign or not sums:
@@ -416,7 +418,7 @@ class Multiboot:
                 self.mark_verified (name)
             else:
                 print(f'* Signature BAD, found {sum}, wanted: {wanted1} / {wanted256} / {wanted512} (1)')
-                self.mark_verified (name)
+                self.unmark_verified (name)
             return
 
         mode = 'text'

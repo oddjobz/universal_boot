@@ -109,7 +109,18 @@ iso_images = {
         'title': 'Sparky (7.7) LXQt',
         'size': 2.0,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.7-x86_64-lxqt.iso',
-        'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde'
+        'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
+7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
+5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
+uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
+CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
+7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
+M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
+=jUJ5
+-----END PGP SIGNATURE-----"""
     },
     'sparky-7.7-mate': {
         'name': 'sparky',
@@ -137,14 +148,14 @@ q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.7-x86_64-xfce.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
-7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
-5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
-uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
-CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
-7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
-M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
-=jUJ5
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SFsACgkQw50/ciyG
+7spB9wgAkdepKiAJuXw1HXWv4ouvrYdAgix28i5TePfhfX1z8Z6wgMNGK79/Z3lV
+iFtRlSuwSo+s/p1ylWA/8g/c11VjvUO1wbfeyBeeOVhq6c8KgDy+XPNIZ4DtgiCR
+PiBfuf5e3QflW9BTxQ5bL094qf0C194RRRSHRkkMYu4DkCUan+i/9V0h4vhZH5I3
+ziFPzaDbloq5gc4GpBkfEJ5t6LMo+ziW87rrQ8XeYfwAkpzLXbxIgpsH6v2Xa6Ug
+zPWj48exS2EqWBEuJpey3+LcbkCAXKuFqA3QtLbksYICjG8wrbHWW2a74KEqI8WB
+eRE2uCJDoZEO4dc1SSfo9xQwzvmJ8g==
+=/l9s
 -----END PGP SIGNATURE-----"""
     },
     'sparky-7.7-kde': {
@@ -204,7 +215,7 @@ FlshxPmljXL+BbVCJlUjn5D9vwww0w==
 =z14S
 -----END PGP SIGNATURE-----"""
     },
-    'sparky-77.7-i686-cli': {
+    'sparky-7.7-i686-cli': {
         'name': 'sparky',
         'menu': 'debian-loop',
         'title': 'Sparky (7.7) CLI (32 Bit)',
