@@ -248,7 +248,7 @@ class Multiboot:
         if net_size + 1 > free:
             prompt += '\nWARNING: THIS DOWNLOAD MAY NOT FIT ON YOUR KEY!'
         w.calc_height(prompt)
-        if not w.yesno(prompt, 'no'):
+        if w.yesno(prompt, 'no'):
             for name in to_delete:
                 print (f"* Delete: {name}")
                 entry = iso_images[name]
