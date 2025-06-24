@@ -110,6 +110,8 @@ iso_images = {
         'size': 2.0,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.7-x86_64-lxqt.iso',
         'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
 iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
@@ -128,6 +130,8 @@ M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
         'title': 'Sparky (7.7) Mate',
         'size': 2.2,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.7-x86_64-mate.iso',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
 iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2U1YACgkQw50/ciyG
@@ -146,6 +150,8 @@ q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
         'title': 'Sparky (7.7) XFCE',
         'size': 1.8,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.7-x86_64-xfce.iso',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
 iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SFsACgkQw50/ciyG
@@ -164,6 +170,8 @@ eRE2uCJDoZEO4dc1SSfo9xQwzvmJ8g==
         'title': 'Sparky (7.7) KDE',
         'size': 2.3,
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.7-x86_64-kde.iso',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
 iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SIQACgkQw50/ciyG
@@ -182,6 +190,8 @@ hyTk+bE7386IxQEJ48bnWJillInB5g==
         'menu': 'debian',
         'title': 'Sparky (7.7) Minimal',
         'size': 1.6,
+        'keyserver': 'keyserver.ubuntu.com',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-x86_64-minimalgui.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
@@ -201,6 +211,8 @@ SmuALsmZTQLOzjN0r9Cke+o443nR7Q==
         'menu': 'debian-loop',
         'title': 'Sparky (7.7) Min (32 bit)',
         'size': 1.3,
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-i686-minimalgui.iso',
         'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
         'sign': """-----BEGIN PGP SIGNATURE-----
@@ -220,6 +232,8 @@ FlshxPmljXL+BbVCJlUjn5D9vwww0w==
         'menu': 'debian-loop',
         'title': 'Sparky (7.7) CLI (32 Bit)',
         'size': 0.796,
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.7-i686-minimalcli.iso',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
@@ -295,7 +309,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/plucky/release/ubuntustudio-25.04-desktop-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/plucky/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/plucky/release/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
+        'keyserver': 'keyserver.ubuntu.com'        
     },
 
     'ubuntu-24.04': {
@@ -372,7 +386,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04.2-dvd-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com'        
+        'keyserver': 'keyserver.ubuntu.com'        
     },
     'mint-22.1-cinnamon': {
         'name': 'mint',
@@ -382,8 +396,8 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
         'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
         'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        'keyserver': 'hkp://keyserver.ubuntu.com',
-        'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
+        # 'keyserver': 'keyserver.ubuntu.com',
+        # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'mint-22.1-mate': {
         'name': 'mint',

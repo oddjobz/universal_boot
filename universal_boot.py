@@ -137,6 +137,7 @@ class Multiboot:
             if 'keyserver' in entry:
                 for key in entry.get('prints', []):
                     self.update_key(entry['keyserver'], key)
+        print ("Done")
     
     def grub (self):
         self.read_isos ()
@@ -262,11 +263,14 @@ class Multiboot:
             self.grub()
 
     def update_key (self, server, key):
-        print (f'Updating "{key}" using keyserver "{server}"')
-        ret = call([f'gpg --keyid-format long --keyserver {server} --recv-keys {key} 2>/tmp/SHAERR'], shell=True)
-        if ret:
-            with open('/tmp/SHAERR') as io:
-                print(io.read())
+        try:
+            print (f'Updating "{key}" using keyserver "{server}"')
+            ret = call([f'gpg --keyid-format long --keyserver {server} --recv-keys {key} 2>/tmp/SHAERR'], shell=True)
+            if ret:
+                with open('/tmp/SHAERR') as io:
+                    print(io.read())
+        except Exception:
+            print (f"Failed: {server} => {key}")
 
     def download (self, name):
         entry = iso_images[name]
