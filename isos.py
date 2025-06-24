@@ -394,8 +394,9 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'title': 'Mint (22.1) Cinnamon', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
-        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'sum': 'ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f',
+        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
+        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
         # 'keyserver': 'keyserver.ubuntu.com',
         # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
@@ -405,8 +406,9 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'title': 'Mint (22.1) Mate', 
         'size': 3.0,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-mate-64bit.iso',
-        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'sum': 'd286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0',
+        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
+        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
     },
     'mint-22.1-xfce': {
         'name': 'mint',
@@ -414,8 +416,11 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'title': 'Mint (22.1) XFCE', 
         'size': 2.9,
         'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-xfce-64bit.iso',
-        'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        'sum': '6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d',
+        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
+        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
+        # 'keyserver': 'keyserver.ubuntu.com',
+        # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
     },
     'bodhi-7.0.0-standard': {
         'name': 'bodhi',

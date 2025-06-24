@@ -384,10 +384,14 @@ class Multiboot:
             sign_file = sign.split('/')[-1]
             sum_file = sums.split('/')[-1]
             
+            print ("HERE")
             if name.startswith('fedora') or name.startswith('gentoo'):
                 ret = call([f'gpgv --keyring tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
             else:
                 ret = call([f'gpg --keyid-format long --verify tmp/{sign_file} tmp/{sum_file} 2>/tmp/SHAERR'], shell=True)
+
+            print ("DONE")
+
             if ret:
                 print (f'* ERROR on {name} - SHASUMS corrupt')
                 if ret:
