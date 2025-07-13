@@ -38,6 +38,19 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
+   'debian-trixie': {
+        'name': 'debian',
+        'menu': 'debian',
+        'title': 'Debian (Trixie) Installer',
+        'size': 3.7,
+        'iso': 'https://cdimage.debian.org/cdimage/trixie_di_rc2/amd64/iso-dvd/debian-trixie-DI-rc2-amd64-DVD-1.iso',
+        'sums': 'https://cdimage.debian.org/cdimage/trixie_di_rc2/amd64/iso-dvd/SHA512SUMS',
+        'sign': 'https://cdimage.debian.org/cdimage/trixie_di_rc2/amd64/iso-dvd/SHA256SUMS.sign',
+        'prints': [
+            'DF9B9C49EAA9298432589D76DA87E80D6294BE9B'
+        ],
+        'keyserver': 'keyring.debian.org'
+    },
     'debian-12.11-lxde': {
         'name': 'debian',
         'menu': 'debian',
