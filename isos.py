@@ -125,157 +125,6 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'sparky-7.7-lxqt': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'cls': 'debian',        
-        'title': 'Sparky (7.7) LXQt',
-        'size': 2.0,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.7-x86_64-lxqt.iso',
-        'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
-7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
-5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
-uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
-CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
-7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
-M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
-=jUJ5
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-mate': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'cls': 'debian',        
-        'title': 'Sparky (7.7) Mate',
-        'size': 2.2,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.7-x86_64-mate.iso',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2U1YACgkQw50/ciyG
-7srl8wgA1YlKUtSUXDk1j4iMDZaC0+heecXrSmDC3OOSENhqiTWRQzHm8RFp0JIN
-HZgXTeOaakVWiCgnY2jSvJtq6QgnBus0VA/7pUD5m9LlzlxFZxSssaBL7nisJ8L9
-gZQSoMJcYgPKVzztGWpaPrMn9f4DyOjpCWN0/yZcdOhMwEoYXFoUTCk8hA9t9Ve8
-uzPPUGI/7f+V/or3+aS7zDHCYpj9CJyp0qipP9v51YUwv/TIDqIMj5Yu4NJioSbc
-uQ3Y6GiRcBlNVxqNaj9DGOR0BIDk4YIKFh7LRgKCeuCEnnh4B565CGXIshUhZ17p
-q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
-=RGzf
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-xfce': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'cls': 'debian',        
-        'title': 'Sparky (7.7) XFCE',
-        'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.7-x86_64-xfce.iso',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SFsACgkQw50/ciyG
-7spB9wgAkdepKiAJuXw1HXWv4ouvrYdAgix28i5TePfhfX1z8Z6wgMNGK79/Z3lV
-iFtRlSuwSo+s/p1ylWA/8g/c11VjvUO1wbfeyBeeOVhq6c8KgDy+XPNIZ4DtgiCR
-PiBfuf5e3QflW9BTxQ5bL094qf0C194RRRSHRkkMYu4DkCUan+i/9V0h4vhZH5I3
-ziFPzaDbloq5gc4GpBkfEJ5t6LMo+ziW87rrQ8XeYfwAkpzLXbxIgpsH6v2Xa6Ug
-zPWj48exS2EqWBEuJpey3+LcbkCAXKuFqA3QtLbksYICjG8wrbHWW2a74KEqI8WB
-eRE2uCJDoZEO4dc1SSfo9xQwzvmJ8g==
-=/l9s
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-kde': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'cls': 'debian',        
-        'title': 'Sparky (7.7) KDE',
-        'size': 2.3,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.7-x86_64-kde.iso',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SIQACgkQw50/ciyG
-7somzgf8D/qNySTGpfC+caN29LC1cmXNW3nUITZFmQjUQgv6HB6UCtwjg/VHoic/
-v3erZuzcQaoNcdV9pxDLIOtGpH5P34nQIFOrJJWQiFGUDsY55qa+hyKQrOpXMc0y
-sRQzVmpmlZKquxYTN3lmbkkhSa+u1eJ1U2etUDFdmXbKdt0v/0Tx57hVgX5cMsiU
-RctA6Hn2y25+DZNCbJ6MoSTEEb/Gw9UPcBrhh/oaPHDmN4C0szPBe2Wtnt0i0huF
-sR/1QrnLM8Q+DpbRaa/gpGCpdwmYcgfOwnIM+tmiIpFTOxvcXyg54pMOxMHoh7oI
-hyTk+bE7386IxQEJ48bnWJillInB5g==
-=Uakm
------END PGP SIGNATURE-----
-"""
-    },
-    'sparky-7.7-minimal': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'cls': 'debian',        
-        'title': 'Sparky (7.7) Minimal',
-        'size': 1.6,
-        'keyserver': 'keyserver.ubuntu.com',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-x86_64-minimalgui.iso',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKoACgkQw50/ciyG
-7spKagf+Nj+mqWAxk0qOxXw4OI0cnMtkMsdRIrpENl5c10AJf8tlCAhTP5ScLcpB
-fq7ewcKfPfaY1Epc4WJ7wKgrC0FuTfNI653x3QWz3Yrl0NDGk2lwteP9FDDnQ0tY
-sPq0siiwAF4rJy3DDj4GuxMEZC0ZXTR/u3sRBI/rVbQLO5x7zfPGS+xKPmSWVO3H
-7SKd8UHWNqIiuLvm2OQlqFc9RzhfU5x8VxKd9aj4NouQb8e9lya5Qod4spERXKIJ
-gu1BzFjRKvJ/XTNyeAPKjmvMsk1kQp7nL6xyjBXQGZFQQISyVgnm4QncKAUcOA+I
-SmuALsmZTQLOzjN0r9Cke+o443nR7Q==
-=yows
------END PGP SIGNATURE-----
-"""
-    },
-    'sparky-7.7-686-min': {
-        'name': 'sparky',
-        'menu': 'debian-loop',
-        'cls': 'debian',
-        'title': 'Sparky (7.7) Min (32 bit)',
-        'size': 1.3,
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-i686-minimalgui.iso',
-        'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKMACgkQw50/ciyG
-7sqJNQf+P9UZ6dJRLsPIAGm9XyesxyJQeaiVXBE5xY7hngHSK/4tJBLYxlCw2Y4N
-mf+qsmt2+qyiqnpamNqCSbhJMmfwebgKyMzHqgbU7G+1boPi/5piIPy0h2AUIawu
-nbo2kUycdr/iS0eTLQ9rzs3nmlNEJK0WYixwjL3+1yBJLtD2JglFgwGvDw8zF8yj
-zV7v5HmGcaS46yHYugciBA4M5NOXOVw5g4OchUF8Y7BXqrwRTzLy/zaRTfzar+qp
-HC6Xzz29HLPsMZ8T9pf2kpFm1dRvebcEYNqP0f54ZUHKo0t8o1940YUJu9rjTcOB
-FlshxPmljXL+BbVCJlUjn5D9vwww0w==
-=z14S
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-i686-cli': {
-        'name': 'sparky',
-        'menu': 'debian-loop',
-        'cls': 'debian',        
-        'title': 'Sparky (7.7) CLI (32 Bit)',
-        'size': 0.796,
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.7-i686-minimalcli.iso',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SLwACgkQw50/ciyG
-7sqNUQgAyCz3cD+ttRPlfBZBvFBXnQXToWcwfhtdAHs4bTDVCtdXefxqU2NNBwUW
-DD4Ox5O8UINU4yhqL5FT2a6dsldVhy0omEx329uxL9fSFxPiH8qTTI6yQ3zHCPRq
-ojEcuGwodwTo/BsmMubZz6LksL1uOde6sC3rzFJ/xJSLH12m4Kujzd3xUMIrJIJ9
-Qk5TgMtzkiaiAExAfhlyLCS7jWRSCjLXRW+512aF6EKr77SPe4cY+O79e4NgORa2
-NrnCAVIjHxstrDLqdk9/3img7pJbuuDnUuGVaIm+o1CwpUxLfLfP2IKuwUrGe8hL
-fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
-=yEJ5
------END PGP SIGNATURE-----"""
-    },
     'ubuntu-25.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
@@ -563,14 +412,23 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'iso': 'https://cdimage.kali.org/kali-2025.1c/kali-linux-2025.1c-live-amd64.iso',
         'sum': '39450e405779fea4e632c2ea46c51981cd6ce5645a02d4d19879496880d6f6a5'
     },
-    'popos-22.04': {
+    'popos-22.04-intel': {
         'name': 'popos',
         'menu': 'pop',
         'cls': 'pop-os',
-        'title': 'Pop!_OS (22.04) LTS',
-        'size': 2.5,
-        'iso': 'https://iso.pop-os.org/22.04/amd64/intel/33/pop-os_22.04_amd64_intel_33.iso',
-        'sum': 'ff834c94c6bc970a9508da24fccf32ac829a51030488e612cc1ab4ecf4e0859d',
+        'title': 'Pop!_OS (22.04) LTS Intel',
+        'size': 2.6,
+        'iso': 'https://iso.pop-os.org/22.04/amd64/intel/55/pop-os_22.04_amd64_intel_55.iso',
+        'sum': '6ebc94bd349c483b6e3b3fef61442100ea861652da426b7fd59cc48271d55ef4',
+    },
+    'popos-22.04-nv': {
+        'name': 'popos',
+        'menu': 'pop',
+        'cls': 'pop-os',
+        'title': 'Pop!_OS (22.04) LTS Nvidia',
+        'size': 2.6,
+        'iso': 'https://iso.pop-os.org/22.04/amd64/nvidia/55/pop-os_22.04_amd64_nvidia_55.iso',
+        'sum': '1cef28d681d8712efeba9b3a74ca63817e4dcb3c567b2469837541a5b56455df',
     },
     'fedora-42-gnome': {
         'name': 'fedora',
@@ -620,45 +478,35 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
         'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
     },
-    'mxlinux-23.2-std': {
+    'mxlinux-23.2-xfce': {
         'name': 'antix',
         'menu': 'mxlinux',
         'cls': 'mx-linux',        
-        'title': 'MX Linux (23.5) Stable',
-        'size': 2.2,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso',
-        'sum': '39c6b7d14d707e602acd91fb651fb3460f86eae80a4038696d626a58ff571960',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso.sig'
+        'title': 'MX Linux (23.6) XFCE',
+        'size': 2.9,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_1_x64.iso',
+        'sum': '4e8e30f1197af7cb07b2f28867012c52572b6d70d173e1909f8b9b860da9a97d',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_1_x64.iso.sig'
     },
-    'mxlinux-23.5-ahs': {
+    'mxlinux-23.6.1-kde': {
         'name': 'antix',
         'menu': 'mxlinux',
         'cls': 'mx-linux',                
-        'title': 'MX Linux (23.5) Current',
-        'size': 2.6,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso',
-        'sum': '3a996902b08b7d18d3dd513efd6cd78070d963cb5c66ac5a51c6c876bc96e807',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso.sig'
+        'title': 'MX Linux (23.6) KDE',
+        'size': 2.9,
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso',
+        'sum': '4e8e30f1197af7cb07b2f28867012c52572b6d70d173e1909f8b9b860da9a97d',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso.sig'
     },
-    'mxlinux-23.5-kde': {
+    'mxlinux-23.6-flux': {
         'name': 'antix',
         'menu': 'mxlinux',
         'cls': 'mx-linux',                
-        'title': 'MX Linux (23.5) KDE',
-        'size': 2.6,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso',
-        'sum': '0c19f64a9316bf1413233a89e34b2dfc58506dc076fce7ae81e46b94fefc8bb3',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso.sig'
-    },
-    'mxlinux-23.5-flux': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'cls': 'mx-linux',                
-        'title': 'MX Linux (23.5) Fluxbox',
+        'title': 'MX Linux (23.6) Fluxbox',
         'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso',
-        'sum': 'b1c8b06bc8a6dea771c79d8a62c4837698b069ce883c7db264e7c4f1fa152819',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso.sig'
+        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso',
+        'sum': 'aebdcb6b1859b21982021f69a1ca1e8b65e7628bc5a41650061dbbb7da6f4874',
+        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso.sig'
     },
     'fedora-41-gnome': {
         'name': 'fedora',
@@ -750,3 +598,158 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/ROME/24.12/openmandriva.rome-24.12-plasma6.wayland.x86_64.iso',
     #     'sum': '6a2a90583d97e18fd374e6f801715e8ed1e6fb61'
     # },
+#
+#   This needs updating, but currently SF it too slow to make this practical.
+#   4 Aug 2025
+#
+#     'sparky-7.7-lxqt': {
+#         'name': 'sparky',
+#         'menu': 'debian',
+#         'cls': 'debian',        
+#         'title': 'Sparky (7.7) LXQt',
+#         'size': 2.0,
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.7-x86_64-lxqt.iso',
+#         'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde',
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
+# 7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
+# 5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
+# uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
+# CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
+# 7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
+# M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
+# =jUJ5
+# -----END PGP SIGNATURE-----"""
+#     },
+#     'sparky-7.7-mate': {
+#         'name': 'sparky',
+#         'menu': 'debian',
+#         'cls': 'debian',        
+#         'title': 'Sparky (7.7) Mate',
+#         'size': 2.2,
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.7-x86_64-mate.iso',
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2U1YACgkQw50/ciyG
+# 7srl8wgA1YlKUtSUXDk1j4iMDZaC0+heecXrSmDC3OOSENhqiTWRQzHm8RFp0JIN
+# HZgXTeOaakVWiCgnY2jSvJtq6QgnBus0VA/7pUD5m9LlzlxFZxSssaBL7nisJ8L9
+# gZQSoMJcYgPKVzztGWpaPrMn9f4DyOjpCWN0/yZcdOhMwEoYXFoUTCk8hA9t9Ve8
+# uzPPUGI/7f+V/or3+aS7zDHCYpj9CJyp0qipP9v51YUwv/TIDqIMj5Yu4NJioSbc
+# uQ3Y6GiRcBlNVxqNaj9DGOR0BIDk4YIKFh7LRgKCeuCEnnh4B565CGXIshUhZ17p
+# q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
+# =RGzf
+# -----END PGP SIGNATURE-----"""
+#     },
+#     'sparky-7.7-xfce': {
+#         'name': 'sparky',
+#         'menu': 'debian',
+#         'cls': 'debian',        
+#         'title': 'Sparky (7.7) XFCE',
+#         'size': 1.8,
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.7-x86_64-xfce.iso',
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SFsACgkQw50/ciyG
+# 7spB9wgAkdepKiAJuXw1HXWv4ouvrYdAgix28i5TePfhfX1z8Z6wgMNGK79/Z3lV
+# iFtRlSuwSo+s/p1ylWA/8g/c11VjvUO1wbfeyBeeOVhq6c8KgDy+XPNIZ4DtgiCR
+# PiBfuf5e3QflW9BTxQ5bL094qf0C194RRRSHRkkMYu4DkCUan+i/9V0h4vhZH5I3
+# ziFPzaDbloq5gc4GpBkfEJ5t6LMo+ziW87rrQ8XeYfwAkpzLXbxIgpsH6v2Xa6Ug
+# zPWj48exS2EqWBEuJpey3+LcbkCAXKuFqA3QtLbksYICjG8wrbHWW2a74KEqI8WB
+# eRE2uCJDoZEO4dc1SSfo9xQwzvmJ8g==
+# =/l9s
+# -----END PGP SIGNATURE-----"""
+#     },
+#     'sparky-7.7-kde': {
+#         'name': 'sparky',
+#         'menu': 'debian',
+#         'cls': 'debian',        
+#         'title': 'Sparky (7.7) KDE',
+#         'size': 2.3,
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.7-x86_64-kde.iso',
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SIQACgkQw50/ciyG
+# 7somzgf8D/qNySTGpfC+caN29LC1cmXNW3nUITZFmQjUQgv6HB6UCtwjg/VHoic/
+# v3erZuzcQaoNcdV9pxDLIOtGpH5P34nQIFOrJJWQiFGUDsY55qa+hyKQrOpXMc0y
+# sRQzVmpmlZKquxYTN3lmbkkhSa+u1eJ1U2etUDFdmXbKdt0v/0Tx57hVgX5cMsiU
+# RctA6Hn2y25+DZNCbJ6MoSTEEb/Gw9UPcBrhh/oaPHDmN4C0szPBe2Wtnt0i0huF
+# sR/1QrnLM8Q+DpbRaa/gpGCpdwmYcgfOwnIM+tmiIpFTOxvcXyg54pMOxMHoh7oI
+# hyTk+bE7386IxQEJ48bnWJillInB5g==
+# =Uakm
+# -----END PGP SIGNATURE-----
+# """
+#     },
+#     'sparky-7.7-minimal': {
+#         'name': 'sparky',
+#         'menu': 'debian',
+#         'cls': 'debian',        
+#         'title': 'Sparky (7.7) Minimal',
+#         'size': 1.6,
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-x86_64-minimalgui.iso',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKoACgkQw50/ciyG
+# 7spKagf+Nj+mqWAxk0qOxXw4OI0cnMtkMsdRIrpENl5c10AJf8tlCAhTP5ScLcpB
+# fq7ewcKfPfaY1Epc4WJ7wKgrC0FuTfNI653x3QWz3Yrl0NDGk2lwteP9FDDnQ0tY
+# sPq0siiwAF4rJy3DDj4GuxMEZC0ZXTR/u3sRBI/rVbQLO5x7zfPGS+xKPmSWVO3H
+# 7SKd8UHWNqIiuLvm2OQlqFc9RzhfU5x8VxKd9aj4NouQb8e9lya5Qod4spERXKIJ
+# gu1BzFjRKvJ/XTNyeAPKjmvMsk1kQp7nL6xyjBXQGZFQQISyVgnm4QncKAUcOA+I
+# SmuALsmZTQLOzjN0r9Cke+o443nR7Q==
+# =yows
+# -----END PGP SIGNATURE-----
+# """
+#     },
+#     'sparky-7.7-686-min': {
+#         'name': 'sparky',
+#         'menu': 'debian-loop',
+#         'cls': 'debian',
+#         'title': 'Sparky (7.7) Min (32 bit)',
+#         'size': 1.3,
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-i686-minimalgui.iso',
+#         'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKMACgkQw50/ciyG
+# 7sqJNQf+P9UZ6dJRLsPIAGm9XyesxyJQeaiVXBE5xY7hngHSK/4tJBLYxlCw2Y4N
+# mf+qsmt2+qyiqnpamNqCSbhJMmfwebgKyMzHqgbU7G+1boPi/5piIPy0h2AUIawu
+# nbo2kUycdr/iS0eTLQ9rzs3nmlNEJK0WYixwjL3+1yBJLtD2JglFgwGvDw8zF8yj
+# zV7v5HmGcaS46yHYugciBA4M5NOXOVw5g4OchUF8Y7BXqrwRTzLy/zaRTfzar+qp
+# HC6Xzz29HLPsMZ8T9pf2kpFm1dRvebcEYNqP0f54ZUHKo0t8o1940YUJu9rjTcOB
+# FlshxPmljXL+BbVCJlUjn5D9vwww0w==
+# =z14S
+# -----END PGP SIGNATURE-----"""
+#     },
+#     'sparky-7.7-i686-cli': {
+#         'name': 'sparky',
+#         'menu': 'debian-loop',
+#         'cls': 'debian',        
+#         'title': 'Sparky (7.7) CLI (32 Bit)',
+#         'size': 0.796,
+#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+#         'keyserver': 'keyserver.ubuntu.com',
+#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.7-i686-minimalcli.iso',
+#         'sign': """-----BEGIN PGP SIGNATURE-----
+
+# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SLwACgkQw50/ciyG
+# 7sqNUQgAyCz3cD+ttRPlfBZBvFBXnQXToWcwfhtdAHs4bTDVCtdXefxqU2NNBwUW
+# DD4Ox5O8UINU4yhqL5FT2a6dsldVhy0omEx329uxL9fSFxPiH8qTTI6yQ3zHCPRq
+# ojEcuGwodwTo/BsmMubZz6LksL1uOde6sC3rzFJ/xJSLH12m4Kujzd3xUMIrJIJ9
+# Qk5TgMtzkiaiAExAfhlyLCS7jWRSCjLXRW+512aF6EKr77SPe4cY+O79e4NgORa2
+# NrnCAVIjHxstrDLqdk9/3img7pJbuuDnUuGVaIm+o1CwpUxLfLfP2IKuwUrGe8hL
+# fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
+# =yEJ5
+# -----END PGP SIGNATURE-----"""
+#     },
