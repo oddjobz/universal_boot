@@ -1,14 +1,20 @@
-submenu "{{ title }}" {
+submenu "{{ title }}"  --class {{ cls }} {
+      loadfont unicode
+      if [ "${loop}" ]; then
+            loopback --delete loop      
+      fi
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
       loopback loop "$iso_path"
       root=(loop)
-      menuentry "Start {{ title }}" {
+      menuentry "Start {{ title }}" --class {{ cls }} {
             linux   /casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
-      menuentry "Start {{ title }} (compatibility mode)" {
+      menuentry "Start {{ title }} (compatibility mode)" --class {{ cls }} {
             linux   boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
+      loopback --delete loop
+      search --label --set=root MP-DATA
 }

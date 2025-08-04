@@ -16,6 +16,7 @@
 #############################################################################
 import rainbow_tqdm 
 import hashlib
+from rsyncwrap import rsyncwrap
 from argparse import ArgumentParser
 from pathlib import Path
 from subprocess import call, Popen, PIPE, check_call, run
@@ -138,8 +139,8 @@ class Multiboot:
                 for key in entry.get('prints', []):
                     self.update_key(entry['keyserver'], key)
         print ("Done")
-    
-    def grub (self):
+
+    def grub_config (self):
         self.read_isos ()
         with open('grub.cfg', 'w') as dst:
             with open('config/grub.cfg', 'r') as src:
@@ -160,6 +161,30 @@ class Multiboot:
                         dst.write(txt)
                     except TemplateNotFound:
                         print(f"ERROR: template missing: {path}")
+
+
+    def grub (self):
+        self.grub_config ()
+        # self.read_isos ()
+        # with open('grub.cfg', 'w') as dst:
+        #     with open('config/grub.cfg', 'r') as src:
+        #         txt = src.read()
+        #         dst.write(txt)
+
+        #         installed = list(self._installed)
+        #         installed.sort()
+        #         for name in installed:
+        #             entry = iso_images[name]
+        #             dst.write('\n')
+        #             path = f'{entry["menu"]}.jinja2'
+        #             try:
+        #                 if 'filename' not in entry:
+        #                     entry['filename'] = entry['iso'].split('/')[-1]
+        #                 template = self._env.get_template(path)
+        #                 txt = template.render(**entry)
+        #                 dst.write(txt)
+        #             except TemplateNotFound:
+        #                 print(f"ERROR: template missing: {path}")
         #
         #   FIXME: now copy grub.cfg onto boot partition for USB key
         #
@@ -178,6 +203,17 @@ class Multiboot:
                 src = Path('grub.cfg')
                 dst = Path('/media/data/boot/grub/grub.cfg')
                 dst.write_text(src.read_text())
+
+                src = Path('config/mp')
+                dst = Path('/media/data/boot/grub/themes/')
+                last = None
+                for update in rsyncwrap (src, dst):
+                    if update:
+                        file = getattr (update, 'transferring_path')
+                        if file:
+                            if file != last:
+                                print (f'Update theme: {file}')
+                                last = file
                 check_call(['umount', device])
                 print (f'* Upddated!')
             except Exception as e:
@@ -499,6 +535,7 @@ class Multiboot:
         parser.add_argument("--add", type=str, metavar="<iso>", help="The name of the ISO to add")
         parser.add_argument("--verify", type=str, metavar="<iso>|all", help="Verify the ISO's signatures")
         parser.add_argument("--grub", action='store_true', help="Refresh the GRUB boot information")
+        parser.add_argument("--grub-config", action='store_true', help="Update grub.cfg file")
         parser.add_argument("--gui", action='store_true', help="Fire up the text based GUI")
         args = parser.parse_args()
 
@@ -519,6 +556,9 @@ class Multiboot:
             action = True
         if args.grub:
             self.grub ()
+            action = True
+        if args.grub_config:
+            self.grub_config ()
             action = True
         if not action:
             print ('No action specified, try adding --help')
