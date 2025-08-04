@@ -17,6 +17,7 @@
 import rainbow_tqdm 
 import hashlib
 from rsyncwrap import rsyncwrap
+from rsyncwrap import rsyncwrap
 from argparse import ArgumentParser
 from pathlib import Path
 from subprocess import call, Popen, PIPE, check_call, run
