@@ -1,19 +1,24 @@
-submenu "{{ title }}" {
+submenu "{{ title }}" --class {{ cls }} {
+    loadfont unicode
+    if [ "${loop}" ]; then
+        loopback --delete loop
+    fi
     isofile="/boot/iso/{{ filename }}"
     export isofile
     loopback loop "${isofile}"
     root=(loop)
-
-    menuentry "Start {{ title }}" --class fedora --class gnu-linux --class gnu --class os {
+    menuentry "Start {{ title }}" --class fedora --class gnu-linux --class gnu --class os --class {{ cls }} {
         linux (loop)/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-WS-Live-41-1-4  rd.live.image quiet rhgb iso-scan/filename=$isofile
         initrd (loop)/images/pxeboot/initrd.img
     }
-    menuentry "Test this media & start {{ title }}" --class fedora --class gnu-linux --class gnu --class os {
+    menuentry "Test this media & start {{ title }}" --class fedora --class gnu-linux --class gnu --class os --class {{ cls }} {
         linux (loop)/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-WS-Live-41-1-4  rd.live.image rd.live.check quiet iso-scan/filename=$isofile
         initrd (loop)/images/pxeboot/initrd.img
     }
-    menuentry "Start {{ title }} in basic graphics mode" --class fedora --class gnu-linux --class gnu --class os {
+    menuentry "Start {{ title }} in basic graphics mode" --class fedora --class gnu-linux --class gnu --class os --class {{ cls }} {
         linux (loop)/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-WS-Live-41-1-4  rd.live.image nomodeset vga=791 quiet rhgb iso-scan/filename=$isofile
         initrd (loop)/images/pxeboot/initrd.img
     }
+    loopback --delete loop
+    search --label --set=root MP-DATA
 }

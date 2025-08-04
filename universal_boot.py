@@ -16,6 +16,7 @@
 #############################################################################
 import rainbow_tqdm 
 import hashlib
+from rsyncwrap import rsyncwrap
 from argparse import ArgumentParser
 from pathlib import Path
 from subprocess import call, Popen, PIPE, check_call, run
@@ -137,8 +138,9 @@ class Multiboot:
             if 'keyserver' in entry:
                 for key in entry.get('prints', []):
                     self.update_key(entry['keyserver'], key)
-    
-    def grub (self):
+        print ("Done")
+
+    def grub_config (self):
         self.read_isos ()
         with open('grub.cfg', 'w') as dst:
             with open('config/grub.cfg', 'r') as src:
@@ -159,6 +161,30 @@ class Multiboot:
                         dst.write(txt)
                     except TemplateNotFound:
                         print(f"ERROR: template missing: {path}")
+
+
+    def grub (self):
+        self.grub_config ()
+        # self.read_isos ()
+        # with open('grub.cfg', 'w') as dst:
+        #     with open('config/grub.cfg', 'r') as src:
+        #         txt = src.read()
+        #         dst.write(txt)
+
+        #         installed = list(self._installed)
+        #         installed.sort()
+        #         for name in installed:
+        #             entry = iso_images[name]
+        #             dst.write('\n')
+        #             path = f'{entry["menu"]}.jinja2'
+        #             try:
+        #                 if 'filename' not in entry:
+        #                     entry['filename'] = entry['iso'].split('/')[-1]
+        #                 template = self._env.get_template(path)
+        #                 txt = template.render(**entry)
+        #                 dst.write(txt)
+        #             except TemplateNotFound:
+        #                 print(f"ERROR: template missing: {path}")
         #
         #   FIXME: now copy grub.cfg onto boot partition for USB key
         #
@@ -177,6 +203,17 @@ class Multiboot:
                 src = Path('grub.cfg')
                 dst = Path('/media/data/boot/grub/grub.cfg')
                 dst.write_text(src.read_text())
+
+                src = Path('config/mp')
+                dst = Path('/media/data/boot/grub/themes/')
+                last = None
+                for update in rsyncwrap (src, dst):
+                    if update:
+                        file = getattr (update, 'transferring_path')
+                        if file:
+                            if file != last:
+                                print (f'Update theme: {file}')
+                                last = file
                 check_call(['umount', device])
                 print (f'* Upddated!')
             except Exception as e:
@@ -248,7 +285,7 @@ class Multiboot:
         if net_size + 1 > free:
             prompt += '\nWARNING: THIS DOWNLOAD MAY NOT FIT ON YOUR KEY!'
         w.calc_height(prompt)
-        if not w.yesno(prompt, 'no'):
+        if w.yesno(prompt, 'no'):
             for name in to_delete:
                 print (f"* Delete: {name}")
                 entry = iso_images[name]
@@ -262,11 +299,14 @@ class Multiboot:
             self.grub()
 
     def update_key (self, server, key):
-        print (f'Updating "{key}" using keyserver "{server}"')
-        ret = call([f'gpg --keyid-format long --keyserver {server} --recv-keys {key} 2>/tmp/SHAERR'], shell=True)
-        if ret:
-            with open('/tmp/SHAERR') as io:
-                print(io.read())
+        try:
+            print (f'Updating "{key}" using keyserver "{server}"')
+            ret = call([f'gpg --keyid-format long --keyserver {server} --recv-keys {key} 2>/tmp/SHAERR'], shell=True)
+            if ret:
+                with open('/tmp/SHAERR') as io:
+                    print(io.read())
+        except Exception:
+            print (f"Failed: {server} => {key}")
 
     def download (self, name):
         entry = iso_images[name]
@@ -320,6 +360,7 @@ class Multiboot:
                     return False
                 c.close()
                 return True
+        print ("@2")
 
     def gnupg_verify (self, name):
         entry = iso_images[name]
@@ -354,11 +395,13 @@ class Multiboot:
                     with open('/tmp/SHAERR') as io:
                         print(io.read())
                     return                
+            # print (f'gpg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR')
             ret = call([f'gpg --no-options --keyid-format long --verify tmp/{sign} isos/{filename} > /tmp/SHAERR'], shell=True)
             if ret:
                 print (f'* ERROR verifying {name}')
                 with open('/tmp/SHAERR') as io:
                     print(io.read())
+                    return self.mark_unverified (name)
             self.mark_verified (name)
             return
         if not sign or not sums:
@@ -416,7 +459,7 @@ class Multiboot:
                 self.mark_verified (name)
             else:
                 print(f'* Signature BAD, found {sum}, wanted: {wanted1} / {wanted256} / {wanted512} (1)')
-                self.mark_verified (name)
+                self.unmark_verified (name)
             return
 
         mode = 'text'
@@ -491,6 +534,7 @@ class Multiboot:
         parser.add_argument("--add", type=str, metavar="<iso>", help="The name of the ISO to add")
         parser.add_argument("--verify", type=str, metavar="<iso>|all", help="Verify the ISO's signatures")
         parser.add_argument("--grub", action='store_true', help="Refresh the GRUB boot information")
+        parser.add_argument("--grub-config", action='store_true', help="Update grub.cfg file")
         parser.add_argument("--gui", action='store_true', help="Fire up the text based GUI")
         args = parser.parse_args()
 
@@ -511,6 +555,9 @@ class Multiboot:
             action = True
         if args.grub:
             self.grub ()
+            action = True
+        if args.grub_config:
+            self.grub_config ()
             action = True
         if not action:
             print ('No action specified, try adding --help')

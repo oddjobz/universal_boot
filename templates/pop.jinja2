@@ -1,4 +1,8 @@
-menuentry "{{ title }}" {
+menuentry "{{ title }}" --class {{ cls }} {
+    loadfont unicode
+    if [ "${loop}" ]; then
+        loopback --delete loop
+    fi
     set color_normal=white/black
     set color_highlight=black/white
     set menu_color_normal=white/black
@@ -14,4 +18,5 @@ menuentry "{{ title }}" {
 	linux (loop)/casper_pop-os_22.04_amd64_intel_debug_530/vmlinuz.efi boot=casper live-media-path=/casper_pop-os_22.04_amd64_intel_debug_530 hostname=pop-os username=pop-os noprompt iso-scan/filename=${iso_path} ---
 	initrd (loop)/casper_pop-os_22.04_amd64_intel_debug_530/initrd.gz
     loopback --delete loop
+    search --label --set=root MP-DATA
 }

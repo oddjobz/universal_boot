@@ -1,4 +1,8 @@
-menuentry "{{ title }}" {
+menuentry "{{ title }}" --class {{ cls }} {
+      loadfont unicode
+      if [ "${loop}" ]; then
+            loopback --delete loop
+      fi
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
       export with_gfx
@@ -8,4 +12,5 @@ menuentry "{{ title }}" {
       linux (loop)/boot/x86_64/loader/linux isofrom_system=$iso_path LANG=en_US.UTF-8
       initrd (loop)/boot/x86_64/loader/initrd
       loopback --delete loop
+      search --label --set=root MP-DATA
 }

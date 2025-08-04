@@ -1,4 +1,8 @@
-menuentry "{{ title }}"  {
+menuentry "{{ title }}"  --class {{ cls }} {
+    loadfont unicode
+    if [ "${loop}" ]; then
+        loopback --delete loop
+    fi
     set dri="free"
     set lang="en_UK"
     set keytable="uk"
@@ -10,4 +14,6 @@ menuentry "{{ title }}"  {
     root=(loop)
     set params "{{ title }}" "iso-scan/filename=${iso_path}"
     configfile /boot/grub/loopback.cfg
+    loopback --delete loop
+    search --label --set=root MP-DATA
 }
