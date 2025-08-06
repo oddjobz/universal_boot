@@ -1,6 +1,6 @@
 menuentry "{{ title }}" --class {{ cls }} {
       loadfont unicode
-      if [ "${loop}" ]; then
+      if [ "${loop}" ];    then
             loopback --delete loop
       fi
       search --label --set=root MP-DATA
