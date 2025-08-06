@@ -1,15 +1,62 @@
-submenu "{{ title }}" --class {{ cls }} {
-      loadfont unicode
-      if [ "${loop}" ]; then
-            loopback --delete loop
-      fi
-      search --label --set=root MP-DATA
-      iso_path="/boot/iso/{{ filename }}"
-      export iso_path
-      loopback loop "$iso_path"
-      root=(loop)
-      set params "{{ title }}" "iso-scan/filename=${iso_path}"
-      configfile /boot/grub2/loopback.cfg
-      loopback --delete loop
-      search --label --set=root MP-DATA
+menuentry "{{ title }}" --class {{ cls }} {
+    loadfont unicode
+    if [ "${loop}" ]; then
+        loopback --delete loop
+    fi
+    search --label --set=root MP-DATA
+    iso_path="/boot/iso/{{ filename }}"
+    export iso_path
+    loopback loop "$iso_path"
+    root=(loop)
+    set params "{{ title }}" "iso-scan/filename=${iso_path}"
+    configfile /boot/grub/loopback.cfg
+    loopback --delete loop
+    search --label --set=root MP-DATA
 }
+
+#set default="1"
+
+#if [ "$grub_platform" == "efi" ]; then
+#	function load_video {
+#		insmod efi_gop
+#		insmod efi_uga
+#		insmod video_bochs
+#		insmod video_cirrus
+#		insmod all_video
+#	}
+#	set basicgfx="nomodeset"
+#else
+#	function load_video {
+#		insmod all_video
+#	}
+#	set basicgfx="nomodeset vga=791"
+#fi
+
+#load_video
+#set gfxpayload=keep
+#insmod gzio
+#insmod part_gpt
+#insmod ext2
+
+#terminal_input console
+#terminal_output console
+
+#set timeout=10
+#set timeout_style=menu
+
+#search --file --set=root /boot/0xc51564f6
+
+#menuentry "Start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
+#	linux ($root)/boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image
+#	initrd ($root)/boot/x86_64/loader/initrd
+#}
+#menuentry "Test this media & start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
+#	linux ($root)/boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image rd.live.check
+#	initrd ($root)/boot/x86_64/loader/initrd
+#}
+#submenu "Troubleshooting -->" {
+#	menuentry "Start Fedora-Workstation-Live in basic graphics mode" --class fedora --class gnu-linux --class gnu --class os {
+#		linux ($root)/boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image ${basicgfx}
+#		initrd ($root)/boot/x86_64/loader/initrd
+#	}
+#}
