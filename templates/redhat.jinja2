@@ -4,7 +4,8 @@ submenu "{{ title }}" --class {{ cls }} {
         loopback --delete loop
     fi
     search --label --set=root MP-DATA
-    loopback loop "/boot/iso/{{ filename }}"
+    iso_path="/boot/iso/{{ filename }}"
+    loopback loop "$iso_path"
     root=(loop)
     
     menuentry "Start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
