@@ -401,7 +401,7 @@ iso_images = {
         'cls': 'arch',
         'title': 'Arch Linux (2025.08.01) Live',
         'size': 1.3,
-        'iso': 'https://mirrors.ukfast.co.uk/sites/archlinux.org/iso/2025.08.01/archlinux-2025.08.01-x86_64.iso ',
+        'iso': 'https://mirrors.ukfast.co.uk/sites/archlinux.org/iso/2025.08.01/archlinux-2025.08.01-x86_64.iso',
         'sum': '4b1af44dbeed97acec0204a95f6393818bb8fd903b423a20b7ea141f80b27e59',
     },
 
