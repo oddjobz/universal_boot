@@ -3,6 +3,7 @@ submenu "{{ title }}"  --class {{ cls }} {
       if [ "${loop}" ]; then
             loopback --delete loop
       fi
+      search --label --set=root MP-DATA
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
       loopback loop "$iso_path"

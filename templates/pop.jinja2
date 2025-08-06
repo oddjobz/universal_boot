@@ -3,6 +3,7 @@ menuentry "{{ title }}" --class {{ cls }} {
     if [ "${loop}" ]; then
         loopback --delete loop
     fi
+    search --label --set=root MP-DATA
     set color_normal=white/black
     set color_highlight=black/white
     set menu_color_normal=white/black

@@ -282,7 +282,7 @@ iso_images = {
     },
     'mint-22.1-cinnamon': {
         'name': 'mint',
-        'menu': 'mint',
+        'menu': 'loopback',
         'cls': 'linuxmint',
         'title': 'Mint (22.1) Cinnamon', 
         'size': 2.9,
@@ -295,7 +295,7 @@ iso_images = {
     },
     'mint-22.1-mate': {
         'name': 'mint',
-        'menu': 'mint',
+        'menu': 'loopback',
         'cls': 'linuxmint',        
         'title': 'Mint (22.1) Mate', 
         'size': 3.0,

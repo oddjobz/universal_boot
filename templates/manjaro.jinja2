@@ -3,6 +3,7 @@ menuentry "{{ title }}"  --class {{ cls }} {
     if [ "${loop}" ]; then
         loopback --delete loop
     fi
+    search --label --set=root MP-DATA
     set dri="free"
     set lang="en_UK"
     set keytable="uk"

@@ -3,6 +3,7 @@ menuentry '{{ title }}' --class {{ cls }} {
     if [ "${loop}" ]; then
     	loopback --delete loop
     fi
+	search --label --set=root MP-DATA
 	iso_path="/boot/iso/{{ filename }}"
 	export iso_path
 	img_path="/dev/disk/by-label/MP-DATA"
