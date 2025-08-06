@@ -395,14 +395,14 @@ iso_images = {
 
 
 
-    'arch-2024.02.01': {
+    'arch-2025.08.01': {
         'name': 'arch',
         'menu': 'arch',
-        'cls': 'unknown',        
-        'title': 'Arch Linux (2024.01.01) Live',
-        'size': 0.93,
-        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
-        'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
+        'cls': 'arch',
+        'title': 'Arch Linux (2025.08.01) Live',
+        'size': 1.3,
+        'iso': 'https://mirrors.ukfast.co.uk/sites/archlinux.org/iso/2025.08.01/archlinux-2025.08.01-x86_64.iso ',
+        'sum': '4b1af44dbeed97acec0204a95f6393818bb8fd903b423a20b7ea141f80b27e59',
     },
 
     # Disabled, sum doesn't match, nor do signing keys
@@ -483,9 +483,9 @@ iso_images = {
         'size': 1.92,
         'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
         'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
-    }
+    },
 
-}
+
 
 #
 #   * FIXME: should be an easy fix
@@ -719,3 +719,4 @@ M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
 # =yEJ5
 # -----END PGP SIGNATURE-----"""
 #     },
+}

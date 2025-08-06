@@ -8,10 +8,11 @@ submenu "{{ title }}" --class {{ cls }} {
     export iso_path
     loopback loop "$iso_path"
     root=(loop)
-    loadfont /boot/grub/font.pf2
-    color_normal=cyan/black
-    menu_color_highlight=yellow/red
-    menu_color_normal=light-gray/black
+    configfile /boot/grub/loopback.cfg
+#    loadfont /boot/grub/font.pf2
+#    color_normal=cyan/black
+#    menu_color_highlight=yellow/redS
+#    menu_color_normal=light-gray/black
 
     menuentry "fossapup64 9.5" --class {{ cls }} {
         linux (loop)/vmlinuz pfix=fsck pmedia=usbflash find_iso=${iso_path}
