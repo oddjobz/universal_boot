@@ -280,43 +280,6 @@ iso_images = {
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
         'keyserver': 'keyserver.ubuntu.com'        
     },
-    'mint-22.1-cinnamon': {
-        'name': 'mint',
-        'menu': 'loopback',
-        'cls': 'linuxmint',
-        'title': 'Mint (22.1) Cinnamon', 
-        'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
-        'sum': 'ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f',
-        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        # 'keyserver': 'keyserver.ubuntu.com',
-        # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
-    },
-    'mint-22.1-mate': {
-        'name': 'mint',
-        'menu': 'loopback',
-        'cls': 'linuxmint',        
-        'title': 'Mint (22.1) Mate', 
-        'size': 3.0,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-mate-64bit.iso',
-        'sum': 'd286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0',
-        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-    },
-    'mint-22.1-xfce': {
-        'name': 'mint',
-        'menu': 'mint',
-        'cls': 'linuxmint',        
-        'title': 'Mint (22.1) XFCE', 
-        'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-xfce-64bit.iso',
-        'sum': '6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d',
-        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        # 'keyserver': 'keyserver.ubuntu.com',
-        # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
-    },
     'bodhi-7.0.0-standard': {
         'name': 'bodhi',
         'menu': 'bodhi',
@@ -335,29 +298,6 @@ iso_images = {
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso',
         'sum': '55601a03d305159569b77e6a6008aedc59f5e81df1beb35f6224c0eae6efde70'
     },
-    'arch-2024.02.01': {
-        'name': 'arch',
-        'menu': 'arch',
-        'cls': 'unknown',        
-        'title': 'Arch Linux (2024.01.01) Live',
-        'size': 0.93,
-        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
-        'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
-    },
-
-    # Disabled, sum doesn't match, nor do signing keys
-    # 'endeavour-2024.06.25': {
-    #     'name': 'endeavour',
-    #     'menu': 'arch',
-    #     'title': 'EndeavourOS (2024.06.25)',
-    #     'size': 2.9,
-    #     'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso',
-    #     'sum': '4ed515fd4ece204a5274912c9056fe70573b810afa8dee90e068ad582265defc62e784d2de9abdc626ba6688934586f38f491fab63618e4f'
-    # },
-
-    #
-    #   FIXME: bad key
-    #
     'rescue-12.0': {
         'name': 'rescue',
         'menu': 'debian-loop',
@@ -376,33 +316,6 @@ iso_images = {
         'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17.2-Core-64-bit.iso',
         'sum': 'e68d49172964e4d0aa39ac1d77674d724b0b835658836a56fc1b318680deaed6',
     },
-    # 'antix-23-full-64': {
-    #     'name': 'antix',
-    #     'menu': 'antix',
-    #     'cls': 'unknown',        
-    #     'title': 'antiX (23) Full 64-bit',
-    #     'size': 2.1,
-    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
-    #     'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
-    # },
-    # 'antix-23-full-32': {
-    #     'name': 'antix',
-    #     'menu': 'antix',
-    #     'cls': 'unknown',        
-    #     'title': 'antiX (23) Full 32-bit',
-    #     'size': 1.8,
-    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
-    #     'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
-    # },
-    'puppy-10.0.10-bookworm': {
-        'name': 'puppy',
-        'menu': 'puppy',
-        'cls': 'unknown',        
-        'title': 'Puppy Linux (10.0.10) Bookworm',
-        'size': 0.41,
-        'iso': 'https://distro.ibiblio.org/puppylinux/puppy-bookwormpup/BookwormPup64/10.0.10/BookwormPup64_10.0.10.iso',
-        'sum': '860eeb70e00a1517753037b5c7278b8a747b8e7b091f799ebe4ecc6be0fe96af'
-    },
     'kali-2025.1c': {
         'name': 'kali',
         'menu': 'debian',
@@ -412,24 +325,6 @@ iso_images = {
         'iso': 'https://cdimage.kali.org/kali-2025.1c/kali-linux-2025.1c-live-amd64.iso',
         'sum': '39450e405779fea4e632c2ea46c51981cd6ce5645a02d4d19879496880d6f6a5'
     },
-    'popos-22.04-intel': {
-        'name': 'popos',
-        'menu': 'pop',
-        'cls': 'pop-os',
-        'title': 'Pop!_OS (22.04) LTS Intel',
-        'size': 2.6,
-        'iso': 'https://iso.pop-os.org/22.04/amd64/intel/55/pop-os_22.04_amd64_intel_55.iso',
-        'sum': '6ebc94bd349c483b6e3b3fef61442100ea861652da426b7fd59cc48271d55ef4',
-    },
-    'popos-22.04-nv': {
-        'name': 'popos',
-        'menu': 'pop',
-        'cls': 'pop-os',
-        'title': 'Pop!_OS (22.04) LTS Nvidia',
-        'size': 2.6,
-        'iso': 'https://iso.pop-os.org/22.04/amd64/nvidia/55/pop-os_22.04_amd64_nvidia_55.iso',
-        'sum': '1cef28d681d8712efeba9b3a74ca63817e4dcb3c567b2469837541a5b56455df',
-    },
     'fedora-42-gnome': {
         'name': 'fedora',
         'menu': 'redhat',
@@ -438,16 +333,6 @@ iso_images = {
         'size': 2.1,
         'iso':  'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-Live-42-1.1.x86_64.iso',
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-42-1.1-x86_64-CHECKSUM',
-        'sign': 'https://fedoraproject.org/fedora.gpg'
-    },
-    'fedora-41-gnome': {
-        'name': 'fedora',
-        'menu': 'redhat',
-        'cls': 'fedora',
-        'title': 'Fedora (41/1.4) Gnome',
-        'size': 2.29,
-        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
-        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
     'manjaro-24.0.3-gnome': {
@@ -479,6 +364,78 @@ iso_images = {
         'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
         'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
     },
+    'mint-22.1-cinnamon': {
+        'name': 'mint',
+        'menu': 'loopback',
+        'cls': 'linuxmint',
+        'title': 'Mint (22.1) Cinnamon', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
+        'sum': 'ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f',
+    },
+    'mint-22.1-mate': {
+        'name': 'mint',
+        'menu': 'loopback',
+        'cls': 'linuxmint',        
+        'title': 'Mint (22.1) Mate', 
+        'size': 3.0,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-mate-64bit.iso',
+        'sum': 'd286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0',
+    },
+    'mint-22.1-xfce': {
+        'name': 'mint',
+        'menu': 'mint',
+        'cls': 'linuxmint',        
+        'title': 'Mint (22.1) XFCE', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-xfce-64bit.iso',
+        'sum': '6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d',
+    },
+
+
+
+
+    'arch-2024.02.01': {
+        'name': 'arch',
+        'menu': 'arch',
+        'cls': 'unknown',        
+        'title': 'Arch Linux (2024.01.01) Live',
+        'size': 0.93,
+        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
+        'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
+    },
+
+    # Disabled, sum doesn't match, nor do signing keys
+    # 'endeavour-2024.06.25': {
+    #     'name': 'endeavour',
+    #     'menu': 'arch',
+    #     'title': 'EndeavourOS (2024.06.25)',
+    #     'size': 2.9,
+    #     'iso': 'https://mirror.rznet.fr/endeavouros/iso/EndeavourOS_Endeavour-2024.06.25.iso',
+    #     'sum': '4ed515fd4ece204a5274912c9056fe70573b810afa8dee90e068ad582265defc62e784d2de9abdc626ba6688934586f38f491fab63618e4f'
+    # },
+
+    #
+    #   FIXME: bad key
+    #
+    # 'antix-23-full-64': {
+    #     'name': 'antix',
+    #     'menu': 'antix',
+    #     'cls': 'unknown',        
+    #     'title': 'antiX (23) Full 64-bit',
+    #     'size': 2.1,
+    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
+    #     'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
+    # },
+    # 'antix-23-full-32': {
+    #     'name': 'antix',
+    #     'menu': 'antix',
+    #     'cls': 'unknown',        
+    #     'title': 'antiX (23) Full 32-bit',
+    #     'size': 1.8,
+    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
+    #     'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
+    # },
     # 'vanillaos-22.10-r9': {
     #     'name': 'vanilla',
     #     'menu': 'debian',
