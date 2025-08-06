@@ -14,3 +14,4 @@ poetry install
 poetry run ./universal_boot.py --update
 poetry run ./universal_boot.py --gui
 echo "Universal Loader Ready>"
+exec /bin/bash
