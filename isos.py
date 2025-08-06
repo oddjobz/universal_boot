@@ -478,6 +478,7 @@ iso_images = {
     'vanillaos-2025-02-20': {
         'name': 'vanilla',
         'menu': 'debian',
+        'cls': 'vanillaos',
         'title': 'VanillaOS (2025-02)',
         'size': 1.92,
         'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
@@ -567,28 +568,28 @@ iso_images = {
 #   This needs updating, but currently SF it too slow to make this practical.
 #   4 Aug 2025
 #
-#     'sparky-7.7-lxqt': {
-#         'name': 'sparky',
-#         'menu': 'debian',
-#         'cls': 'debian',        
-#         'title': 'Sparky (7.7) LXQt',
-#         'size': 2.0,
-#         'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.7-x86_64-lxqt.iso',
-#         'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde',
-#         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-#         'keyserver': 'keyserver.ubuntu.com',
-#         'sign': """-----BEGIN PGP SIGNATURE-----
+    'sparky-7.8-lxqt': {
+        'name': 'sparky',
+        'menu': 'debian',
+        'cls': 'debian',        
+        'title': 'Sparky (7.8) LXQt',
+        'size': 2.0,
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.8-x86_64-lxqt.iso',
+        'sum': '50c4cd47ff539bcb20357c37a317dbf4d296b53cbc17b97ade9a0eadc6ee318e',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
+        'sign': """-----BEGIN PGP SIGNATURE-----
 
-# iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
-# 7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
-# 5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
-# uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
-# CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
-# 7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
-# M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
-# =jUJ5
-# -----END PGP SIGNATURE-----"""
-#     },
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
+7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
+5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
+uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
+CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
+7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
+M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
+=jUJ5
+-----END PGP SIGNATURE-----"""
+    },
 #     'sparky-7.7-mate': {
 #         'name': 'sparky',
 #         'menu': 'debian',
