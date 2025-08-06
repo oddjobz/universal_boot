@@ -4,18 +4,15 @@ submenu "{{ title }}" --class {{ cls }} {
         loopback --delete loop
     fi
     search --label --set=root MP-DATA
-    iso_path="/boot/iso/{{ filename }}"
-    export iso_path
-    loopback loop "$iso_path"
+    loopback loop "/boot/iso/{{ filename }}"
     root=(loop)
-    set params "iso-scan/filename=${iso_path}"
-
+    
     menuentry "Start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
-        linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image ${parms}
+        linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image iso-scan/filename=${iso_path}
         initrd /boot/x86_64/loader/initrd
     }
     menuentry "Test this media & start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
-        linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image rd.live.check ${params}
+        linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image rd.live.check iso-scan/filename=${iso_path}
         initrd /boot/x86_64/loader/initrd
     }
 }
