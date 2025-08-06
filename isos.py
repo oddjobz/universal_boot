@@ -518,6 +518,14 @@ iso_images = {
     #     'sum': 'aebdcb6b1859b21982021f69a1ca1e8b65e7628bc5a41650061dbbb7da6f4874',
     #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso.sig'
     # },
+    'vanillaos-2025-02-20': {
+        'name': 'vanilla',
+        'menu': 'debian',
+        'title': 'VanillaOS (2025-02)',
+        'size': 1.92,
+        'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
+        'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
+
 }
 
 #
