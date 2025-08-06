@@ -525,6 +525,7 @@ iso_images = {
         'size': 1.92,
         'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
         'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
+    }
 
 }
 
