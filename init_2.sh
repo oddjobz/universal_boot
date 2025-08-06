@@ -5,10 +5,10 @@ export PATH=$PATH:/root/.local/bin
 apt update
 apt -y install git python3-pip git libcurl4-openssl-dev libssl-dev whiptail pipx
 pipx install poetry
+mount -o remount,rw ${MNT}
 git -C ${DST} config --global --add safe.directory ${DST}
 git -C ${DST} pull
 cd ${DST}
-mount -o remount,rw ${MNT}
 poetry env use python3
 poetry install
 poetry run ./universal_boot.py --update
