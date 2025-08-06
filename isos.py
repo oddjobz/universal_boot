@@ -376,24 +376,24 @@ iso_images = {
         'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17.2-Core-64-bit.iso',
         'sum': 'e68d49172964e4d0aa39ac1d77674d724b0b835658836a56fc1b318680deaed6',
     },
-    'antix-23-full-64': {
-        'name': 'antix',
-        'menu': 'antix',
-        'cls': 'unknown',        
-        'title': 'antiX (23) Full 64-bit',
-        'size': 2.1,
-        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
-        'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
-    },
-    'antix-23-full-32': {
-        'name': 'antix',
-        'menu': 'antix',
-        'cls': 'unknown',        
-        'title': 'antiX (23) Full 32-bit',
-        'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
-        'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
-    },
+    # 'antix-23-full-64': {
+    #     'name': 'antix',
+    #     'menu': 'antix',
+    #     'cls': 'unknown',        
+    #     'title': 'antiX (23) Full 64-bit',
+    #     'size': 2.1,
+    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
+    #     'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
+    # },
+    # 'antix-23-full-32': {
+    #     'name': 'antix',
+    #     'menu': 'antix',
+    #     'cls': 'unknown',        
+    #     'title': 'antiX (23) Full 32-bit',
+    #     'size': 1.8,
+    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
+    #     'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
+    # },
     'puppy-10.0.10-bookworm': {
         'name': 'puppy',
         'menu': 'puppy',
@@ -440,6 +440,16 @@ iso_images = {
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-42-1.1-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
+    'fedora-41-gnome': {
+        'name': 'fedora',
+        'menu': 'redhat',
+        'cls': 'fedora',
+        'title': 'Fedora (41/1.4) Gnome',
+        'size': 2.29,
+        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
+        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
+        'sign': 'https://fedoraproject.org/fedora.gpg'
+    },
     'manjaro-24.0.3-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
@@ -469,56 +479,45 @@ iso_images = {
         'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
         'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
     },
-    'vanillaos-22.10-r9': {
-        'name': 'vanilla',
-        'menu': 'debian',
-        'cls': 'vanillaos',        
-        'title': 'VanillaOS (22.10) Beta',
-        'size': 1.8,
-        'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
-        'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
-    },
-    'mxlinux-23.2-xfce': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'cls': 'mx-linux',        
-        'title': 'MX Linux (23.6) XFCE',
-        'size': 2.9,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_1_x64.iso',
-        'sum': '4e8e30f1197af7cb07b2f28867012c52572b6d70d173e1909f8b9b860da9a97d',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_1_x64.iso.sig'
-    },
-    'mxlinux-23.6.1-kde': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'cls': 'mx-linux',                
-        'title': 'MX Linux (23.6) KDE',
-        'size': 2.9,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso',
-        'sum': '4e8e30f1197af7cb07b2f28867012c52572b6d70d173e1909f8b9b860da9a97d',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso.sig'
-    },
-    'mxlinux-23.6-flux': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'cls': 'mx-linux',                
-        'title': 'MX Linux (23.6) Fluxbox',
-        'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso',
-        'sum': 'aebdcb6b1859b21982021f69a1ca1e8b65e7628bc5a41650061dbbb7da6f4874',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso.sig'
-    },
-    'fedora-41-gnome': {
-        'name': 'fedora',
-        'menu': 'redhat',
-        'cls': 'fedora',
-        'title': 'Fedora (41/1.4) Gnome',
-        'size': 2.29,
-        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
-        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
-        'sign': 'https://fedoraproject.org/fedora.gpg'
-    },
-
+    # 'vanillaos-22.10-r9': {
+    #     'name': 'vanilla',
+    #     'menu': 'debian',
+    #     'cls': 'vanillaos',        
+    #     'title': 'VanillaOS (22.10) Beta',
+    #     'size': 1.8,
+    #     'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
+    #     'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
+    # },
+    # 'mxlinux-23.6-xfce': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'cls': 'mx-linux',        
+    #     'title': 'MX Linux (23.6) XFCE',
+    #     'size': 2.3,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_x64.iso',
+    #     'sum': '6960a253320a7615217b07593fcd04f7ab6126a87cce1398e2c153c45ca03978',
+    #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_x64.iso.sig'
+    # },
+    # 'mxlinux-23.6.1-kde': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'cls': 'mx-linux',                
+    #     'title': 'MX Linux (23.6) KDE',
+    #     'size': 2.9,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso',
+    #     'sum': '4e8e30f1197af7cb07b2f28867012c52572b6d70d173e1909f8b9b860da9a97d',
+    #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso.sig'
+    # },
+    # 'mxlinux-23.6-flux': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'cls': 'mx-linux',                
+    #     'title': 'MX Linux (23.6) Fluxbox',
+    #     'size': 1.8,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso',
+    #     'sum': 'aebdcb6b1859b21982021f69a1ca1e8b65e7628bc5a41650061dbbb7da6f4874',
+    #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso.sig'
+    # },
 }
 
 #

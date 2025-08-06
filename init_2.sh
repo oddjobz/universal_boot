@@ -8,9 +8,9 @@ pipx install poetry
 git -C ${DST} config --global --add safe.directory ${DST}
 git -C ${DST} pull
 cd ${DST}
+mount -o remount,rw ${MNT}
 poetry env use python3
 poetry install
-mount -o remount,rw ${MNT}
 poetry run ./universal_boot.py --update
 poetry run ./universal_boot.py --gui
 echo "Universal Loader Ready>"
