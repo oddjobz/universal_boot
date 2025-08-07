@@ -1,4 +1,5 @@
-loadfont unicode
+menuentry "{{ title }}" --class {{ cls }} {      
+      loadfont unicode
       search --label --set=root MP-DATA
       loadfont unicode
       iso_path="/boot/iso/{{ filename }}"
