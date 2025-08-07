@@ -398,7 +398,7 @@ wFOb8nc0hykimMzIptJMiSWWPN0yUQ==
         'cls': 'debian',        
         'title': 'Sparky (7.8) KDE',
         'size': 2.3,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.8-x86_64-kde.iso/download',
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.8-x86_64-kde.iso',
         'sum': '912571eee59f98d2d92f352439a1ba5d3aed2310b65ab18666c34196e6ae7225',
         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
         'keyserver': 'keyserver.ubuntu.com',
@@ -445,7 +445,7 @@ bjDer4Wh2ZWKiBLg5foHuKxf6tpLVQ==
         'size': 0.8,
         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
         'keyserver': 'keyserver.ubuntu.com',
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.8-i686-minimalcli.iso/download',
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.8-i686-minimalcli.iso',
         'sum': '686fa93eb7bd483722e0b4ef9e67e274b3f21752f3b4a4cfad877fab360f6dda',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
