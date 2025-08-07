@@ -328,7 +328,7 @@ iso_images = {
     },
     'sparky-7.8-lxqt': {
         'name': 'sparky',
-        'menu': 'debian',
+        'menu': 'sparky',
         'cls': 'debian',        
         'title': 'Sparky (7.8) LXQt',
         'size': 2.0,
@@ -350,7 +350,7 @@ lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
     },
      'sparky-7.8-mate': {
          'name': 'sparky',
-         'menu': 'debian',
+         'menu': 'sparky',
          'cls': 'debian',        
          'title': 'Sparky (7.7) Mate',
          'size': 2.2,
@@ -372,7 +372,7 @@ SVcNY3yEkOrTsSeIANBLuioGHNjDlw==
 },
      'sparky-7.8-xfce': {
          'name': 'sparky',
-         'menu': 'debian',
+         'menu': 'sparky',
          'cls': 'debian',        
          'title': 'Sparky (7.8) XFCE',
          'size': 1.85,
@@ -394,7 +394,7 @@ wFOb8nc0hykimMzIptJMiSWWPN0yUQ==
 },
     'sparky-7.8-kde': {
         'name': 'sparky',
-        'menu': 'debian',
+        'menu': 'sparky',
         'cls': 'debian',        
         'title': 'Sparky (7.8) KDE',
         'size': 2.3,
@@ -416,7 +416,7 @@ lpckgZc/PNHtOB0bSeOhC9R34gD70KvMLTMfZPFM79fnRl7v9AF8ML4h6bDUSjm3
     },
     'sparky-7.8-686-min': {
         'name': 'sparky',
-        'menu': 'debian-loop',
+        'menu': 'sparky',
         'cls': 'debian',
         'title': 'Sparky (7.8) Min (32 bit)',
         'size': 1.3,
@@ -439,7 +439,7 @@ bjDer4Wh2ZWKiBLg5foHuKxf6tpLVQ==
     },
     'sparky-7.8-i686-cli': {
         'name': 'sparky',
-        'menu': 'debian-loop',
+        'menu': 'sparky',
         'cls': 'debian',        
         'title': 'Sparky (7.8) CLI (32 Bit)',
         'size': 0.8,

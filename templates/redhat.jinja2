@@ -1,23 +1,18 @@
 submenu "{{ title }}" --class {{ cls }} {
-    if [ "${loop}" ]; then
-        loopback --delete loop
-    fi
     search --label --set=root MP-DATA
     loadfont unicode
     iso_path="/boot/iso/{{ filename }}"
-    loopback loop "$iso_path"
-    root=(loop)
+    loopback loop2 "$iso_path"
+    root=(loop2)
     
     menuentry "Start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
         linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image iso-scan/filename=${iso_path}
         initrd /boot/x86_64/loader/initrd
-        loopback --delete loop
         search --label --set=root MP-DATA
     }
     menuentry "Test this media & start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
         linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image rd.live.check iso-scan/filename=${iso_path}
         initrd /boot/x86_64/loader/initrd
-        loopback --delete loop
         search --label --set=root MP-DATA
     }
 }
