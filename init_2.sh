@@ -13,5 +13,6 @@ poetry env use python3
 poetry install
 poetry run ./universal_boot.py --update
 poetry run ./universal_boot.py --gui
-echo "Universal Loader Ready>"
+echo "Universal Loader Ready, type 'gui --help'"
+alias gui='poetry run ./universal_boot.py'
 exec /bin/bash

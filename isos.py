@@ -335,34 +335,35 @@ iso_images = {
         'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-42-1.1-x86_64-CHECKSUM',
         'sign': 'https://fedoraproject.org/fedora.gpg'
     },
-    'manjaro-24.0.3-gnome': {
+    'manjaro-25.0.6-gnome': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'cls': 'manjaro',        
-        'title': 'Manjaro (24.2.1) Gnome',
+        'title': 'Manjaro (25.0.6) Gnome',
         'size': 3.9,
-        'iso': 'https://download.manjaro.org/gnome/24.2.1/manjaro-gnome-24.2.1-241216-linux612.iso',
-        'sum': 'd6ccfbfccea732857bd60d33925852a639f08e570336f68e179479fa99df3866',
-        'sign': 'https://download.manjaro.org/gnome/24.2.1/manjaro-gnome-24.2.1-241216-linux612.iso.sig'
+        'iso': 'https://download.manjaro.org/gnome/25.0.6/manjaro-gnome-25.0.6-250730-linux612.iso',
+        'sum': '284dfa000a8b8e9dc114a54bca17d6eed9fb21480bacba9cf7844964fadfd252',
+        'sign': 'https://download.manjaro.org/gnome/25.0.6/manjaro-gnome-25.0.6-250730-linux612.iso.sig'
     },
-    'manjaro-24.2.1-kde': {
+    'manjaro-25.0.6-kde': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'cls': 'manjaro',        
-        'title': 'Manjaro (24.2.1) KDE',
+        'title': 'Manjaro (25.0.6) KDE',
         'size': 3.7,
-        'iso': 'https://download.manjaro.org/kde/24.2.1/manjaro-kde-24.2.1-241216-linux612.iso',
-        'sum': 'e8cb6f9617593707bb7a96ccfc6051e4e3d25635e416cfdd5ae73e07fd1cd65f',
-        'sign': 'https://download.manjaro.org/kde/24.2.1/manjaro-kde-24.2.1-241216-linux612.iso.sig'
+        'iso': 'https://download.manjaro.org/kde/25.0.6/manjaro-kde-25.0.6-250730-linux612.iso',
+        'sum': 'cb2e7aa66d5e0cc27dddedc6833f67ef5643549f870a9c2d316070bb75e733cc',
+        'sign': 'https://download.manjaro.org/kde/25.0.6/manjaro-kde-25.0.6-250730-linux612.iso.sig'
     },
-    'manjaro-24.2.1-xfce': {
+    'manjaro-25.0.6-xfce': {
         'name': 'manjaro',
         'menu': 'manjaro',
         'cls': 'manjaro',                
-        'title': 'Manjaro (24.2.1) XFCE',
+        'title': 'Manjaro (25.0.6) XFCE',
         'size': 3.6,
-        'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
-        'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
+        'iso': 'https://download.manjaro.org/xfce/25.0.6/manjaro-xfce-25.0.6-250730-linux612.iso',
+        'sum': '87e35bd6024c310bc56fdb8ec8bbb22c66541a4230746e2f11e5d874aef7889e',
+        'sign': 'https://download.manjaro.org/xfce/25.0.6/manjaro-xfce-25.0.6-250730-linux612.iso.sig'
     },
     'mint-22.1-cinnamon': {
         'name': 'mint',
@@ -421,14 +422,14 @@ iso_images = {
         'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
-7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
-5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
-uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
-CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
-7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
-M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
-=jUJ5
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
+7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
+K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
+eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
+Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
+tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
+lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
+=ZWZ+
 -----END PGP SIGNATURE-----"""
     },
      'sparky-7.8-mate': {
@@ -441,18 +442,18 @@ M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
          'sum': '8099ad940b061dfdb34880e3a35c136e9320ec0d72181d7385e17ff0704d7c35',
          'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
          'keyserver': 'keyserver.ubuntu.com',
-         'sign': """-----BEGIN PGP SIGNATURE-----
+        'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2U1YACgkQw50/ciyG
-7srl8wgA1YlKUtSUXDk1j4iMDZaC0+heecXrSmDC3OOSENhqiTWRQzHm8RFp0JIN
-HZgXTeOaakVWiCgnY2jSvJtq6QgnBus0VA/7pUD5m9LlzlxFZxSssaBL7nisJ8L9
-gZQSoMJcYgPKVzztGWpaPrMn9f4DyOjpCWN0/yZcdOhMwEoYXFoUTCk8hA9t9Ve8
-uzPPUGI/7f+V/or3+aS7zDHCYpj9CJyp0qipP9v51YUwv/TIDqIMj5Yu4NJioSbc
-uQ3Y6GiRcBlNVxqNaj9DGOR0BIDk4YIKFh7LRgKCeuCEnnh4B565CGXIshUhZ17p
-q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
-=RGzf
------END PGP SIGNATURE-----"""
-    },
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
+7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
+K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
+eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
+Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
+tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
+lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
+=ZWZ+
+-----END PGP SIGNATURE-----"""    
+},
      'sparky-7.8-xfce': {
          'name': 'sparky',
          'menu': 'debian',
@@ -463,16 +464,16 @@ q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
          'sum': 'd26aa50b3fc427fcbc8fb0f08e8852723e26f7a82630dab3a08e51390d3ec798',
          'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
          'keyserver': 'keyserver.ubuntu.com',
-         'sign': """-----BEGIN PGP SIGNATURE-----
+        'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SFsACgkQw50/ciyG
-7spB9wgAkdepKiAJuXw1HXWv4ouvrYdAgix28i5TePfhfX1z8Z6wgMNGK79/Z3lV
-iFtRlSuwSo+s/p1ylWA/8g/c11VjvUO1wbfeyBeeOVhq6c8KgDy+XPNIZ4DtgiCR
-PiBfuf5e3QflW9BTxQ5bL094qf0C194RRRSHRkkMYu4DkCUan+i/9V0h4vhZH5I3
-ziFPzaDbloq5gc4GpBkfEJ5t6LMo+ziW87rrQ8XeYfwAkpzLXbxIgpsH6v2Xa6Ug
-zPWj48exS2EqWBEuJpey3+LcbkCAXKuFqA3QtLbksYICjG8wrbHWW2a74KEqI8WB
-eRE2uCJDoZEO4dc1SSfo9xQwzvmJ8g==
-=/l9s
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
+7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
+K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
+eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
+Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
+tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
+lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
+=ZWZ+
 -----END PGP SIGNATURE-----"""
 },
     'sparky-7.8-kde': {
@@ -511,14 +512,14 @@ hyTk+bE7386IxQEJ48bnWJillInB5g==
         'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKMACgkQw50/ciyG
-7sqJNQf+P9UZ6dJRLsPIAGm9XyesxyJQeaiVXBE5xY7hngHSK/4tJBLYxlCw2Y4N
-mf+qsmt2+qyiqnpamNqCSbhJMmfwebgKyMzHqgbU7G+1boPi/5piIPy0h2AUIawu
-nbo2kUycdr/iS0eTLQ9rzs3nmlNEJK0WYixwjL3+1yBJLtD2JglFgwGvDw8zF8yj
-zV7v5HmGcaS46yHYugciBA4M5NOXOVw5g4OchUF8Y7BXqrwRTzLy/zaRTfzar+qp
-HC6Xzz29HLPsMZ8T9pf2kpFm1dRvebcEYNqP0f54ZUHKo0t8o1940YUJu9rjTcOB
-FlshxPmljXL+BbVCJlUjn5D9vwww0w==
-=z14S
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
+7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
+K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
+eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
+Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
+tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
+lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
+=ZWZ+
 -----END PGP SIGNATURE-----"""
     },
     'sparky-7.8-i686-cli': {
@@ -526,21 +527,21 @@ FlshxPmljXL+BbVCJlUjn5D9vwww0w==
         'menu': 'debian-loop',
         'cls': 'debian',        
         'title': 'Sparky (7.8) CLI (32 Bit)',
-        'size': 0.796,
+        'size': 0.8,
         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
         'keyserver': 'keyserver.ubuntu.com',
         'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.8-i686-minimalcli.iso/download',
         'sum': '686fa93eb7bd483722e0b4ef9e67e274b3f21752f3b4a4cfad877fab360f6dda',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SLwACgkQw50/ciyG
-7sqNUQgAyCz3cD+ttRPlfBZBvFBXnQXToWcwfhtdAHs4bTDVCtdXefxqU2NNBwUW
-DD4Ox5O8UINU4yhqL5FT2a6dsldVhy0omEx329uxL9fSFxPiH8qTTI6yQ3zHCPRq
-ojEcuGwodwTo/BsmMubZz6LksL1uOde6sC3rzFJ/xJSLH12m4Kujzd3xUMIrJIJ9
-Qk5TgMtzkiaiAExAfhlyLCS7jWRSCjLXRW+512aF6EKr77SPe4cY+O79e4NgORa2
-NrnCAVIjHxstrDLqdk9/3img7pJbuuDnUuGVaIm+o1CwpUxLfLfP2IKuwUrGe8hL
-fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
-=yEJ5
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
+7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
+K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
+eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
+Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
+tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
+lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
+=ZWZ+
 -----END PGP SIGNATURE-----"""
     },
 
