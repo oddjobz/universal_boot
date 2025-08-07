@@ -310,7 +310,7 @@ iso_images = {
     },
     'vanillaos-2025-02-20': {
         'name': 'vanilla',
-        'menu': 'debian',
+        'menu': 'vanillaos',
         'cls': 'vanillaos',
         'title': 'VanillaOS (2025-02)',
         'size': 1.92,
