@@ -1,15 +1,12 @@
 loadfont unicode
-      if [ "${loop}" ]; then
-            loopback --delete loop
-      fi
       search --label --set=root MP-DATA
       loadfont unicode
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
-      loopback loop "$iso_path"
-      root=(loop)
+      loopback loop4 "$iso_path"
+      root=(loop4)
       set params "{{ title }}" "iso-scan/filename=${iso_path}"
       configfile /boot/grub/loopback.cfg
-      loopback --delete loop
+      loopback --delete loop4
       search --label --set=root MP-DATA
 }
