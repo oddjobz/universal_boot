@@ -444,14 +444,14 @@ lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
          'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
-7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
-K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
-eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
-Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
-tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
-lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
-=ZWZ+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2QSwACgkQw50/ciyG
+7splGAgA1g6LQOqL27tJ7OUMeynTo+yIRKWOjh3FsIis7cCe+4cvUjfJHM3mFSbI
+wxXRs7Xx/SU/0tzFpIoP6jy8xP+5740yk5g9QcCw7QY+qdQQ63S5zEZoL0b/qXyN
+y4lmaKwOKHSMr6KJ2ewcsXN9jOI4dpNJrF9waDTQh3bBAOMmavnuY8GQLmldFQ4d
+wix5hk/laQGVBYpTrVjJhcU4dMr8jq80Vr8ZTCZWABLevIx120QkQRH8DHuFDD/O
+PRIGPjuDYhUcdQ6NT17hPnAV5gHjj87RHifGDlYtruMdePdt5FqbIhZUmfszKfUe
+SVcNY3yEkOrTsSeIANBLuioGHNjDlw==
+=5VJ3
 -----END PGP SIGNATURE-----"""    
 },
      'sparky-7.8-xfce': {
