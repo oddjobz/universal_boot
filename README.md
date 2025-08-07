@@ -36,7 +36,6 @@ Current ISO's we're sort of set up for (some of these need tweaking);
 
 ```bash
 # ./universal_boot.py --list
-ISO's Present on the USB Key:
 
 ISO's Available for download:
 > debian-12.11-cinnamon    |             | 3.10G | Debian (12.11) Cinnamon
