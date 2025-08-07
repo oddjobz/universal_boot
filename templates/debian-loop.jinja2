@@ -9,4 +9,5 @@ menuentry "{{ title }}" --class {{ cls }} {
       loopback loop "$iso_path"
       root=(loop)
       configfile /boot/grub/loopback.cfg
+      search --label --set=root MP-DATA
 }

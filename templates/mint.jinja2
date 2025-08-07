@@ -11,9 +11,11 @@ submenu "{{ title }}"  --class {{ cls }} {
       menuentry "Start {{ title }}" --class {{ cls }} {
             linux   /casper/vmlinuz  boot=casper username=mint hostname=mint quiet splash iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
+            search --label --set=root MP-DATA
       }
       menuentry "Start {{ title }} (compatibility mode)" --class {{ cls }} {
             linux   boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
+            search --label --set=root MP-DATA
       }
 }
