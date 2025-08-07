@@ -512,14 +512,14 @@ hyTk+bE7386IxQEJ48bnWJillInB5g==
         'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
-7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
-K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
-eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
-Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
-tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
-lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
-=ZWZ+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2REoACgkQw50/ciyG
+7sqUyggAroAoTQOB34b9BEaYewtXYLmoxABG7EztPmPgKHDR0gGqGqm6gpMtt1Vd
+tUe6TeZ6UYUa0i4VMe56aGGu9NwkRVWQO+03qmxzyH8DBRcBY8+IbIYS2JrLbcNL
+h3+YP51rHP3Tcuy4L8Q58Uhvsd0eBaJ+dtxECw9F26dJOe8jp2NFJNmPO4BeEdGu
+xMTzHSXlCiT1rhBDW6vHemM3HNsY7XXNiNeFJ9ziH3jDTk3E8ANDnQ9+1N8szXqa
+OvpnYwEhiag0Vzd2YK9W2rlbS916Oxu8oCDJxBnrgnvB6584pLM+EaZyjkPMFzrs
+tBVHHRnmso1POf0cHstnbkjIQNUXZQ==
+=1Hl0
 -----END PGP SIGNATURE-----"""
     },
     'sparky-7.8-i686-cli': {
