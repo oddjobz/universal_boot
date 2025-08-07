@@ -488,16 +488,15 @@ wFOb8nc0hykimMzIptJMiSWWPN0yUQ==
         'keyserver': 'keyserver.ubuntu.com',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SIQACgkQw50/ciyG
-7somzgf8D/qNySTGpfC+caN29LC1cmXNW3nUITZFmQjUQgv6HB6UCtwjg/VHoic/
-v3erZuzcQaoNcdV9pxDLIOtGpH5P34nQIFOrJJWQiFGUDsY55qa+hyKQrOpXMc0y
-sRQzVmpmlZKquxYTN3lmbkkhSa+u1eJ1U2etUDFdmXbKdt0v/0Tx57hVgX5cMsiU
-RctA6Hn2y25+DZNCbJ6MoSTEEb/Gw9UPcBrhh/oaPHDmN4C0szPBe2Wtnt0i0huF
-sR/1QrnLM8Q+DpbRaa/gpGCpdwmYcgfOwnIM+tmiIpFTOxvcXyg54pMOxMHoh7oI
-hyTk+bE7386IxQEJ48bnWJillInB5g==
-=Uakm
------END PGP SIGNATURE-----
-"""
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LigACgkQw50/ciyG
+7spIogf+N7hR2CVMDrbYHN/11X+VhPulyhO6YuvavQccbOKwJ3l2m9anc5XBrqwB
+7KKDRg+++xsFeSxO3YSDQIDnWGOi98HOyDY5Ht3dFByoosZa+RXNWMXLOomjePqY
+lpckgZc/PNHtOB0bSeOhC9R34gD70KvMLTMfZPFM79fnRl7v9AF8ML4h6bDUSjm3
+/1n7pNpZrunWEjxYS/phJOcaeQt0Sluhyi3GLmtuhsS+ZcZ6ydbsddNFmhV/T5lN
+6T7+pJbguyjAKMQcDM9+hSyrg9dloNxyL/GZRDo0IZ02TzG1BCGEQWwNy/d13cxn
+6gSAEt3sqYrRKMwW73wDVTFuEVFRoQ==
+=bveh
+-----END PGP SIGNATURE-----"""
     },
     'sparky-7.8-686-min': {
         'name': 'sparky',
@@ -512,14 +511,14 @@ hyTk+bE7386IxQEJ48bnWJillInB5g==
         'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2REoACgkQw50/ciyG
-7sqUyggAroAoTQOB34b9BEaYewtXYLmoxABG7EztPmPgKHDR0gGqGqm6gpMtt1Vd
-tUe6TeZ6UYUa0i4VMe56aGGu9NwkRVWQO+03qmxzyH8DBRcBY8+IbIYS2JrLbcNL
-h3+YP51rHP3Tcuy4L8Q58Uhvsd0eBaJ+dtxECw9F26dJOe8jp2NFJNmPO4BeEdGu
-xMTzHSXlCiT1rhBDW6vHemM3HNsY7XXNiNeFJ9ziH3jDTk3E8ANDnQ9+1N8szXqa
-OvpnYwEhiag0Vzd2YK9W2rlbS916Oxu8oCDJxBnrgnvB6584pLM+EaZyjkPMFzrs
-tBVHHRnmso1POf0cHstnbkjIQNUXZQ==
-=1Hl0
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LewACgkQw50/ciyG
+7sr/hggAxr0v8qbV5F6iTZXODGS84Btr3coU0C4haZGHHd8CanRIgpe2q3JLQIo+
+/1Dm7iN3ImghUNHGlWQ0Z8/ht1n0P2EIRC6RXBt7DoV9SkbdY6pMM122+dsNz6xZ
+28rZ6a4kTM4XUDpuE4l6mDKKd/zrQwDxWMw3igudTdX4TXZ0LXqU+8GY1pKp41c4
+S59d6LXUA8ssSUSe+ZgJBc6LCC7HCwTc2WlX2tuLsk7gpgraskUEQ5gPvUfoIo5U
+E89ayFGVkV5dGdEwokpU3XqxNub8L/4RMPNIOzIaridL49wdyZfdcdLVm361tGp+
+bjDer4Wh2ZWKiBLg5foHuKxf6tpLVQ==
+=9X30
 -----END PGP SIGNATURE-----"""
     },
     'sparky-7.8-i686-cli': {
@@ -534,14 +533,14 @@ tBVHHRnmso1POf0cHstnbkjIQNUXZQ==
         'sum': '686fa93eb7bd483722e0b4ef9e67e274b3f21752f3b4a4cfad877fab360f6dda',
         'sign': """-----BEGIN PGP SIGNATURE-----
 
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
-7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
-K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
-eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
-Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
-tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
-lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
-=ZWZ+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2RDEACgkQw50/ciyG
+7soOZAf+LHbRxMzD/I0v5cME88og3onjN/+BLgL9NH58PC+v1/ykCjybN8XhEyj5
+NrNDDeDvW5VwshO3nT8ug5LLDGuPhNNfHLZcmIjsDRsifuR3Cw6kcMW3m4i2D4UM
+ym5WGyJgPLutiRgBoRXwq0i1mi36+HeJNm2QpbnK1s+2g1CZ/Tlwb8ksPU2mACvx
+rDCiK6l6YOVmSmyjN67SWmQzxhkTv0NahJTEP5RrS8x1xyELtIcXAh9qRKZxzW7/
+AoYGwwt6+34Eotncvb1vmbCGKoYaA94KUTZzgmcj2ekZ8dc1bxMJvP/CN9vYKhg6
+eMdqFLnGlCwTuoE5DCdR2FygsrVSsw==
+=TaB6
 -----END PGP SIGNATURE-----"""
     },
 
