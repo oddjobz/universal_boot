@@ -1,14 +1,10 @@
 menuentry "{{ title }}" --class {{ cls }} {
-      if [ "${loop}" ]; then
-            loopback --delete loop
-      fi
       search --label --set=root MP-DATA
       loadfont unicode      
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
-      loopback loop "$iso_path"
-      root=(loop)
+      loopback loop1 "$iso_path"
+      root=(loop1)
       configfile /boot/grub/grub.cfg
-      loopback --delete loop
       search --label --set=root MP-DATA
 }
