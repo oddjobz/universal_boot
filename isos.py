@@ -132,25 +132,8 @@ iso_images = {
         'title': 'Ubuntu (25.04) Gnome',
         'size': 5.7,
         'iso':  'https://releases.ubuntu.com/plucky/ubuntu-25.04-desktop-amd64.iso',
-        'sum': 'b87366b62eddfbecb60e681ba83299c61884a0d97569abe797695c8861f5dea4',
-        # 'sign': 'https://releases.ubuntu.com/plucky/SHA256SUMS.gpg',      
-        'prints': ['843938DF22F7B374BC0D94AA3F0EFE21092'],
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQIzBAABCgAdFiEEhDk43yKNIvezdCvA2Uqj8O/iEJIFAmgA/swACgkQ2Uqj8O/i
-EJIiRQ/9G0w1uv1sPTFs2bTL4YrEKUy4ICJPwYCw6mKGld5yzaKb5uxU+v3oRei9
-FGAxSKUcg2jzldp8AWMfrTQgfNRBCzMddOokSd39EXpvPDetmc+6d/o+FMs8/EXn
-+f57cPx6fPJWkZJhHwwpUQCwf/FYUv8h5kiXykk2ZgcoBM06MtNmWPqxyWUcBluk
-bEb4egJLkdZR6UdmCgiLyRLEOBq583q77Ley90/FOjThckz4BkorULwJ1zpUL8ch
-i+f6bL7ojvQuPZMG3euw2pyGKvLV3fNX+BpQg3ssbdVhYt2St5Qf+fJ5i+L80Xti
-GIwTS9nsAODnHyMl1wDrbNNe6R+1tlrjiVENRcBhPADVV1gSl5BI1KOxI5rp+grM
-a234CbqzhmwGvgBNsyotIf/MZUDJ50lBjENCWi1F2pDNenehs1Wy/kLvLbwmmk5s
-lJTqxWUTBL7rZbts82MFhk/en+efQrbe+aC/K8tg0thyU5c1bUMgM5vKegHyyeiZ
-B22oRb9pzjRCqA/q3e7t7WFVxKK9VWLKt5+UEQ9/kkstIbaHkgCJJV7znMemFWZ5
-IU2w1Ni397rffDGxUU6JzD/3jDrD85L1k+en+SI5dY659jg874LpiI61GBDLInBr
-8f6PmTp9tOwlOFoq34cfqFB1GfA24blitRlU+MuDEvN+2yVujfM=
-=dX1P
------END PGP SIGNATURE-----"""
+        'sums': 'https://releases.ubuntu.com/plucky/SHA256SUMS',
+        'sign': 'https://releases.ubuntu.com/plucky/SHA256SUMS.gpg',        
     },
     'ubuntu-25.04-xfce': {
         'name': 'xubuntu',
