@@ -133,7 +133,8 @@ iso_images = {
         'size': 5.7,
         'iso':  'https://releases.ubuntu.com/plucky/ubuntu-25.04-desktop-amd64.iso',
         'sum': 'b87366b62eddfbecb60e681ba83299c61884a0d97569abe797695c8861f5dea4',
-        'sign': 'https://releases.ubuntu.com/plucky/SHA256SUMS.gpg',        
+        'sign': 'https://releases.ubuntu.com/plucky/SHA256SUMS.gpg',      
+        'prints': ['843938DF22F7B374BC0D94AA3F0EFE21092'],
     },
     'ubuntu-25.04-xfce': {
         'name': 'xubuntu',
