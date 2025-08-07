@@ -132,7 +132,7 @@ iso_images = {
         'title': 'Ubuntu (25.04) Gnome',
         'size': 5.7,
         'iso':  'https://releases.ubuntu.com/plucky/ubuntu-25.04-desktop-amd64.iso',
-        'sums': 'https://releases.ubuntu.com/plucky/SHA256SUMS',
+        'sum': 'b87366b62eddfbecb60e681ba83299c61884a0d97569abe797695c8861f5dea4',
         'sign': 'https://releases.ubuntu.com/plucky/SHA256SUMS.gpg',        
     },
     'ubuntu-25.04-xfce': {
