@@ -1,9 +1,9 @@
 submenu "{{ title }}"  --class {{ cls }} {
-    loadfont unicode
     if [ "${loop}" ]; then
         loopback --delete loop
     fi
     search --label --set=root MP-DATA
+    loadfont unicode    
     iso_path="/boot/iso/{{ filename }}"
     loopback loop "$iso_path"
     probe -u $root --set=rootuuid
@@ -32,6 +32,4 @@ submenu "{{ title }}"  --class {{ cls }} {
         linux (loop)/antiX/vmlinuz $bootoptions
         initrd (loop)/antiX/initrd.gz
     }
-    loopback --delete loop
-    search --label --set=root MP-DATA
 }

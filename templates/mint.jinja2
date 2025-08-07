@@ -1,9 +1,9 @@
 submenu "{{ title }}"  --class {{ cls }} {
-      loadfont unicode
       if [ "${loop}" ]; then
             loopback --delete loop      
       fi
       search --label --set=root MP-DATA
+      loadfont unicode      
       iso_path="/boot/iso/{{ filename }}"
       export iso_path
       loopback loop "$iso_path"
@@ -16,6 +16,4 @@ submenu "{{ title }}"  --class {{ cls }} {
             linux   boot=casper username=mint hostname=mint noapic noacpi nosplash irqpoll nomodeset iso-scan/filename=${iso_path} --
             initrd  /casper/initrd.lz
       }
-      loopback --delete loop
-      search --label --set=root MP-DATA
 }
