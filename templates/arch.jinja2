@@ -1,10 +1,14 @@
-menuentry '{{ title }}' {
+menuentry '{{ title }}' --class {{ cls }} {
+	if [ "${loop}" ]; then
+		loopback --delete loop
+	fi
+	search --label --set=root MP-DATA
+	loadfont unicode	
 	iso_path="/boot/iso/{{ filename }}"
 	export iso_path
-	img_path="/dev/disk/by-label/MP-DATA"
-	search --set=root --file "$iso_path"
 	loopback loop "$iso_path"
- 	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_path img_loop=$iso_path earlymodules=loop
-	initrd (loop)/arch/boot/intel-ucode.img (loop)/arch/boot/amd-ucode.img (loop)/arch/boot/x86_64/initramfs-linux.img
+	root=(loop)
+	configfile (loop)/boot/grub/loopback.cfg
 	loopback --delete loop
+	search --label --set=root MP-DATA
 }

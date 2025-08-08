@@ -1,11 +1,16 @@
-submenu "{{ title }}" {
+submenu "{{ title }}" --class {{ cls }} {
+    loadfont unicode
+    if [ "${loop}" ]; then
+        loopback --delete loop
+    fi
+    search --label --set=root MP-DATA
     iso_path="/boot/iso/{{ filename }}"
     export iso_path
     loopback loop "$iso_path"
     probe --set rootuuid --fs-uuid ($root)
     root=(loop)
 
-    menuentry 'Tails 5.22' --id 'live' {
+    menuentry 'Tails 5.22' --id 'live' --class {{ cls }} {
         echo "Loading the Linux kernel..."
         linux /live/vmlinuz initrd=/live/initrd.img boot=live config live-media=removable nopersistence noprompt timezone=Etc/UTC splash noautologin module=Tails slab_nomerge slub_debug=FZ mce=0 vsyscall=none init_on_free=1 mds=full,nosmt page_alloc.shuffle=1 randomize_kstack_offset=on FSUUID=${rootuuid} quiet
         echo "Loading the initramfs..."
@@ -14,7 +19,7 @@ submenu "{{ title }}" {
         boot
     }
 
-    menuentry 'Tails 5.22 (Troubleshooting Mode)' --id 'livefailsafe' {
+    menuentry 'Tails 5.22 (Troubleshooting Mode)' --id 'livefailsafe' --class {{ cls }} {
             echo "Loading the Linux kernel..."
             linux /live/vmlinuz initrd=/live/initrd.img boot=live config live-media=removable nopersistence noprompt timezone=Etc/UTC splash noautologin module=Tails slab_nomerge slub_debug=FZ mce=0 vsyscall=none init_on_free=1 mds=full,nosmt page_alloc.shuffle=1 randomize_kstack_offset=on FSUUID=${rootuuid} noapic noapm nodma nomce nolapic nosmp
             echo "Loading the initramfs..."
@@ -23,7 +28,7 @@ submenu "{{ title }}" {
             boot
     }
 
-    menuentry 'Tails 5.22 (External Hard Disk)' --id 'livenonremovable' {
+    menuentry 'Tails 5.22 (External Hard Disk)' --id 'livenonremovable' --class {{ cls }} {
             echo "Loading the Linux kernel..."
             linux /live/vmlinuz initrd=/live/initrd.img boot=live config nopersistence noprompt timezone=Etc/UTC splash noautologin module=Tails slab_nomerge slub_debug=FZ mce=0 vsyscall=none init_on_free=1 mds=full,nosmt page_alloc.shuffle=1 randomize_kstack_offset=on FSUUID=${rootuuid} quiet
             echo "Loading the initramfs..."
@@ -32,4 +37,5 @@ submenu "{{ title }}" {
             boot
     }
     loopback --delete loop
+    search --label --set=root MP-DATA
 }

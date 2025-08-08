@@ -1,4 +1,4 @@
-menuentry "{{ title }}" {
+menuentry "{{ title }}" --class {{ cls }} {
     set gfxpayload=keep
     insmod all_video
     root=(hd0,msdos2)

@@ -1,8 +1,23 @@
 #!/usr/bin/env bash
-sudo apt install -y python3-pip git libcurl4-openssl-dev libssl-dev whiptail
-sudo pip install pgpy jinja2 tqdm pycurl rainbow_tqdm whiptail-dialogs psutil whiptail rainbow_tqdm --break-system-packages
-sudo mount -o remount,rw ${MNT}
-echo "Universal Loader Ready>"
-cd ${DST} && sudo ./universal_boot.py --update
-cd ${DST} && sudo ./universal_boot.py --gui
-cd ${DST} && exec bash
+export MNT=/run/live/findiso
+export DST=${MNT}/universal_boot
+export PATH=$PATH:/root/.local/bin
+apt update
+apt -y install git python3-pip git libcurl4-openssl-dev libssl-dev whiptail pipx
+pipx install poetry
+mount -o remount,rw ${MNT}
+git -C ${DST} config --global --add safe.directory ${DST}
+git -C ${DST} pull
+cd ${DST}
+poetry env use python3
+poetry install
+poetry run ./universal_boot.py --update
+poetry run ./universal_boot.py --gui
+echo "Universal Loader Ready, type 'gui --help'"
+
+function gui() {
+  poetry run ./universal_boot.py "$@"
+}
+
+export -f gui
+exec /bin/bash -i

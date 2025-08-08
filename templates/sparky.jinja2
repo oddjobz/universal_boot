@@ -1,0 +1,11 @@
+menuentry "{{ title }}" --class {{ cls }} {
+      search --label --set=root MP-DATA
+      loadfont unicode
+      iso_path="/boot/iso/{{ filename }}"
+      export iso_path
+      loopback loop3 "$iso_path"
+      root=(loop3)
+      configfile /boot/grub/loopback.cfg
+      loopback --delete loop3
+      search --label --set=root MP-DATA
+}

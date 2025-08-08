@@ -1,28 +1,33 @@
-submenu "{{ title }}" {
+submenu "{{ title }}"  --class {{ cls }} {
+    if [ "${loop}" ]; then
+        loopback --delete loop
+    fi
+    search --label --set=root MP-DATA
+    loadfont unicode    
     iso_path="/boot/iso/{{ filename }}"
     loopback loop "$iso_path"
     probe -u $root --set=rootuuid
-    menuentry "Standard" {
+    menuentry "Standard" --class {{ cls }} {
         bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx"
         linux (loop)/antiX/vmlinuz $bootoptions
         initrd (loop)/antiX/initrd.gz
     }
-    menuentry "Persistent" {
+    menuentry "Persistent" --class {{ cls }} {
         bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx persist=hd,usb,r,h"
         linux (loop)/antiX/vmlinuz $bootoptions
         initrd (loop)/antiX/initrd.gz
     }
-    menuentry "Customize Boot (text menus)" {
+    menuentry "Customize Boot (text menus)" --class {{ cls }} {
         bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx menus"
         linux (loop)/antiX/vmlinuz $bootoptions
         initrd (loop)/antiX/initrd.gz
     }
-    menuentry "Failsafe" {
+    menuentry "Failsafe"  --class {{ cls }} {
         bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx nomodeset failsafe"
         linux (loop)/antiX/vmlinuz $bootoptions
         initrd (loop)/antiX/initrd.gz
     }
-    menuentry "Create Bootchart" {
+    menuentry "Create Bootchart" --class {{ cls }} {
         bootoptions="from=hd,usb root=UUID=$rootuuid fromiso=$iso_path quiet splash=v disable=lx bootchart initcall_debug printk.time=y"
         linux (loop)/antiX/vmlinuz $bootoptions
         initrd (loop)/antiX/initrd.gz

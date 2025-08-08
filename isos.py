@@ -2,6 +2,7 @@ iso_images = {
     'debian-12.11-cinnamon': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',
         'title': 'Debian (12.11) Cinnamon',
         'size': 3.1,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-cinnamon.iso',
@@ -15,6 +16,7 @@ iso_images = {
     'debian-12.11-gnome': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',
         'title': 'Debian (12.11) Gnome',
         'size': 3.2,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-gnome.iso',
@@ -28,6 +30,7 @@ iso_images = {
    'debian-12.11-kde': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (12.11) KDE',
         'size': 3.3,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-kde.iso',
@@ -41,6 +44,7 @@ iso_images = {
    'debian-13-kde': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (Trixie) KDE',
         'size': 3.9,
         'iso': 'https://cdimage.debian.org/cdimage/trixie_di_rc2-live/amd64/iso-hybrid/debian-live-trixie-DI-rc2-amd64-kde.iso',
@@ -54,6 +58,7 @@ iso_images = {
     'debian-12.11-lxde': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (12.11) LXDE',
         'size': 2.9,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-lxde.iso',
@@ -67,6 +72,7 @@ iso_images = {
     'debian-12.11-lxqt': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (12.11) LXQT',
         'size': 3.0,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-lxqt.iso',
@@ -80,6 +86,7 @@ iso_images = {
     'debian-12.11-mate': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (12.11) MATE',
         'size': 3.0,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-mate.iso',
@@ -93,6 +100,7 @@ iso_images = {
     'debian-12.11-standard': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (12.11) Standard',
         'size': 1.4,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-standard.iso',
@@ -106,6 +114,7 @@ iso_images = {
     'debian-12.11-xfce': {
         'name': 'debian',
         'menu': 'debian',
+        'cls': 'debian',        
         'title': 'Debian (12.11) XFCE',
         'size': 3.0,
         'iso': 'https://mirrorservice.org/sites/cdimage.debian.org/debian-cd/12.11.0-live/amd64/iso-hybrid/debian-live-12.11.0-amd64-xfce.iso',
@@ -116,153 +125,10 @@ iso_images = {
         ],
         'keyserver': 'keyring.debian.org'
     },
-    'sparky-7.7-lxqt': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'title': 'Sparky (7.7) LXQt',
-        'size': 2.0,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.7-x86_64-lxqt.iso',
-        'sum': '44b666a62f823f6ed2fd44f29a70c0f613596e354a551f1fe8d8658f83e23cde',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2UzEACgkQw50/ciyG
-7sqbOgf/cM6kTfZ7nYxN3R8rQxQ3QUYpRQeFgobxddhrdZen4AdbgmkQail1HbJt
-5XFveIWntn/2NM7QlL9tkOm6QxMhlnHbbhRhROOgPMQWBMPfDfQUfC33IkX4582A
-uwrCUwmg2EmwRn4qWeM75r078ZGXcqLZdc8Ztzcm9mBCrGnpNL2LkfIwflqmUDZ8
-CQinPmhqf6JgbmTZPCgaShID5SbraA+H+wsO3v0ibZo8fSXBnzC+cO1iOL13rOWm
-7cJAV4JSqb5QB0GptfjAZB7D265n/bz5vOEYwnLP0TWZK1IcDlZ/VkV/G2JR+b4m
-M8ZO0KVvXL7Eg2sJDEpQK5EXyO1a5Q==
-=jUJ5
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-mate': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'title': 'Sparky (7.7) Mate',
-        'size': 2.2,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.7-x86_64-mate.iso',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2U1YACgkQw50/ciyG
-7srl8wgA1YlKUtSUXDk1j4iMDZaC0+heecXrSmDC3OOSENhqiTWRQzHm8RFp0JIN
-HZgXTeOaakVWiCgnY2jSvJtq6QgnBus0VA/7pUD5m9LlzlxFZxSssaBL7nisJ8L9
-gZQSoMJcYgPKVzztGWpaPrMn9f4DyOjpCWN0/yZcdOhMwEoYXFoUTCk8hA9t9Ve8
-uzPPUGI/7f+V/or3+aS7zDHCYpj9CJyp0qipP9v51YUwv/TIDqIMj5Yu4NJioSbc
-uQ3Y6GiRcBlNVxqNaj9DGOR0BIDk4YIKFh7LRgKCeuCEnnh4B565CGXIshUhZ17p
-q1V6ByIlj1vqQ6P0YRzIcUe2a4/ytA==
-=RGzf
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-xfce': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'title': 'Sparky (7.7) XFCE',
-        'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.7-x86_64-xfce.iso',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SFsACgkQw50/ciyG
-7spB9wgAkdepKiAJuXw1HXWv4ouvrYdAgix28i5TePfhfX1z8Z6wgMNGK79/Z3lV
-iFtRlSuwSo+s/p1ylWA/8g/c11VjvUO1wbfeyBeeOVhq6c8KgDy+XPNIZ4DtgiCR
-PiBfuf5e3QflW9BTxQ5bL094qf0C194RRRSHRkkMYu4DkCUan+i/9V0h4vhZH5I3
-ziFPzaDbloq5gc4GpBkfEJ5t6LMo+ziW87rrQ8XeYfwAkpzLXbxIgpsH6v2Xa6Ug
-zPWj48exS2EqWBEuJpey3+LcbkCAXKuFqA3QtLbksYICjG8wrbHWW2a74KEqI8WB
-eRE2uCJDoZEO4dc1SSfo9xQwzvmJ8g==
-=/l9s
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-kde': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'title': 'Sparky (7.7) KDE',
-        'size': 2.3,
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.7-x86_64-kde.iso',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SIQACgkQw50/ciyG
-7somzgf8D/qNySTGpfC+caN29LC1cmXNW3nUITZFmQjUQgv6HB6UCtwjg/VHoic/
-v3erZuzcQaoNcdV9pxDLIOtGpH5P34nQIFOrJJWQiFGUDsY55qa+hyKQrOpXMc0y
-sRQzVmpmlZKquxYTN3lmbkkhSa+u1eJ1U2etUDFdmXbKdt0v/0Tx57hVgX5cMsiU
-RctA6Hn2y25+DZNCbJ6MoSTEEb/Gw9UPcBrhh/oaPHDmN4C0szPBe2Wtnt0i0huF
-sR/1QrnLM8Q+DpbRaa/gpGCpdwmYcgfOwnIM+tmiIpFTOxvcXyg54pMOxMHoh7oI
-hyTk+bE7386IxQEJ48bnWJillInB5g==
-=Uakm
------END PGP SIGNATURE-----
-"""
-    },
-    'sparky-7.7-minimal': {
-        'name': 'sparky',
-        'menu': 'debian',
-        'title': 'Sparky (7.7) Minimal',
-        'size': 1.6,
-        'keyserver': 'keyserver.ubuntu.com',
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-x86_64-minimalgui.iso',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKoACgkQw50/ciyG
-7spKagf+Nj+mqWAxk0qOxXw4OI0cnMtkMsdRIrpENl5c10AJf8tlCAhTP5ScLcpB
-fq7ewcKfPfaY1Epc4WJ7wKgrC0FuTfNI653x3QWz3Yrl0NDGk2lwteP9FDDnQ0tY
-sPq0siiwAF4rJy3DDj4GuxMEZC0ZXTR/u3sRBI/rVbQLO5x7zfPGS+xKPmSWVO3H
-7SKd8UHWNqIiuLvm2OQlqFc9RzhfU5x8VxKd9aj4NouQb8e9lya5Qod4spERXKIJ
-gu1BzFjRKvJ/XTNyeAPKjmvMsk1kQp7nL6xyjBXQGZFQQISyVgnm4QncKAUcOA+I
-SmuALsmZTQLOzjN0r9Cke+o443nR7Q==
-=yows
------END PGP SIGNATURE-----
-"""
-    },
-    'sparky-7.7-686-min': {
-        'name': 'sparky',
-        'menu': 'debian-loop',
-        'title': 'Sparky (7.7) Min (32 bit)',
-        'size': 1.3,
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.7-i686-minimalgui.iso',
-        'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SKMACgkQw50/ciyG
-7sqJNQf+P9UZ6dJRLsPIAGm9XyesxyJQeaiVXBE5xY7hngHSK/4tJBLYxlCw2Y4N
-mf+qsmt2+qyiqnpamNqCSbhJMmfwebgKyMzHqgbU7G+1boPi/5piIPy0h2AUIawu
-nbo2kUycdr/iS0eTLQ9rzs3nmlNEJK0WYixwjL3+1yBJLtD2JglFgwGvDw8zF8yj
-zV7v5HmGcaS46yHYugciBA4M5NOXOVw5g4OchUF8Y7BXqrwRTzLy/zaRTfzar+qp
-HC6Xzz29HLPsMZ8T9pf2kpFm1dRvebcEYNqP0f54ZUHKo0t8o1940YUJu9rjTcOB
-FlshxPmljXL+BbVCJlUjn5D9vwww0w==
-=z14S
------END PGP SIGNATURE-----"""
-    },
-    'sparky-7.7-i686-cli': {
-        'name': 'sparky',
-        'menu': 'debian-loop',
-        'title': 'Sparky (7.7) CLI (32 Bit)',
-        'size': 0.796,
-        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
-        'keyserver': 'keyserver.ubuntu.com',
-        'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.7-i686-minimalcli.iso',
-        'sign': """-----BEGIN PGP SIGNATURE-----
-
-iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmf2SLwACgkQw50/ciyG
-7sqNUQgAyCz3cD+ttRPlfBZBvFBXnQXToWcwfhtdAHs4bTDVCtdXefxqU2NNBwUW
-DD4Ox5O8UINU4yhqL5FT2a6dsldVhy0omEx329uxL9fSFxPiH8qTTI6yQ3zHCPRq
-ojEcuGwodwTo/BsmMubZz6LksL1uOde6sC3rzFJ/xJSLH12m4Kujzd3xUMIrJIJ9
-Qk5TgMtzkiaiAExAfhlyLCS7jWRSCjLXRW+512aF6EKr77SPe4cY+O79e4NgORa2
-NrnCAVIjHxstrDLqdk9/3img7pJbuuDnUuGVaIm+o1CwpUxLfLfP2IKuwUrGe8hL
-fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
-=yEJ5
------END PGP SIGNATURE-----"""
-    },
     'ubuntu-25.04': {
         'name': 'ubuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',
         'title': 'Ubuntu (25.04) Gnome',
         'size': 5.7,
         'iso':  'https://releases.ubuntu.com/plucky/ubuntu-25.04-desktop-amd64.iso',
@@ -272,6 +138,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'ubuntu-25.04-xfce': {
         'name': 'xubuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',        
         'title': 'Ubuntu (25.04) XFCE',
         'size': 3.8,
         'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/25.04/release/xubuntu-25.04-desktop-amd64.iso',
@@ -281,8 +148,9 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'ubuntu-25.04-kde': {
         'name': 'kubuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',        
         'title': 'Ubuntu (25.04) KDE',
-        'size': 3.9,
+        'size': 4.7,
         'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/25.04/release/kubuntu-25.04-desktop-amd64.iso',
         'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/25.04/release/SHA256SUMS',
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/25.04/release/SHA256SUMS.gpg',
@@ -290,6 +158,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'ubuntu-25.04-lxde': {
         'name': 'lubuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',        
         'title': 'Ubuntu (25.04) LXDE',
         'size': 3.1,
         'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/25.04/release/lubuntu-25.04-desktop-amd64.iso',
@@ -299,6 +168,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'ubuntu-25.04-budgie': {
         'name': 'bubuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',        
         'title': 'Ubuntu (25.04) Budgie',
         'size': 3.5,
         'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/25.04/release/ubuntu-budgie-25.04-desktop-amd64.iso',
@@ -308,6 +178,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'ubuntu-25.04-mate': {      
         'name': 'mubuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',        
         'title': 'Ubuntu (25.04) MATE',
         'size': 3.9,
         'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/plucky/release/ubuntu-mate-25.04-desktop-amd64.iso',
@@ -317,6 +188,7 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'ubuntu-25.04-studio': {
         'name': 'subuntu',
         'menu': 'debian-loop',
+        'cls': 'ubuntu',        
         'title': 'Ubuntu (25.04) Studio',
         'size': 4.7,
         'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/plucky/release/ubuntustudio-25.04-desktop-amd64.iso',
@@ -324,120 +196,10 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
         'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/plucky/release/SHA256SUMS.gpg',
         'keyserver': 'keyserver.ubuntu.com'        
     },
-
-    'ubuntu-24.04': {
-        'name': 'ubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) Gnome',
-        'size': 5.7,
-        'iso':  'https://releases.ubuntu.com/noble/ubuntu-24.04.2-desktop-amd64.iso',
-        'sums': 'https://releases.ubuntu.com/noble/SHA256SUMS',
-        'sign': 'https://releases.ubuntu.com/noble/SHA256SUMS.gpg',  
-        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
-        'keyserver': 'keyserver.ubuntu.com'
-    },
-    'ubuntu-24.04-xfce': {
-        'name': 'xubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) XFCE',
-        'size': 3.8,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/xubuntu-24.04.2-desktop-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
-        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
-        'keyserver': 'keyserver.ubuntu.com'
-    },
-    'ubuntu-24.04-kde': {
-        'name': 'kubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) KDE',
-        'size': 3.9,
-        'iso':  'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/kubuntu-24.04.2-desktop-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
-        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
-        'keyserver': 'keyserver.ubuntu.com'
-    },
-    'ubuntu-24.04-lxde': {
-        'name': 'lubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) LXDE',
-        'size': 3.1,
-        'iso': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/lubuntu-24.04.2-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/SHA256SUMS.gpg',
-        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
-        'keyserver': 'keyserver.ubuntu.com'
-    },
-    'ubuntu-24.04-budgie': {
-        'name': 'bubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) Budgie',
-        'size': 3.5,
-        'iso': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/ubuntu-budgie-24.04.2-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntu-budgie/releases/24.04.2/release/SHA256SUMS.gpg',
-        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
-        'keyserver': 'keyserver.ubuntu.com'
-    },
-    'ubuntu-24.04-mate': {      
-        'name': 'mubuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) MATE',
-        'size': 3.9,
-        'iso':  'https://cdimage.ubuntu.com/ubuntu-mate/releases/noble/release/ubuntu-mate-24.04.2-desktop-amd64.iso',
-        'sums': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS',
-        'sign': 'https://cdimage.ubuntu.com/ubuntu-mate/releases/24.04.2/release/SHA256SUMS.gpg',
-        'prints': ['843938DF228D22F7B3742BC0D94AA3F0EFE21092'],
-        'keyserver': 'keyserver.ubuntu.com'
-    },
-    'ubuntu-24.04-studio': {
-        'name': 'subuntu',
-        'menu': 'debian-loop',
-        'title': 'Ubuntu (24.04) Studio',
-        'size': 4.7,
-        'iso': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/ubuntustudio-24.04.2-dvd-amd64.iso',
-        'sums': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS',
-        'sign': 'https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntustudio/releases/noble/release/SHA256SUMS.gpg',
-        'keyserver': 'keyserver.ubuntu.com'        
-    },
-    'mint-22.1-cinnamon': {
-        'name': 'mint',
-        'menu': 'mint',
-        'title': 'Mint (22.1) Cinnamon', 
-        'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
-        'sum': 'ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f',
-        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        # 'keyserver': 'keyserver.ubuntu.com',
-        # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
-    },
-    'mint-22.1-mate': {
-        'name': 'mint',
-        'menu': 'mint',
-        'title': 'Mint (22.1) Mate', 
-        'size': 3.0,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-mate-64bit.iso',
-        'sum': 'd286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0',
-        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-    },
-    'mint-22.1-xfce': {
-        'name': 'mint',
-        'menu': 'mint',
-        'title': 'Mint (22.1) XFCE', 
-        'size': 2.9,
-        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-xfce-64bit.iso',
-        'sum': '6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d',
-        # 'sums': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt',
-        # 'sign': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/sha256sum.txt.gpg',
-        # 'keyserver': 'keyserver.ubuntu.com',
-        # 'prints': ['27DEB15644C6B3CF3BD7D291300F846BA25BAE09']
-    },
     'bodhi-7.0.0-standard': {
         'name': 'bodhi',
         'menu': 'bodhi',
+        'cls': 'unknown',
         'title': 'Bodhi (7.0.0) Standard',
         'size': 1.3,
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64.iso',
@@ -446,19 +208,259 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     'bodhi-7.0.0-hwe': {
         'name': 'bodhi',
         'menu': 'bodhi',
+        'cls': 'unknown',        
         'title': 'Bodhi (7.0.0) HWE',
         'size': 1.3,
         'iso': 'https://sourceforge.net/projects/bodhilinux/files/7.0.0/bodhi-7.0.0-64-hwe.iso',
         'sum': '55601a03d305159569b77e6a6008aedc59f5e81df1beb35f6224c0eae6efde70'
     },
-    'arch-2024.02.01': {
+    'rescue-12.0': {
+        'name': 'rescue',
+        'menu': 'debian-loop',
+        'cls': 'recovery',        
+        'title': 'System Rescue (12.0)',
+        'size': 0.86,
+        'iso': 'https://fastly-cdn.system-rescue.org/releases/12.00/systemrescue-12.00-amd64.iso',
+        'sum': '11a1f31412046cc28f2b7a465a2f1634ca5095594a9e5937e1ff9fd25f9ae8e6'
+    },
+    'zorin-17.0': {
+        'name': 'zorin',
+        'menu': 'zorin',
+        'cls': 'zorin',        
+        'title': 'Zorin Desktop (17.0)',
+        'size': 3.6,
+        'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17.2-Core-64-bit.iso',
+        'sum': 'e68d49172964e4d0aa39ac1d77674d724b0b835658836a56fc1b318680deaed6',
+    },
+    'kali-2025.1c': {
+        'name': 'kali',
+        'menu': 'debian',
+        'cls': 'kali',
+        'title': 'Kali Desktop (2025.1c) Live',
+        'size': 4.6,
+        'iso': 'https://cdimage.kali.org/kali-2025.1c/kali-linux-2025.1c-live-amd64.iso',
+        'sum': '39450e405779fea4e632c2ea46c51981cd6ce5645a02d4d19879496880d6f6a5'
+    },
+    'fedora-42-gnome': {
+        'name': 'fedora',
+        'menu': 'redhat',
+        'cls': 'fedora',
+        'title': 'Fedora (42) Gnome',
+        'size': 2.1,
+        'iso':  'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-Live-42-1.1.x86_64.iso',
+        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-42-1.1-x86_64-CHECKSUM',
+        'sign': 'https://fedoraproject.org/fedora.gpg'
+    },
+    'manjaro-25.0.6-gnome': {
+        'name': 'manjaro',
+        'menu': 'manjaro',
+        'cls': 'manjaro',        
+        'title': 'Manjaro (25.0.6) Gnome',
+        'size': 3.9,
+        'iso': 'https://download.manjaro.org/gnome/25.0.6/manjaro-gnome-25.0.6-250730-linux612.iso',
+        'sum': '284dfa000a8b8e9dc114a54bca17d6eed9fb21480bacba9cf7844964fadfd252',
+        'sign': 'https://download.manjaro.org/gnome/25.0.6/manjaro-gnome-25.0.6-250730-linux612.iso.sig'
+    },
+    'manjaro-25.0.6-kde': {
+        'name': 'manjaro',
+        'menu': 'manjaro',
+        'cls': 'manjaro',        
+        'title': 'Manjaro (25.0.6) KDE',
+        'size': 3.7,
+        'iso': 'https://download.manjaro.org/kde/25.0.6/manjaro-kde-25.0.6-250730-linux612.iso',
+        'sum': 'cb2e7aa66d5e0cc27dddedc6833f67ef5643549f870a9c2d316070bb75e733cc',
+        'sign': 'https://download.manjaro.org/kde/25.0.6/manjaro-kde-25.0.6-250730-linux612.iso.sig'
+    },
+    'manjaro-25.0.6-xfce': {
+        'name': 'manjaro',
+        'menu': 'manjaro',
+        'cls': 'manjaro',                
+        'title': 'Manjaro (25.0.6) XFCE',
+        'size': 3.6,
+        'iso': 'https://download.manjaro.org/xfce/25.0.6/manjaro-xfce-25.0.6-250730-linux612.iso',
+        'sum': '87e35bd6024c310bc56fdb8ec8bbb22c66541a4230746e2f11e5d874aef7889e',
+        'sign': 'https://download.manjaro.org/xfce/25.0.6/manjaro-xfce-25.0.6-250730-linux612.iso.sig'
+    },
+    'mint-22.1-cinnamon': {
+        'name': 'mint',
+        'menu': 'loopback',
+        'cls': 'linuxmint',
+        'title': 'Mint (22.1) Cinnamon', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-cinnamon-64bit.iso',
+        'sum': 'ccf482436df954c0ad6d41123a49fde79352ca71f7a684a97d5e0a0c39d7f39f',
+    },
+    'mint-22.1-mate': {
+        'name': 'mint',
+        'menu': 'loopback',
+        'cls': 'linuxmint',        
+        'title': 'Mint (22.1) Mate', 
+        'size': 3.0,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-mate-64bit.iso',
+        'sum': 'd286306d0f40bd7268f08c523ece5fba87c0369a27a72465a19447e3606c5fa0',
+    },
+    'mint-22.1-xfce': {
+        'name': 'mint',
+        'menu': 'mint',
+        'cls': 'linuxmint',        
+        'title': 'Mint (22.1) XFCE', 
+        'size': 2.9,
+        'iso': 'https://mirror.bytemark.co.uk/linuxmint/stable/22.1/linuxmint-22.1-xfce-64bit.iso',
+        'sum': '6451496af35e6855ffe1454f061993ea9cb884d2b4bc8bf17e7d5925ae2ae86d',
+    },
+    'vanillaos-2025-02-20': {
+        'name': 'vanilla',
+        'menu': 'vanillaos',
+        'cls': 'vanillaos',
+        'title': 'VanillaOS (2025-02)',
+        'size': 1.92,
+        'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
+        'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
+    },
+    'arch-2025.08.01': {
         'name': 'arch',
         'menu': 'arch',
-        'title': 'Arch Linux (2024.01.01) Live',
-        'size': 0.93,
-        'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2024.02.01/archlinux-2024.02.01-x86_64.iso',
-        'sum': '891ebab4661cedb0ae3b8fe15a906ae2ba22e284551dc293436d5247220933c5',
+        'cls': 'arch',
+        'title': 'Arch Linux (2025.08.01) Live',
+        'size': 1.3,
+        'iso': 'https://mirrors.ukfast.co.uk/sites/archlinux.org/iso/2025.08.01/archlinux-2025.08.01-x86_64.iso',
+        'sum': '4b1af44dbeed97acec0204a95f6393818bb8fd903b423a20b7ea141f80b27e59',
     },
+    'sparky-7.8-lxqt': {
+        'name': 'sparky',
+        'menu': 'sparky',
+        'cls': 'debian',        
+        'title': 'Sparky (7.8) LXQt',
+        'size': 2.0,
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-7.8-x86_64-lxqt.iso',
+        'sum': '50c4cd47ff539bcb20357c37a317dbf4d296b53cbc17b97ade9a0eadc6ee318e',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LkQACgkQw50/ciyG
+7sqCHgf+K+Q0uX54EO6m3lKaMx/BhyPi3mgnMflRxB0zV8FT+VL90D2iN3aqOTQc
+K5S1YO/6QMj5hvdbiglT0HfQ64ghQCHcLnXfo8XZmOMQqqPzERjeSyjr0v2St2o7
+eUh0B8pChGoYrI9ALLdmlAH6eJMANmkX2o9KmNxvCU4LI8o9pWOpdk7M+p9wpqAy
+Il6zGZDSGJZdiVazbJoFZbjgmgwMHMAtrTxLV79YsSFZA7VB+BtlWS+zceZpPsDz
+tq1tkypt4yfhkCNHbswnmY3Obe+pJXVdVFDgVnAOqyJBn2ApW6nGThv7PVuLqs/q
+lyA/FiWHvBipmLX8ZHrkXD41XFIAKg==
+=ZWZ+
+-----END PGP SIGNATURE-----"""
+    },
+     'sparky-7.8-mate': {
+         'name': 'sparky',
+         'menu': 'sparky',
+         'cls': 'debian',        
+         'title': 'Sparky (7.7) Mate',
+         'size': 2.2,
+         'iso': 'https://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-7.8-x86_64-mate.iso',
+         'sum': '8099ad940b061dfdb34880e3a35c136e9320ec0d72181d7385e17ff0704d7c35',
+         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+         'keyserver': 'keyserver.ubuntu.com',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2QSwACgkQw50/ciyG
+7splGAgA1g6LQOqL27tJ7OUMeynTo+yIRKWOjh3FsIis7cCe+4cvUjfJHM3mFSbI
+wxXRs7Xx/SU/0tzFpIoP6jy8xP+5740yk5g9QcCw7QY+qdQQ63S5zEZoL0b/qXyN
+y4lmaKwOKHSMr6KJ2ewcsXN9jOI4dpNJrF9waDTQh3bBAOMmavnuY8GQLmldFQ4d
+wix5hk/laQGVBYpTrVjJhcU4dMr8jq80Vr8ZTCZWABLevIx120QkQRH8DHuFDD/O
+PRIGPjuDYhUcdQ6NT17hPnAV5gHjj87RHifGDlYtruMdePdt5FqbIhZUmfszKfUe
+SVcNY3yEkOrTsSeIANBLuioGHNjDlw==
+=5VJ3
+-----END PGP SIGNATURE-----"""    
+},
+     'sparky-7.8-xfce': {
+         'name': 'sparky',
+         'menu': 'sparky',
+         'cls': 'debian',        
+         'title': 'Sparky (7.8) XFCE',
+         'size': 1.85,
+         'iso': 'https://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-7.8-x86_64-xfce.iso',
+         'sum': 'd26aa50b3fc427fcbc8fb0f08e8852723e26f7a82630dab3a08e51390d3ec798',
+         'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+         'keyserver': 'keyserver.ubuntu.com',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2QU8ACgkQw50/ciyG
+7srqkAf+MO6ijbqocDRN0d7X5CDRW8tEv+XNI31eaxHnB7stGfctVmxWSQNiH+hX
+EMDZM+itytQOkIm1f1Hu09m7xLMo2PqPzjxYLHQzFg2KV/U0sqAHnYfshJ2MaiVO
+dEfOV/qr9Bg8+DPe/JoVUXGkLyhHunwHQUA8rWt8jz0USrEBINgZ9YqJHPHjEo8K
+xDXwx6Id0yhEsHrEGa+B4rg8jIs1BL6cY6jZIorkJklpJrXwoAuhGT2A2bygDjYQ
+AS1e3o4o0UcedjyWc5zRs+VCd+MncexKqajhszVT7APgP4ZQwGvHVeCb+EwUnR1w
+wFOb8nc0hykimMzIptJMiSWWPN0yUQ==
+=76uI
+-----END PGP SIGNATURE-----"""
+},
+    'sparky-7.8-kde': {
+        'name': 'sparky',
+        'menu': 'sparky',
+        'cls': 'debian',        
+        'title': 'Sparky (7.8) KDE',
+        'size': 2.3,
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-7.8-x86_64-kde.iso',
+        'sum': '912571eee59f98d2d92f352439a1ba5d3aed2310b65ab18666c34196e6ae7225',
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LigACgkQw50/ciyG
+7spIogf+N7hR2CVMDrbYHN/11X+VhPulyhO6YuvavQccbOKwJ3l2m9anc5XBrqwB
+7KKDRg+++xsFeSxO3YSDQIDnWGOi98HOyDY5Ht3dFByoosZa+RXNWMXLOomjePqY
+lpckgZc/PNHtOB0bSeOhC9R34gD70KvMLTMfZPFM79fnRl7v9AF8ML4h6bDUSjm3
+/1n7pNpZrunWEjxYS/phJOcaeQt0Sluhyi3GLmtuhsS+ZcZ6ydbsddNFmhV/T5lN
+6T7+pJbguyjAKMQcDM9+hSyrg9dloNxyL/GZRDo0IZ02TzG1BCGEQWwNy/d13cxn
+6gSAEt3sqYrRKMwW73wDVTFuEVFRoQ==
+=bveh
+-----END PGP SIGNATURE-----"""
+    },
+    'sparky-7.8-686-min': {
+        'name': 'sparky',
+        'menu': 'sparky',
+        'cls': 'debian',
+        'title': 'Sparky (7.8) Min (32 bit)',
+        'size': 1.3,
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-7.8-i686-minimalgui.iso',
+        'sum': 'f8b3d64f40784283d668b9c7aed031ecdf264de4f8e3b8ce7f93069a257b7697',
+        'key': 'https://sparkylinux.org/files/klucz/sparkylinux-iso.gpg.key',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2LewACgkQw50/ciyG
+7sr/hggAxr0v8qbV5F6iTZXODGS84Btr3coU0C4haZGHHd8CanRIgpe2q3JLQIo+
+/1Dm7iN3ImghUNHGlWQ0Z8/ht1n0P2EIRC6RXBt7DoV9SkbdY6pMM122+dsNz6xZ
+28rZ6a4kTM4XUDpuE4l6mDKKd/zrQwDxWMw3igudTdX4TXZ0LXqU+8GY1pKp41c4
+S59d6LXUA8ssSUSe+ZgJBc6LCC7HCwTc2WlX2tuLsk7gpgraskUEQ5gPvUfoIo5U
+E89ayFGVkV5dGdEwokpU3XqxNub8L/4RMPNIOzIaridL49wdyZfdcdLVm361tGp+
+bjDer4Wh2ZWKiBLg5foHuKxf6tpLVQ==
+=9X30
+-----END PGP SIGNATURE-----"""
+    },
+    'sparky-7.8-i686-cli': {
+        'name': 'sparky',
+        'menu': 'sparky',
+        'cls': 'debian',        
+        'title': 'Sparky (7.8) CLI (32 Bit)',
+        'size': 0.8,
+        'prints': ['1F61A0A8478AE18EA3E77CF9C39D3F722C86EECA'],
+        'keyserver': 'keyserver.ubuntu.com',
+        'iso': 'https://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-7.8-i686-minimalcli.iso',
+        'sum': '686fa93eb7bd483722e0b4ef9e67e274b3f21752f3b4a4cfad877fab360f6dda',
+        'sign': """-----BEGIN PGP SIGNATURE-----
+
+iQEzBAABCgAdFiEEH2GgqEeK4Y6j53z5w50/ciyG7soFAmh2RDEACgkQw50/ciyG
+7soOZAf+LHbRxMzD/I0v5cME88og3onjN/+BLgL9NH58PC+v1/ykCjybN8XhEyj5
+NrNDDeDvW5VwshO3nT8ug5LLDGuPhNNfHLZcmIjsDRsifuR3Cw6kcMW3m4i2D4UM
+ym5WGyJgPLutiRgBoRXwq0i1mi36+HeJNm2QpbnK1s+2g1CZ/Tlwb8ksPU2mACvx
+rDCiK6l6YOVmSmyjN67SWmQzxhkTv0NahJTEP5RrS8x1xyELtIcXAh9qRKZxzW7/
+AoYGwwt6+34Eotncvb1vmbCGKoYaA94KUTZzgmcj2ekZ8dc1bxMJvP/CN9vYKhg6
+eMdqFLnGlCwTuoE5DCdR2FygsrVSsw==
+=TaB6
+-----END PGP SIGNATURE-----"""
+    },
+
+
 
     # Disabled, sum doesn't match, nor do signing keys
     # 'endeavour-2024.06.25': {
@@ -473,192 +475,56 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     #
     #   FIXME: bad key
     #
-    'rescue-12.0': {
-        'name': 'rescue',
-        'menu': 'debian-loop',
-        'title': 'System Rescue (12.0)',
-        'size': 0.86,
-        'iso': 'https://fastly-cdn.system-rescue.org/releases/12.00/systemrescue-12.00-amd64.iso',
-        'sum': '11a1f31412046cc28f2b7a465a2f1634ca5095594a9e5937e1ff9fd25f9ae8e6'
-    },
-    'zorin-17.0': {
-        'name': 'zorin',
-        'menu': 'zorin',
-        'title': 'Zorin Desktop (17.0)',
-        'size': 3.6,
-        'iso': 'https://mirror.webworld.ie/zorinos/17/Zorin-OS-17.2-Core-64-bit.iso',
-        'sum': 'e68d49172964e4d0aa39ac1d77674d724b0b835658836a56fc1b318680deaed6',
-    },
-    'antix-23-full-64': {
-        'name': 'antix',
-        'menu': 'antix',
-        'title': 'antiX (23) Full 64-bit',
-        'size': 2.1,
-        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
-        'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
-    },
-    'antix-23-full-32': {
-        'name': 'antix',
-        'menu': 'antix',
-        'title': 'antiX (23) Full 32-bit',
-        'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
-        'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
-    },
-    'puppy-10.0.10-bookworm': {
-        'name': 'puppy',
-        'menu': 'puppy',
-        'title': 'Puppy Linux (10.0.10) Bookworm',
-        'size': 0.41,
-        'iso': 'https://distro.ibiblio.org/puppylinux/puppy-bookwormpup/BookwormPup64/10.0.10/BookwormPup64_10.0.10.iso',
-        'sum': '860eeb70e00a1517753037b5c7278b8a747b8e7b091f799ebe4ecc6be0fe96af'
-    },
-    'kali-2025.1c': {
-        'name': 'kali',
-        'menu': 'debian',
-        'title': 'Kali Desktop (2025.1c) Live',
-        'size': 4.6,
-        'iso': 'https://cdimage.kali.org/kali-2025.1c/kali-linux-2025.1c-live-amd64.iso',
-        'sum': '39450e405779fea4e632c2ea46c51981cd6ce5645a02d4d19879496880d6f6a5'
-    },
-    'popos-22.04': {
-        'name': 'popos',
-        'menu': 'pop',
-        'title': 'Pop!_OS (22.04) LTS',
-        'size': 2.5,
-        'iso': 'https://iso.pop-os.org/22.04/amd64/intel/33/pop-os_22.04_amd64_intel_33.iso',
-        'sum': 'ff834c94c6bc970a9508da24fccf32ac829a51030488e612cc1ab4ecf4e0859d',
-    },
-    'fedora-42-gnome': {
-        'name': 'fedora',
-        'menu': 'redhat',
-        'title': 'Fedora (42) Gnome',
-        'size': 2.1,
-        'iso':  'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-Live-42-1.1.x86_64.iso',
-        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-42-1.1-x86_64-CHECKSUM',
-        'sign': 'https://fedoraproject.org/fedora.gpg'
-    },
-    'manjaro-24.0.3-gnome': {
-        'name': 'manjaro',
-        'menu': 'manjaro',
-        'title': 'Manjaro (24.2.1) Gnome',
-        'size': 3.9,
-        'iso': 'https://download.manjaro.org/gnome/24.2.1/manjaro-gnome-24.2.1-241216-linux612.iso',
-        'sum': 'd6ccfbfccea732857bd60d33925852a639f08e570336f68e179479fa99df3866',
-        'sign': 'https://download.manjaro.org/gnome/24.2.1/manjaro-gnome-24.2.1-241216-linux612.iso.sig'
-    },
-    'manjaro-24.2.1-kde': {
-        'name': 'manjaro',
-        'menu': 'manjaro',
-        'title': 'Manjaro (24.2.1) KDE',
-        'size': 3.7,
-        'iso': 'https://download.manjaro.org/kde/24.2.1/manjaro-kde-24.2.1-241216-linux612.iso',
-        'sum': 'e8cb6f9617593707bb7a96ccfc6051e4e3d25635e416cfdd5ae73e07fd1cd65f',
-        'sign': 'https://download.manjaro.org/kde/24.2.1/manjaro-kde-24.2.1-241216-linux612.iso.sig'
-    },
-    'manjaro-24.2.1-xfce': {
-        'name': 'manjaro',
-        'menu': 'manjaro',
-        'title': 'Manjaro (24.2.1) XFCE',
-        'size': 3.6,
-        'iso': 'https://download.manjaro.org/xfce/24.0.3/manjaro-xfce-24.0.3-240702-linux69.iso',
-        'sum': 'dace856cf172c0bb3647455cd797ada5e970dec1c13f7dbb015ce24ef893ea73'
-    },
-    'vanillaos-22.10-r9': {
-        'name': 'vanilla',
-        'menu': 'debian',
-        'title': 'VanillaOS (22.10) Beta',
-        'size': 1.8,
-        'iso': 'https://cdn.vanillaos.org/assets/ISO/22.10-r9/VanillaOS-22.10-all.20231009.iso',
-        'sum': '893474b4bf1c6e0c895c7f5d2b0bb1f5297197d4c6b6740c79659e9f6bfeb0e7'
-    },
-    'mxlinux-23.2-std': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.5) Stable',
-        'size': 2.2,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso',
-        'sum': '39c6b7d14d707e602acd91fb651fb3460f86eae80a4038696d626a58ff571960',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_x64.iso.sig'
-    },
-    'mxlinux-23.5-ahs': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.5) Current',
-        'size': 2.6,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso',
-        'sum': '3a996902b08b7d18d3dd513efd6cd78070d963cb5c66ac5a51c6c876bc96e807',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.5_ahs_x64.iso.sig'
-    },
-    'mxlinux-23.5-kde': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.5) KDE',
-        'size': 2.6,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso',
-        'sum': '0c19f64a9316bf1413233a89e34b2dfc58506dc076fce7ae81e46b94fefc8bb3',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.5_KDE_x64.iso.sig'
-    },
-    'mxlinux-23.5-flux': {
-        'name': 'antix',
-        'menu': 'mxlinux',
-        'title': 'MX Linux (23.5) Fluxbox',
-        'size': 1.8,
-        'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso',
-        'sum': 'b1c8b06bc8a6dea771c79d8a62c4837698b069ce883c7db264e7c4f1fa152819',
-        'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.5_fluxbox_x64.iso.sig'
-    },
-    'fedora-41-gnome': {
-        'name': 'fedora',
-        'menu': 'redhat',
-        'title': 'Fedora (41/1.4) Gnome',
-        'size': 2.29,
-        'iso': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-41-1.4.iso',
-        'sums': 'https://download.fedoraproject.org/pub/fedora/linux/releases/41/Workstation/x86_64/iso/Fedora-Workstation-41-1.4-x86_64-CHECKSUM',
-        'sign': 'https://fedoraproject.org/fedora.gpg'
-    },
+    # 'antix-23-full-64': {
+    #     'name': 'antix',
+    #     'menu': 'antix',
+    #     'cls': 'unknown',        
+    #     'title': 'antiX (23) Full 64-bit',
+    #     'size': 2.1,
+    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso',
+    #     'sum': '1177e467b14ab9e006b755076680f4c321cb49b989c73a56458fc8050ce713de'
+    # },
+    # 'antix-23-full-32': {
+    #     'name': 'antix',
+    #     'menu': 'antix',
+    #     'cls': 'unknown',        
+    #     'title': 'antiX (23) Full 32-bit',
+    #     'size': 1.8,
+    #     'iso': 'https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_386-full.iso',
+    #     'sum': 'd5df9986e95bc707345779c833b3fc7aee364d58addae07ee19292a162af159b'
+    # },
+    # 'mxlinux-23.6-xfce': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'cls': 'mx-linux',        
+    #     'title': 'MX Linux (23.6) XFCE',
+    #     'size': 2.3,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_x64.iso',
+    #     'sum': '6960a253320a7615217b07593fcd04f7ab6126a87cce1398e2c153c45ca03978',
+    #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-23.6_x64.iso.sig'
+    # },
+    # 'mxlinux-23.6.1-kde': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'cls': 'mx-linux',                
+    #     'title': 'MX Linux (23.6) KDE',
+    #     'size': 2.9,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso',
+    #     'sum': '4e8e30f1197af7cb07b2f28867012c52572b6d70d173e1909f8b9b860da9a97d',
+    #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-23.6.1_KDE_x64.iso.sig'
+    # },
+    # 'mxlinux-23.6-flux': {
+    #     'name': 'antix',
+    #     'menu': 'mxlinux',
+    #     'cls': 'mx-linux',                
+    #     'title': 'MX Linux (23.6) Fluxbox',
+    #     'size': 1.8,
+    #     'iso': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso',
+    #     'sum': 'aebdcb6b1859b21982021f69a1ca1e8b65e7628bc5a41650061dbbb7da6f4874',
+    #     'sign': 'https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-23.6.1_fluxbox_x64.iso.sig'
+    # },
 
-}
 
-#
-#   * FIXME: should be an easy fix
-#
-    #
-    #   Missing image
-    #
-    # 'arch-2025.03.01': {
-    #     'name': 'arch',
-    #     'menu': 'arch',
-    #     'title': 'Arch Linux (2025.03.01) Live',
-    #     'size': 1.2,
-    #     'iso': 'https://mirror.bytemark.co.uk/archlinux/iso/2025.03.01/archlinux-2025.03.01-x86_64.iso',
-    #     'sum': '8150e3c1a479de9134baa13cea4ff78856cca5ebeb9bdfa87ecfce2e47ac9b5b',
-    # },
-    # #
-    # #   UEFI only
-    # #
-    # 'vanillaos-2025-02-20': {
-    #     'name': 'vanilla',
-    #     'menu': 'debian',
-    #     'title': 'VanillaOS (2025-02)',
-    #     'size': 1.92,
-    #     'iso': 'https://github.com/Vanilla-OS/live-iso/releases/download/2.0/VanillaOS-2-stable.20250220.iso',
-    #     'sum': '87922b952d7b8c00e7acd48beb945f6c35e4415ce4cf89c4e7ac3a3df66c988f'
-    # },
-#
-#   * FIXME: On-Hold
-#
-    # #
-    # #   Error finding EFI
-    # #
-    # 'popos-22.04': {
-    #     'name': 'popos',
-    #     'menu': 'pop',
-    #     'title': 'Pop!_OS (22.04) LTS',
-    #     'size': 2.49,
-    #     'iso': 'https://iso.pop-os.org/22.04/amd64/intel/51/pop-os_22.04_amd64_intel_51.iso',
-    #     'sum': '5621e7544a00c1e358d667ce36eb5ae0741fe63431c92cf68c17ff66630b5ded',
-    # },
     # #
     # #   Looping menu
     # #
@@ -697,3 +563,8 @@ fxwmlNzDcQO1HXN7abnZxv4qx6Xp0g==
     #     'iso': 'https://sourceforge.net/projects/openmandriva/files/release/ROME/24.12/openmandriva.rome-24.12-plasma6.wayland.x86_64.iso',
     #     'sum': '6a2a90583d97e18fd374e6f801715e8ed1e6fb61'
     # },
+#
+#   This needs updating, but currently SF it too slow to make this practical.
+#   4 Aug 2025
+#
+}

@@ -1,19 +1,18 @@
-submenu "{{ title }}" {
-    isofile="/boot/iso/{{ filename }}"
-    export isofile
-    loopback loop "${isofile}"
-    root=(loop)
-
-    menuentry "Start {{ title }}" --class fedora --class gnu-linux --class gnu --class os {
-        linux (loop)/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-WS-Live-41-1-4  rd.live.image quiet rhgb iso-scan/filename=$isofile
-        initrd (loop)/images/pxeboot/initrd.img
+submenu "{{ title }}" --class {{ cls }} {
+    search --label --set=root MP-DATA
+    loadfont unicode
+    iso_path="/boot/iso/{{ filename }}"
+    loopback loop2 "$iso_path"
+    root=(loop2)
+    
+    menuentry "Start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
+        linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image iso-scan/filename=${iso_path}
+        initrd /boot/x86_64/loader/initrd
+        search --label --set=root MP-DATA
     }
-    menuentry "Test this media & start {{ title }}" --class fedora --class gnu-linux --class gnu --class os {
-        linux (loop)/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-WS-Live-41-1-4  rd.live.image rd.live.check quiet iso-scan/filename=$isofile
-        initrd (loop)/images/pxeboot/initrd.img
-    }
-    menuentry "Start {{ title }} in basic graphics mode" --class fedora --class gnu-linux --class gnu --class os {
-        linux (loop)/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-WS-Live-41-1-4  rd.live.image nomodeset vga=791 quiet rhgb iso-scan/filename=$isofile
-        initrd (loop)/images/pxeboot/initrd.img
+    menuentry "Test this media & start Fedora-Workstation-Live" --class fedora --class gnu-linux --class gnu --class os {
+        linux /boot/x86_64/loader/linux quiet rhgb  root=live:CDLABEL=Fedora-WS-Live-42 rd.live.image rd.live.check iso-scan/filename=${iso_path}
+        initrd /boot/x86_64/loader/initrd
+        search --label --set=root MP-DATA
     }
 }
