@@ -60,3 +60,11 @@ ISO's Available for download:
 > subuntu-23.04                    => Ubuntu Desktop - 23.04 - (Studio)
 > fedora-38-gnome                  => Fedora Desktop - 38 / 1.6 - Gnome
 ```
+
+# REGIONAL LICENCE AMENDMENT:
+
+The license applied to this software is done so in good faith. If you fall within the scope of a region
+which is attempting to undermine or subvert the terms of license, in particular with regards to liability
+or requiring features not provided by the software, then you are expressly forbidden from downloading and
+using this software. It is your responsibility as the user to know and abide by local rules and
+regulations that apply to you within your region.
